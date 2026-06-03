@@ -213,6 +213,55 @@
     .dot-mistral { background: #f97316; }
     .dot-databricks { background: #e63946; }
 
+    /* Filter bar */
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+
+    .filter-btn {
+      padding: 5px 14px;
+      border-radius: 20px;
+      border: 1px solid #30363d;
+      background: transparent;
+      color: #8b949e;
+      font-size: 0.8rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .filter-btn:hover {
+      border-color: #58a6ff;
+      color: #58a6ff;
+    }
+
+    .filter-btn.active {
+      background: #1f6feb;
+      border-color: #1f6feb;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .filter-btn .btn-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: currentColor;
+      flex-shrink: 0;
+    }
+
+    .filter-btn.active .btn-dot {
+      background: #fff;
+    }
+
+    .company-section.hidden { display: none; }
+
     /* Mobile */
     @media (max-width: 768px) {
       .layout { flex-direction: column; }
@@ -390,7 +439,24 @@
       return map[company] || '';
     };
 
+    let activeFilter = 'All';
+
+    function applyFilter(company) {
+      activeFilter = company;
+      // Update button states
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.company === company);
+      });
+      // Show/hide company sections
+      document.querySelectorAll('.company-section').forEach(section => {
+        const match = company === 'All' || section.dataset.company === company;
+        section.classList.toggle('hidden', !match);
+      });
+    }
+
     function renderBriefing(briefing) {
+      activeFilter = 'All';
+
       // Group items by company
       const byCompany = {};
       for (const item of briefing.items) {
@@ -398,17 +464,31 @@
         byCompany[item.company].push(item);
       }
 
+      const companies = Object.keys(byCompany);
       const total = briefing.items.length;
+
+      // Filter bar
+      let filterHtml = `<div class="filter-bar">
+        <button class="filter-btn active" data-company="All" onclick="applyFilter('All')">All</button>`;
+      for (const company of companies) {
+        const dotClass = companyDotClass(company);
+        filterHtml += `<button class="filter-btn" data-company="${company}" onclick="applyFilter('${company}')">
+          <span class="btn-dot ${dotClass}"></span>${company}
+        </button>`;
+      }
+      filterHtml += `</div>`;
+
       let html = `
         <div class="briefing-header">
           <div class="briefing-date">${briefing.displayDate}</div>
-          <div class="item-count">${total} news item${total !== 1 ? 's' : ''} across ${Object.keys(byCompany).length} companies</div>
+          <div class="item-count">${total} news item${total !== 1 ? 's' : ''} across ${companies.length} companies</div>
         </div>
+        ${filterHtml}
       `;
 
       for (const [company, items] of Object.entries(byCompany)) {
         const dotClass = companyDotClass(company);
-        html += `<div class="company-section">
+        html += `<div class="company-section" data-company="${company}">
           <div class="company-header">
             <div class="company-name">
               <span class="company-dot ${dotClass}"></span>
