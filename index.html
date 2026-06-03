@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI7 Daily Briefing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d2e;
+      --border: #2a2d3e;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --accent: #6ee7b7;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 1.2rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header .logo {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: -0.5px;
+    }
+
+    header .subtitle {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-left: auto;
+    }
+
+    .layout {
+      display: flex;
+      flex: 1;
+      max-width: 1100px;
+      margin: 0 auto;
+      width: 100%;
+      padding: 2rem 1.5rem;
+      gap: 2rem;
+    }
+
+    .sidebar {
+      width: 200px;
+      flex-shrink: 0;
+    }
+
+    .sidebar-title {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+      font-weight: 600;
+    }
+
+    .nav-item {
+      display: block;
+      padding: 0.5rem 0.75rem;
+      border-radius: 6px;
+      font-size: 0.82rem;
+      color: var(--muted);
+      text-decoration: none;
+      margin-bottom: 0.25rem;
+      transition: all 0.15s;
+    }
+
+    .nav-item:hover {
+      background: var(--surface);
+      color: var(--text);
+    }
+
+    .main {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .briefing {
+      margin-bottom: 2.5rem;
+    }
+
+    .briefing-date {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .company-section {
+      margin-bottom: 1.5rem;
+    }
+
+    .company-header {
+      padding: 0.35rem 0.75rem;
+      margin-bottom: 0.75rem;
+      background: var(--surface);
+      border-radius: 0 6px 6px 0;
+    }
+
+    .company-name {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .news-item {
+      padding: 0.85rem 1rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      margin-bottom: 0.6rem;
+    }
+
+    .news-item h4 {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 0.4rem;
+      line-height: 1.4;
+    }
+
+    .news-item p {
+      font-size: 0.83rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .source-link {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.78rem;
+      font-weight: 500;
+    }
+
+    .source-link:hover { text-decoration: underline; }
+
+    .no-news {
+      font-size: 0.83rem;
+      color: var(--muted);
+      font-style: italic;
+      padding: 0.5rem 0;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2rem 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.75rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 640px) {
+      .sidebar { display: none; }
+      .layout { padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">AI7 Daily Briefing</div>
+    <div class="subtitle">Databricks · NVIDIA · Snowflake · Palantir · Mistral · Anthropic · OpenAI</div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="sidebar-title">Editions</div>
+      <a href="#briefing-2026-06-02" class="nav-item">June 2, 2026</a>
+
+    </aside>
+    <main class="main">
+      
+    <section class="briefing" id="briefing-2026-06-02">
+      <div class="briefing-date">June 2, 2026</div>
+      
+        <div class="company-section">
+          <div class="company-header" style="border-left: 4px solid #76b900">
+            <span class="company-name" style="color:#76b900">NVIDIA</span>
+          </div>
+          <div class="company-items">
+                <div class="news-item">
+                  <h4>RTX Spark superchip and Vera CPU unveiled at Computex 2026</h4>
+                  <p>Jensen Huang unveiled the RTX Spark superchip at Computex 2026 — an Arm Grace + Blackwell chip with ~128GB unified memory and nearly 1 petaflop of compute, designed to turn Windows PCs into personal AI agent platforms. NVIDIA also announced the Vera CPU purpose-built for AI agents, with major tech firms committing to adopt it. Intel and AMD stocks fell on the news. <a href="https://nvidianews.nvidia.com/news/nvidia-microsoft-windows-pcs-agents-rtx-spark" target="_blank" rel="noopener" class="source-link">[Source]</a></p>
+                </div>
+                <div class="news-item">
+                  <h4>US moves to block Nvidia chip exports to Chinese firms overseas subsidiaries</h4>
+                  <p>The US Commerce Department issued guidance to halt Nvidia AI chip shipments to overseas subsidiaries of Chinese AI firms, suggesting advanced chips had been reaching Chinese companies through this loophole despite existing restrictions. <a href="https://www.reuters.com/world/china/us-takes-step-halt-nvidia-ai-chip-shipments-chinese-firms-outside-china-2026-05-31/" target="_blank" rel="noopener" class="source-link">[Source]</a></p>
+                </div></div>
+        </div>
+        <div class="company-section">
+          <div class="company-header" style="border-left: 4px solid #29b5e8">
+            <span class="company-name" style="color:#29b5e8">Snowflake</span>
+          </div>
+          <div class="company-items">
+                <div class="news-item">
+                  <h4>Snowflake integrates Anthropic Claude into Cortex AI for enterprise agents</h4>
+                  <p>Snowflake deepened its Anthropic partnership, embedding Claude into Cortex AI to power governed, production-ready AI agents for enterprises, addressing rising demand for AI that operates within data governance frameworks. <a href="https://www.snowflake.com/en/news/press-releases/snowflake-and-anthropic-accelerate-enterprise-ai-adoption-driven-by-rising-demand-for-governed-ai/" target="_blank" rel="noopener" class="source-link">[Source]</a></p>
+                </div>
+                <div class="news-item">
+                  <h4>Snowflake commits $6B to AWS over five years for AI infrastructure</h4>
+                  <p>Snowflake announced a $6 billion, five-year commitment to AWS to expand its AI infrastructure, reinforcing its cloud-native positioning as competition for enterprise AI data platforms intensifies. <a href="https://www.instagram.com/p/DZC7xk8CRWz/" target="_blank" rel="noopener" class="source-link">[Source]</a></p>
+                </div></div>
+        </div>
+        <div class="company-section">
+          <div class="company-header" style="border-left: 4px solid #e63b2e">
+            <span class="company-name" style="color:#e63b2e">Palantir</span>
+          </div>
+          <div class="company-items">
+                <div class="news-item">
+                  <h4>Norway $2.3T sovereign wealth fund backs human rights review at Palantir</h4>
+                  <p>Norway sovereign wealth fund voted in favor of all shareholder proposals at Palantir, including a human rights review, a governance pressure signal from one of the worlds largest institutional investors targeting Palantir defense and surveillance work. <a href="https://www.bloomberg.com/news/articles/2026-05-29/-2-3-trillion-norway-fund-backs-human-rights-review-at-palantir" target="_blank" rel="noopener" class="source-link">[Source]</a></p>
+                </div></div>
+        </div>
+        <div class="company-section">
+          <div class="company-header" style="border-left: 4px solid #fa5a28">
+            <span class="company-name" style="color:#fa5a28">Mistral</span>
+          </div>
+          <div class="company-items">
+                <div class="news-item">
+                  <h4>Mistral signs Airbus and BMW for manufacturing AI</h4>
+                  <p>Mistral struck deals with Airbus and BMW to deploy AI across advanced manufacturing, with Airbus acquiring licenses for Mistral full product suite for on-premises and cloud deployment. This marks a major expansion into industrial AI. <a href="https://www.bloomberg.com/news/articles/2026-05-28/mistral-signs-airbus-and-bmw-as-it-brings-ai-to-manufacturing" target="_blank" rel="noopener" class="source-link">[Source]</a></p>
+                </div>
+                <div class="news-item">
+                  <h4>BNP Paribas deepens Mistral partnership; new France data center announced</h4>
+                  <p>BNP Paribas expanded its Mistral partnership to harden cybersecurity defenses against threats posed by next-generation AI models. Mistral also announced a new 10-megawatt data center in Les Ulis, France, due to open in H2 2026. <a href="https://www.reuters.com/business/finance/bnp-paribas-steps-up-mistral-partnership-bolster-rapid-ai-defences-2026-05-26/" target="_blank" rel="noopener" class="source-link">[Source]</a></p>
+                </div></div>
+        </div>
+        <div class="company-section">
+          <div class="company-header" style="border-left: 4px solid #d97757">
+            <span class="company-name" style="color:#d97757">Anthropic</span>
+          </div>
+          <div class="company-items">
+                <div class="news-item">
+                  <h4>Anthropic confidentially files S-1 IPO prospectus at near-$1T valuation</h4>
+                  <p>Anthropic filed a confidential draft S-1 with the SEC to begin its IPO process, days after closing a $65B Series H round at a $965B post-money valuation, surpassing OpenAI $852B March valuation. It is expected to be among 2026 most consequential public listings alongside SpaceX and OpenAI. <a href="https://www.anthropic.com/news/confidential-draft-s1-sec" target="_blank" rel="noopener" class="source-link">[Source]</a></p>
+                </div></div>
+        </div>
+        <div class="company-section">
+          <div class="company-header" style="border-left: 4px solid #10a37f">
+            <span class="company-name" style="color:#10a37f">OpenAI</span>
+          </div>
+          <div class="company-items">
+                <div class="news-item">
+                  <h4>OpenAI revives robotics team, hiring to build and manufacture robots</h4>
+                  <p>CEO Sam Altman announced the revival of OpenAI Robotics, recruiting hardware, systems, and ML engineers to program and manufacture robots, a direct challenge to Tesla Optimus humanoid program and a pivot from pure software into physical AI. <a href="https://www.thenews.com.pk/latest/1404438-sam-altman-revives-openai-robotics-team-after-five-years" target="_blank" rel="noopener" class="source-link">[Source]</a></p>
+                </div></div>
+        </div>
+        <div class="company-section">
+          <div class="company-header" style="border-left: 4px solid #ff3621">
+            <span class="company-name" style="color:#ff3621">Databricks</span>
+          </div>
+          <div class="company-items"><p class="no-news">No major news today.</p></div>
+        </div>
+    </section>
+    <hr class="divider">
+    </main>
+  </div>
+
+  <footer>
+    AI7 Daily Briefing · Curated by Tasklet AI · Updated daily at 4:00 PM AEST
+  </footer>
+</body>
+</html>
