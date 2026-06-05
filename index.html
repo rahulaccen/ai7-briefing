@@ -5,209 +5,505 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI7 Daily Briefing</title>
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f0f13; color: #e2e8f0; min-height: 100vh; display: flex; flex-direction: column; }
-  header { background: #1a1a24; border-bottom: 1px solid #2d2d3d; padding: 16px 24px; display: flex; align-items: center; gap: 12px; }
-  header h1 { font-size: 1.3rem; font-weight: 700; color: #fff; letter-spacing: -0.3px; }
-  header .badge { background: linear-gradient(135deg, #6366f1, #8b5cf6); color: #fff; font-size: 0.7rem; font-weight: 700; padding: 3px 8px; border-radius: 20px; letter-spacing: 0.5px; }
-  .layout { display: flex; flex: 1; overflow: hidden; height: calc(100vh - 57px); }
-  .sidebar { width: 200px; min-width: 200px; background: #13131c; border-right: 1px solid #2d2d3d; overflow-y: auto; padding: 12px 0; }
-  .sidebar-label { font-size: 0.65rem; font-weight: 700; color: #64748b; letter-spacing: 1px; text-transform: uppercase; padding: 8px 16px 4px; }
-  .sidebar-item { padding: 10px 16px; font-size: 0.85rem; color: #94a3b8; cursor: pointer; border-left: 3px solid transparent; transition: all 0.15s; }
-  .sidebar-item:hover { background: #1e1e2e; color: #e2e8f0; }
-  .sidebar-item.active { background: #1e1e2e; color: #a5b4fc; border-left-color: #6366f1; font-weight: 600; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0d1117; color: #c9d1d9; min-height: 100vh; }
+  .app { display: flex; flex-direction: column; height: 100vh; }
+  header { background: #161b22; border-bottom: 1px solid #30363d; padding: 12px 20px; display: flex; align-items: center; gap: 16px; flex-shrink: 0; }
+  header h1 { font-size: 18px; font-weight: 700; color: #f0f6fc; letter-spacing: -0.3px; }
+  header span { color: #8b949e; font-size: 13px; }
+  .main { display: flex; flex: 1; overflow: hidden; }
+  .sidebar { width: 200px; background: #161b22; border-right: 1px solid #30363d; overflow-y: auto; flex-shrink: 0; }
+  .sidebar-header { padding: 12px 16px 8px; font-size: 11px; font-weight: 600; color: #8b949e; text-transform: uppercase; letter-spacing: 0.8px; }
+  .sidebar-item { padding: 10px 16px; cursor: pointer; border-left: 3px solid transparent; font-size: 13px; color: #8b949e; transition: all 0.15s; }
+  .sidebar-item:hover { background: #21262d; color: #c9d1d9; }
+  .sidebar-item.active { border-left-color: #4a90d9; color: #f0f6fc; background: #21262d; }
   .sidebar-item.dimmed { opacity: 0.4; }
-  .main { flex: 1; overflow-y: auto; padding: 24px; }
-  .briefing-date { font-size: 0.8rem; color: #64748b; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px; }
-  .filter-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
-  .chip { padding: 5px 14px; border-radius: 20px; font-size: 0.78rem; font-weight: 600; cursor: pointer; border: 2px solid transparent; transition: all 0.15s; background: #1e1e2e; color: #94a3b8; }
-  .chip:hover { background: #2a2a3e; color: #e2e8f0; }
-  .chip.active { color: #fff; border-color: transparent; }
-  .chip[data-company="All"].active { background: #6366f1; color: #fff; }
-  .company-section { margin-bottom: 28px; }
-  .company-header { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+  .sidebar-item .date-label { font-weight: 600; color: inherit; }
+  .sidebar-item .item-count { font-size: 11px; color: #8b949e; margin-top: 2px; }
+  .content { flex: 1; overflow-y: auto; padding: 20px 24px; }
+  .filter-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; align-items: center; }
+  .filter-chip { padding: 5px 14px; border-radius: 20px; font-size: 12px; font-weight: 500; cursor: pointer; border: 1px solid #30363d; background: #21262d; color: #8b949e; transition: all 0.15s; white-space: nowrap; }
+  .filter-chip:hover { border-color: #8b949e; color: #c9d1d9; }
+  .filter-chip.active { color: #fff; border-color: transparent; }
+  .filter-chip.all.active { background: #4a90d9; border-color: #4a90d9; }
+  .banner { background: #1c2128; border: 1px solid #30363d; border-left: 3px solid #4a90d9; border-radius: 6px; padding: 10px 16px; margin-bottom: 20px; font-size: 13px; color: #8b949e; display: none; }
+  .banner.visible { display: block; }
+  .banner strong { color: #c9d1d9; }
+  .date-group { margin-bottom: 32px; }
+  .date-group-header { font-size: 13px; font-weight: 600; color: #8b949e; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #21262d; text-transform: uppercase; letter-spacing: 0.5px; }
+  .company-section { margin-bottom: 24px; }
+  .company-header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
   .company-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
-  .company-name { font-size: 1rem; font-weight: 700; color: #f1f5f9; }
-  .date-group { margin-bottom: 24px; }
-  .date-group-label { font-size: 0.72rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid #2d2d3d; }
-  .news-item { background: #1a1a24; border: 1px solid #2d2d3d; border-radius: 10px; padding: 14px 16px; margin-bottom: 10px; transition: border-color 0.15s; }
-  .news-item:hover { border-color: #4d4d6d; }
-  .news-item-company { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
-  .news-headline { font-size: 0.92rem; font-weight: 600; color: #e2e8f0; margin-bottom: 6px; line-height: 1.4; }
-  .news-summary { font-size: 0.83rem; color: #94a3b8; line-height: 1.6; margin-bottom: 8px; }
-  .news-source a { font-size: 0.75rem; color: #6366f1; text-decoration: none; font-weight: 500; }
-  .news-source a:hover { text-decoration: underline; }
-  .no-news { color: #64748b; font-style: italic; font-size: 0.85rem; padding: 8px 0; }
-  .history-banner { background: #1e1e2e; border: 1px solid #2d2d3d; border-radius: 10px; padding: 12px 16px; margin-bottom: 20px; font-size: 0.82rem; color: #94a3b8; }
-  .history-banner strong { color: #a5b4fc; }
+  .company-name { font-size: 15px; font-weight: 700; color: #f0f6fc; }
+  .news-item { background: #161b22; border: 1px solid #21262d; border-radius: 8px; padding: 14px 16px; margin-bottom: 10px; transition: border-color 0.15s; }
+  .news-item:hover { border-color: #30363d; }
+  .news-headline { font-size: 14px; font-weight: 600; color: #f0f6fc; margin-bottom: 6px; line-height: 1.4; }
+  .news-summary { font-size: 13px; color: #8b949e; line-height: 1.6; }
+  .news-source { display: inline-block; margin-top: 8px; font-size: 12px; color: #4a90d9; text-decoration: none; }
+  .news-source:hover { text-decoration: underline; }
+  .empty-state { text-align: center; padding: 60px 20px; color: #8b949e; }
+  .empty-state h3 { font-size: 16px; margin-bottom: 8px; color: #c9d1d9; }
   @media (max-width: 640px) {
-    .layout { flex-direction: column; height: auto; }
-    .sidebar { width: 100%; min-width: unset; height: auto; display: flex; overflow-x: auto; border-right: none; border-bottom: 1px solid #2d2d3d; padding: 8px; gap: 4px; }
-    .sidebar-label { display: none; }
-    .sidebar-item { white-space: nowrap; border-left: none; border-radius: 6px; padding: 6px 12px; }
-    .sidebar-item.active { border-left: none; background: #2a2a3e; }
-    .main { padding: 16px; }
+    .sidebar { width: 140px; }
+    .content { padding: 16px; }
+    .company-name { font-size: 14px; }
   }
 </style>
 </head>
 <body>
-<header>
-  <h1>AI7 Daily Briefing</h1>
-  <span class="badge">CEO Edition</span>
-</header>
-<div class="layout">
-  <div class="sidebar">
-    <div class="sidebar-label">Archives</div>
-    <div class="sidebar-item" data-id="briefing-2026-06-04">June 4, 2026</div>
-<div class="sidebar-item" data-id="briefing-2026-06-03">June 3, 2026</div>
-<div class="sidebar-item" data-id="briefing-2026-06-02">June 2, 2026</div>
-
-  </div>
-  <div class="main" id="main">
-    <div id="content"></div>
+<div class="app">
+  <header>
+    <h1>AI7 Daily Briefing</h1>
+    <span>Tech intel for the C-suite</span>
+  </header>
+  <div class="main">
+    <div class="sidebar">
+      <div class="sidebar-header">Past Briefings</div>
+      <div id="sidebar-list"></div>
+    </div>
+    <div class="content">
+      <div class="filter-bar" id="filter-bar">
+        <div class="filter-chip all active" data-company="all" onclick="setFilter('all')">All</div>
+        <div class="filter-chip" data-company="Databricks" onclick="setFilter('Databricks')" style="--c:#FF3621">Databricks</div>
+        <div class="filter-chip" data-company="NVIDIA" onclick="setFilter('NVIDIA')" style="--c:#76b900">NVIDIA</div>
+        <div class="filter-chip" data-company="Snowflake" onclick="setFilter('Snowflake')" style="--c:#29B5E8">Snowflake</div>
+        <div class="filter-chip" data-company="Palantir" onclick="setFilter('Palantir')" style="--c:#7B68EE">Palantir</div>
+        <div class="filter-chip" data-company="Mistral" onclick="setFilter('Mistral')" style="--c:#FA520F">Mistral</div>
+        <div class="filter-chip" data-company="Anthropic" onclick="setFilter('Anthropic')" style="--c:#C96F1F">Anthropic</div>
+        <div class="filter-chip" data-company="OpenAI" onclick="setFilter('OpenAI')" style="--c:#10a37f">OpenAI</div>
+      </div>
+      <div class="banner" id="filter-banner"></div>
+      <div id="news-content"></div>
+    </div>
   </div>
 </div>
+
 <script>
-const BRIEFINGS = [{"id": "briefing-2026-06-04", "date": "June 4, 2026", "items": [{"company": "NVIDIA", "headline": "RTX Spark Superchip Unveiled at Computex 2026", "summary": "NVIDIA debuted RTX Spark \u2014 an Arm CPU + Blackwell GPU superchip with 128GB unified memory \u2014 targeting Windows laptops and compact desktops, with Dell, HP, and ASUS launching devices this fall. The chip enables local AI agents to run natively on personal PCs, marking NVIDIA's first serious push into the consumer PC CPU market.", "sourceUrl": "https://nvidianews.nvidia.com/news/nvidia-microsoft-windows-pcs-agents-rtx-spark"}, {"company": "NVIDIA", "headline": "Jensen Huang Dismisses AI Job Loss Fears at Computex", "summary": "Huang called AI job-displacement fears 'complete nonsense,' citing GitHub data showing AI dramatically increases developer output rather than replacing workers \u2014 a pointed statement as global anxiety about AI and employment grows.", "sourceUrl": "https://www.cnbc.com/2026/05/31/nvidias-new-chip-to-power-fresh-line-of-windows-laptops-by-dell-hp.html"}, {"company": "OpenAI", "headline": "Sam Altman Lobbies Congress Against Pre-Release AI Approval Rules", "summary": "Altman met with Republican and Democratic lawmakers \u2014 including Hakeem Jeffries and Bernie Sanders \u2014 and Trump officials on June 3, pushing back against proposals requiring government sign-off before releasing new AI models. OpenAI simultaneously released a policy paper diverging from Trump's AI executive order, proposing industry-led federal governance instead.", "sourceUrl": "https://www.cnbc.com/2026/06/03/open-ai-altman-congress-trump-eo.html"}, {"company": "OpenAI", "headline": "OpenAI Publishes Frontier AI Safety Blueprint", "summary": "The policy paper proposes a U.S. federal framework covering safety, resilience, and national security for frontier AI \u2014 but splits from the White House on at least two key provisions, signaling OpenAI wants a governance model it can shape, not one imposed on it.", "sourceUrl": "https://www.politico.com/news/2026/06/03/openai-white-house-ai-safety-rules-00948478"}, {"company": "Snowflake", "headline": "Summit 2026 Bets on Four Pillars for the Agentic Enterprise", "summary": "Snowflake unveiled Cortex Sense, Iceberg v3, Datastream, and Adaptive Compute as its core infrastructure bets, with CEO Sridhar Ramaswamy framing the entire platform around making AI agents production-ready for enterprise.", "sourceUrl": "https://futurumgroup.com/insights/snowflake-summit-2026-four-infrastructure-bets-that-determine-whether-the-agentic-enterprise-delivers/"}, {"company": "Snowflake", "headline": "Horizon Catalog Launched for Enterprise AI Governance", "summary": "Snowflake's new Horizon Catalog centralizes governance, security, and context across enterprise AI workloads \u2014 directly addressing the compliance and auditability challenges of at-scale AI agent deployment.", "sourceUrl": "https://www.snowflake.com/en/news/press-releases/snowflake-advances-trusted-ai-with-snowflake-horizon-catalog-centralizing-governance-context-and-security-across-the-enterprise/"}, {"company": "Palantir", "headline": "PLTR Falls 6.5% Despite Record FY2026 Guidance Raise", "summary": "Palantir shares dropped to ~$142 on June 3-4, interrupting a sharp rally. This follows management raising FY2026 revenue guidance to a $7.656B midpoint \u2014 a 71% growth rate and the largest guidance raise in company history. Analyst consensus price target remains $193.", "sourceUrl": "https://www.fool.com/investing/2026/06/03/why-palantir-stock-is-sinking-today/"}, {"company": "Palantir", "headline": "Shareholders Vote Down Human Rights Proposals at Annual Meeting", "summary": "Investors rejected two proposals requesting independent reports on whether Palantir's AI surveillance software causes human rights abuses by government clients. Government revenue is on track to hit $3.8B in 2026 (up from $2.4B), reinforcing how central this business is to Palantir's model.", "sourceUrl": "https://www.barrons.com/articles/palantir-stock-price-human-rights-99fc4356"}, {"company": "Anthropic", "headline": "Claude Opus 4.8 Released \u2014 Near-Generational Leap in Agentic Performance", "summary": "Anthropic released Opus 4.8 with stronger coding, agentic task, and professional work capabilities. Pricing unchanged at $5/$25 per million tokens. Early testers describe the improvement as close to a full model generation upgrade rather than a point release.", "sourceUrl": "https://www.anthropic.com/news/claude-opus-4-8"}, {"company": "Anthropic", "headline": "Project Glasswing Expands; Claude Security Launches", "summary": "Anthropic expanded access to its powerful Claude Mythos Preview model to 150+ organizations and launched Claude Security \u2014 a product that scans enterprise codebases using frontier models \u2014 signaling a push into the enterprise security market.", "sourceUrl": "https://www.anthropic.com/news/expanding-project-glasswing"}, {"company": "Mistral", "headline": "Emmi AI Founders Fund a Rival Just 13 Days After Mistral Acquisition", "summary": "Mistral acquired Austrian physics-AI startup Emmi AI on May 19. Thirteen days later, two of Emmi's own co-founders provided funding to a competing startup \u2014 raising serious questions about Mistral's acquisition integration and talent retention as it scales to a $14B valuation.", "sourceUrl": "https://www.frenchtechjournal.com/mistral-bought-a-physics-ai-startup-then-its-founders-funded-rival-np/"}, {"company": "Mistral", "headline": "CEO Arthur Mensch on Building Europe's $14B AI Challenger", "summary": "Mensch spoke publicly about Mistral's $14B valuation and the AI compute race, arguing that access to compute ('AI tokens') is becoming the critical strategic resource \u2014 positioning Mistral as the key non-US player fighting for infrastructure parity.", "sourceUrl": "https://www.msn.com/en-us/money/news/mistral-ceo-arthur-mensch-on-building-europe-s-14-billion-ai-challenger/vi-AA24H6nO"}]}, {"id": "briefing-2026-06-03", "date": "June 3, 2026", "items": [{"company": "NVIDIA", "headline": "Jensen Huang Unveils RTX Spark at Computex 2026, Eyes Full AI Stack Ownership", "summary": "NVIDIA CEO Jensen Huang introduced the RTX Spark at Computex 2026 in Taipei \u2014 a powerful laptop/PC superchip designed to bring advanced local AI capabilities to slim Windows laptops and compact desktops. ASUS, Dell, and others are set to launch RTX Spark-powered devices this fall. CNBC framed it as Huang's bid to 'own every part of the AI stack,' moving aggressively into consumer hardware previously dominated by Intel and AMD.", "sourceUrl": "https://www.cnbc.com/2026/06/02/nvidias-new-pc-chips-are-ceos-bid-to-own-every-part-of-ai-stack.html"}, {"company": "Anthropic", "headline": "Anthropic Files Confidentially for IPO, Beats OpenAI to the Starting Line", "summary": "Anthropic submitted a confidential draft S-1 to the SEC on June 1, 2026 \u2014 making it the world's most valuable AI startup to formally begin the IPO process. The filing positions Anthropic ahead of rival OpenAI in the race to Wall Street. The S-1 is expected to become public two weeks before its investor roadshow. Separately, Anthropic expanded enterprise access to its Claude Mythos-level models.", "sourceUrl": "https://www.euronews.com/business/2026/06/02/worlds-most-valuable-ai-start-up-anthropic-files-for-ipo-five-things-to-know"}, {"company": "OpenAI", "headline": "OpenAI CFO Details IPO, New AI Device, and $100B+ Compute Spending; Florida Sues OpenAI", "summary": "CFO Sarah Friar spoke publicly about OpenAI's IPO timeline, a forthcoming AI hardware device, and a commitment to spending over $100 billion on compute infrastructure. Florida became the first U.S. state to file a lawsuit against OpenAI and CEO Sam Altman, alleging ChatGPT provided dangerous instructions to users. Senator Bernie Sanders also proposed legislation giving the federal government a 50% ownership stake in OpenAI and Anthropic.", "sourceUrl": "https://finance.yahoo.com/video/spacex-openai-anthropic-ipos-investors-141627771.html"}, {"company": "Palantir", "headline": "Palantir Stock Falls 5.3% as Trump Executive Order Rattles AI Sector", "summary": "Palantir shares dropped 5.3% (down as much as 6.8% intraday) after President Trump signed an executive order requiring AI companies to share previews of new frontier models with the government before public release \u2014 triggering a broad AI sector selloff on valuation concerns. Despite the dip, Q1 2026 revenue surged 85% YoY to $1.63B, with U.S. commercial revenue up 133% to $595M.", "sourceUrl": "https://finance.yahoo.com/markets/stocks/articles/why-palantir-stock-sinking-today-192459194.html"}, {"company": "Snowflake", "headline": "Snowflake Summit 2026: Iceberg v3 GA, Natoma Acquisition, $6B AWS Commitment", "summary": "Snowflake's annual Summit delivered a wave of announcements: Apache Iceberg v3 support is now generally available, enabling open interoperability for enterprise data. Snowflake announced plans to acquire Natoma, whose MCP platform brings governed agentic access to enterprise systems. Additional highlights: a $6B commitment to AWS infrastructure and the launch of CoWork, a personal AI agent for knowledge workers.", "sourceUrl": "https://www.snowflake.com/en/news/press-releases/snowflake-pioneers-new-open-framework-for-interoperable-enterprise-data-and-ai/"}, {"company": "Mistral", "headline": "Mistral Launches Aggressive US Push Targeting Wall Street Banks; Hits Copilot Studio", "summary": "Fresh off its first corporate showcase in Paris, France's Mistral is aggressively courting American banks and enterprises as the European challenger to U.S. AI giants. CEO Arthur Mensch projects \u20ac1B+ in revenue in 2026. Microsoft also made Mistral Medium 3.5 available in Copilot Studio, expanding Mistral's enterprise reach in the U.S.", "sourceUrl": "https://www.nbcnews.com/tech/tech-news/mistral-selling-wall-street-us-ai-giants-chat-rcna346578"}, {"company": "Databricks", "headline": "Data + AI Summit 2026 Coming June 15\u201318 in San Francisco", "summary": "No major product announcements from Databricks today. The company's flagship Data + AI Summit 2026 is scheduled for June 15\u201318 in San Francisco, featuring 759 sessions over 4 days. Major product announcements are expected at the event, particularly around enterprise AI and open data formats.", "sourceUrl": "https://atlan.com/know/databricks-data-ai-summit-2026-must-attend-sessions/"}]}, {"id": "briefing-2026-06-02", "date": "June 2, 2026", "items": [{"company": "NVIDIA", "headline": "RTX Spark superchip and Vera CPU unveiled at Computex 2026", "summary": "Jensen Huang unveiled the RTX Spark superchip at Computex 2026 \u2014 an Arm Grace + Blackwell chip with ~128GB unified memory and nearly 1 petaflop of compute, designed to turn Windows PCs into personal AI agent platforms. NVIDIA also announced the Vera CPU purpose-built for AI agents, with major tech firms committing to adopt it. Intel and AMD stocks fell on the news.", "sourceUrl": "https://nvidianews.nvidia.com/news/nvidia-microsoft-windows-pcs-agents-rtx-spark"}, {"company": "NVIDIA", "headline": "US moves to block Nvidia chip exports to Chinese firms overseas subsidiaries", "summary": "The US Commerce Department issued guidance to halt Nvidia AI chip shipments to overseas subsidiaries of Chinese AI firms, suggesting advanced chips had been reaching Chinese companies through this loophole despite existing restrictions.", "sourceUrl": "https://www.reuters.com/world/china/us-takes-step-halt-nvidia-ai-chip-shipments-chinese-firms-outside-china-2026-05-31/"}, {"company": "Snowflake", "headline": "Snowflake integrates Anthropic Claude into Cortex AI for enterprise agents", "summary": "Snowflake deepened its Anthropic partnership, embedding Claude into Cortex AI to power governed, production-ready AI agents for enterprises, addressing rising demand for AI that operates within data governance frameworks.", "sourceUrl": "https://www.snowflake.com/en/news/press-releases/snowflake-and-anthropic-accelerate-enterprise-ai-adoption-driven-by-rising-demand-for-governed-ai/"}, {"company": "Snowflake", "headline": "Snowflake commits $6B to AWS over five years for AI infrastructure", "summary": "Snowflake announced a $6 billion, five-year commitment to AWS to expand its AI infrastructure, reinforcing its cloud-native positioning as competition for enterprise AI data platforms intensifies.", "sourceUrl": "https://www.instagram.com/p/DZC7xk8CRWz/"}, {"company": "Palantir", "headline": "Norway $2.3T sovereign wealth fund backs human rights review at Palantir", "summary": "Norway sovereign wealth fund voted in favor of all shareholder proposals at Palantir, including a human rights review, a governance pressure signal from one of the worlds largest institutional investors targeting Palantir defense and surveillance work.", "sourceUrl": "https://www.bloomberg.com/news/articles/2026-05-29/-2-3-trillion-norway-fund-backs-human-rights-review-at-palantir"}, {"company": "Mistral", "headline": "Mistral signs Airbus and BMW for manufacturing AI", "summary": "Mistral struck deals with Airbus and BMW to deploy AI across advanced manufacturing, with Airbus acquiring licenses for Mistral full product suite for on-premises and cloud deployment. This marks a major expansion into industrial AI.", "sourceUrl": "https://www.bloomberg.com/news/articles/2026-05-28/mistral-signs-airbus-and-bmw-as-it-brings-ai-to-manufacturing"}, {"company": "Mistral", "headline": "BNP Paribas deepens Mistral partnership; new France data center announced", "summary": "BNP Paribas expanded its Mistral partnership to harden cybersecurity defenses against threats posed by next-generation AI models. Mistral also announced a new 10-megawatt data center in Les Ulis, France, due to open in H2 2026.", "sourceUrl": "https://www.reuters.com/business/finance/bnp-paribas-steps-up-mistral-partnership-bolster-rapid-ai-defences-2026-05-26/"}, {"company": "Anthropic", "headline": "Anthropic confidentially files S-1 IPO prospectus at near-$1T valuation", "summary": "Anthropic filed a confidential draft S-1 with the SEC to begin its IPO process, days after closing a $65B Series H round at a $965B post-money valuation, surpassing OpenAI $852B March valuation. It is expected to be among 2026 most consequential public listings alongside SpaceX and OpenAI.", "sourceUrl": "https://www.anthropic.com/news/confidential-draft-s1-sec"}, {"company": "OpenAI", "headline": "OpenAI revives robotics team, hiring to build and manufacture robots", "summary": "CEO Sam Altman announced the revival of OpenAI Robotics, recruiting hardware, systems, and ML engineers to program and manufacture robots, a direct challenge to Tesla Optimus humanoid program and a pivot from pure software into physical AI.", "sourceUrl": "https://www.thenews.com.pk/latest/1404438-sam-altman-revives-openai-robotics-team-after-five-years"}, {"company": "Databricks", "headline": "No major news today", "summary": "No significant product, funding, or partnership announcements from Databricks in the past 24 hours.", "sourceUrl": ""}]}];
-const COLORS = {"Databricks": "#FF3621", "NVIDIA": "#76B900", "Snowflake": "#29B5E8", "Palantir": "#A855F7", "Mistral": "#F59E0B", "Anthropic": "#EC4899", "OpenAI": "#10B981"};
-const COMPANIES = ["Databricks", "NVIDIA", "Snowflake", "Palantir", "Mistral", "Anthropic", "OpenAI"];
-
-let activeFilter = 'All';
-let activeBriefingId = BRIEFINGS.length > 0 ? BRIEFINGS[0].id : null;
-
-function renderContent() {
-  if (activeFilter === 'All') {
-    renderSingleBriefing(activeBriefingId);
-  } else {
-    renderCompanyHistory(activeFilter);
+const BRIEFINGS = [
+  {
+    "id": "briefing-2026-06-05",
+    "date": "2026-06-05",
+    "displayDate": "June 5, 2026",
+    "items": [
+      {
+        "company": "NVIDIA",
+        "headline": "GTC Taipei 2026 Wraps — RTX Spark PC Superchip Formally Launched",
+        "summary": "NVIDIA's GTC Taipei conference (June 1-4) culminated with Jensen Huang formally demoing RTX Spark — an Arm+Blackwell superchip for Windows PCs with ~128GB unified memory. Devices from Dell, HP, ASUS, and Microsoft Surface Ultra are slated for fall 2026, bringing local AI agent inference to consumer hardware for the first time. NVIDIA stock rose 2.3% to $219.51 on June 4, outperforming a broad chip-sector selloff.",
+        "sourceUrl": "https://mashable.com/tech/everything-announced-nvidia-gtc-keynote"
+      },
+      {
+        "company": "Snowflake",
+        "headline": "Summit 26 Wraps with CoCo (Coding Agent) and CoWork (Knowledge Worker Agent) Launches",
+        "summary": "Snowflake's Summit 26 (June 1-4, San Francisco) delivered CoCo — an enterprise AI coding agent — and CoWork — a personal AI agent for knowledge workers — plus Horizon Catalog for AI governance and a new open interoperability framework. All built on Snowflake's governed data platform as the differentiator against pure-play AI tools.",
+        "sourceUrl": "https://www.snowflake.com/en/news/press-releases/snowflake-coco-redefines-enterprise-ai-development-as-the-coding-agent-built-for-faster-easier-and-more-powerful-innovation-anywhere/"
+      },
+      {
+        "company": "Snowflake",
+        "headline": "Thomson Reuters and Sanofi Announce Snowflake-Powered AI Deployments",
+        "summary": "At Summit 26, Thomson Reuters announced trusted enterprise AI at scale on Snowflake (legal/news/tax products), and pharmaceutical giant Sanofi chose Snowflake to accelerate AI-powered drug development. Two marquee logos validating Snowflake's AI Data Cloud for regulated, high-stakes enterprise use cases.",
+        "sourceUrl": "https://www.snowflake.com/en/news/press-releases/thomson-reuters-powers-trusted-enterprise-ai-at-scale-on-snowflake/"
+      },
+      {
+        "company": "Palantir",
+        "headline": "GNP Seguros and McCarthy Construction Partner with Palantir at AIPCon 10",
+        "summary": "AIPCon 10 (June 4) added GNP Seguros (Mexico's largest insurer) expanding Palantir Foundry and AIP across all lines of business, and McCarthy Building Companies bringing AI to construction project management. Continues Palantir's cadence of enterprise wins across insurance, construction, defense, and financial services.",
+        "sourceUrl": "https://investors.palantir.com/news-details/2026/GNP-Seguros-Announces-Enterprise-Expansion-of-Palantir-Foundry-and-AIP-Across-All-Lines-of-Business/"
+      },
+      {
+        "company": "Palantir",
+        "headline": "Palantir Now on Google Cloud Marketplace with BigQuery and Gemini Integrations",
+        "summary": "Palantir announced availability on Google Cloud Marketplace with two-way integrations between BigQuery and Foundry, plus deep connectivity between Gemini and AIP. Opens Palantir's AI stack to GCP-native enterprises — a meaningful distribution expansion alongside existing Azure and AWS coverage.",
+        "sourceUrl": "https://investors.palantir.com/news-details/2026/Palantir-Announces-Availability-on-Google-Cloud-Marketplace-Including-Two-Way-Integrations-between-BigQuery-and-Foundry-and-Deep-Connectivity-between-Gemini-and-AIP/"
+      },
+      {
+        "company": "Mistral",
+        "headline": "No major news today — most recent: Vibe unified AI agent launched May 28",
+        "summary": "Mistral's Le Chat was rebranded as Vibe (May 28), a unified agent for long-horizon work and coding with Work Mode, Code Mode, and a new VS Code extension. Revenue ~$400M annualized in early 2026. No new announcements in the past 24 hours.",
+        "sourceUrl": "https://mistral.ai/news/vibe-agent"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Claude Partner Network Launches Services Track and Partner Hub",
+        "summary": "Anthropic formalized its partner ecosystem (June 3) with a Services Track for system integrators and a Partner Hub for discovery — mirroring how enterprise platform companies structure SI ecosystems. A clear signal Anthropic is scaling from model-provider to platform company, relevant ahead of its IPO S-1 filing from June 1.",
+        "sourceUrl": "https://www.anthropic.com/news/services-track-partner-hub"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Year-Long AI-Enabled Cyber Threat Intelligence Report Published",
+        "summary": "Anthropic released a policy report on AI-enabled cyber threats mapped to the MITRE ATT&CK framework (June 3), covering a full year of adversarial AI observations. Positions Anthropic as a credible AI security voice — directly relevant to government business, the Glasswing initiative, and its IPO narrative.",
+        "sourceUrl": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "ChatGPT 'Dreaming' Memory System Rolls Out — Factual Recall Jumps from 41% to 83%",
+        "summary": "OpenAI deployed Dreaming v3 (June 4) — a background memory synthesis architecture. Internal evals: factual recall 41%→83%, preference adherence 31%→71%, temporal memory 9%→75% vs. 2024 baselines. Rolling out to Plus/Pro users in the US now; Free tier in weeks. The most significant ChatGPT UX improvement since memory launched in 2024.",
+        "sourceUrl": "https://openai.com/index/chatgpt-memory-dreaming/"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "Codex Expanded to Every Role, Tool, and Workflow",
+        "summary": "OpenAI expanded Codex (June 2) beyond developers to product managers, designers, and operational roles — with integrations across major enterprise tools. Directly challenges GitHub Copilot's enterprise positioning and Anthropic's Claude Code.",
+        "sourceUrl": "https://openai.com/index/codex-for-every-role-tool-workflow/"
+      },
+      {
+        "company": "Databricks",
+        "headline": "Genie Code Full-Page Beta Launched; Auto-Approve Mode Enables Autonomous Agent Actions",
+        "summary": "Databricks launched full-page Genie Code (Beta, June 3) — a dedicated command center with parallel threads, MCP servers, and custom instructions. Auto-approve mode now lets the agent execute tool actions without per-step prompts, with an AI classifier blocking risky operations. Built for teams running agentic data pipelines at scale.",
+        "sourceUrl": "https://docs.databricks.com/aws/en/release-notes/product/2026/june"
+      },
+      {
+        "company": "Databricks",
+        "headline": "Genie Transitions to Pay-as-You-Go Pricing on July 6; 150 DBU Free Monthly",
+        "summary": "Starting July 6, Databricks Genie moves to pay-as-you-go: 150 free DBUs/month per user (~$10.50 in US East), with overage billed per DBU. Admins can now set account-level, workspace, group, and per-user spending caps with email alerts. Signals Genie is crossing from beta to production-grade monetized product.",
+        "sourceUrl": "https://docs.databricks.com/aws/en/release-notes/product/2026/june"
+      }
+    ]
+  },
+  {
+    "id": "briefing-2026-06-04",
+    "date": "2026-06-04",
+    "displayDate": "June 4, 2026",
+    "items": [
+      {
+        "company": "NVIDIA",
+        "headline": "RTX Spark Superchip Unveiled at Computex 2026",
+        "summary": "NVIDIA debuted RTX Spark — an Arm CPU + Blackwell GPU superchip with 128GB unified memory — targeting Windows laptops and compact desktops, with Dell, HP, and ASUS launching devices this fall. The chip enables local AI agents to run natively on personal PCs, marking NVIDIA's first serious push into the consumer PC CPU market.",
+        "sourceUrl": "https://nvidianews.nvidia.com/news/nvidia-microsoft-windows-pcs-agents-rtx-spark"
+      },
+      {
+        "company": "NVIDIA",
+        "headline": "Jensen Huang Dismisses AI Job Loss Fears at Computex",
+        "summary": "Huang called AI job-displacement fears 'complete nonsense,' citing GitHub data showing AI dramatically increases developer output rather than replacing workers — a pointed statement as global anxiety about AI and employment grows.",
+        "sourceUrl": "https://www.cnbc.com/2026/05/31/nvidias-new-chip-to-power-fresh-line-of-windows-laptops-by-dell-hp.html"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "Sam Altman Lobbies Congress Against Pre-Release AI Approval Rules",
+        "summary": "Altman met with Republican and Democratic lawmakers — including Hakeem Jeffries and Bernie Sanders — and Trump officials on June 3, pushing back against proposals requiring government sign-off before releasing new AI models. OpenAI simultaneously released a policy paper diverging from Trump's AI executive order, proposing industry-led federal governance instead.",
+        "sourceUrl": "https://www.cnbc.com/2026/06/03/open-ai-altman-congress-trump-eo.html"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "OpenAI Publishes Frontier AI Safety Blueprint",
+        "summary": "The policy paper proposes a U.S. federal framework covering safety, resilience, and national security for frontier AI — but splits from the White House on at least two key provisions, signaling OpenAI wants a governance model it can shape, not one imposed on it.",
+        "sourceUrl": "https://www.politico.com/news/2026/06/03/openai-white-house-ai-safety-rules-00948478"
+      },
+      {
+        "company": "Snowflake",
+        "headline": "Summit 2026 Bets on Four Pillars for the Agentic Enterprise",
+        "summary": "Snowflake unveiled Cortex Sense, Iceberg v3, Datastream, and Adaptive Compute as its core infrastructure bets, with CEO Sridhar Ramaswamy framing the entire platform around making AI agents production-ready for enterprise.",
+        "sourceUrl": "https://futurumgroup.com/insights/snowflake-summit-2026-four-infrastructure-bets-that-determine-whether-the-agentic-enterprise-delivers/"
+      },
+      {
+        "company": "Snowflake",
+        "headline": "Horizon Catalog Launched for Enterprise AI Governance",
+        "summary": "Snowflake's new Horizon Catalog centralizes governance, security, and context across enterprise AI workloads — directly addressing the compliance and auditability challenges of at-scale AI agent deployment.",
+        "sourceUrl": "https://www.snowflake.com/en/news/press-releases/snowflake-advances-trusted-ai-with-snowflake-horizon-catalog-centralizing-governance-context-and-security-across-the-enterprise/"
+      },
+      {
+        "company": "Palantir",
+        "headline": "PLTR Falls 6.5% Despite Record FY2026 Guidance Raise",
+        "summary": "Palantir shares dropped to ~$142 on June 3-4, interrupting a sharp rally. This follows management raising FY2026 revenue guidance to a $7.656B midpoint — a 71% growth rate and the largest guidance raise in company history. Analyst consensus price target remains $193.",
+        "sourceUrl": "https://www.fool.com/investing/2026/06/03/why-palantir-stock-is-sinking-today/"
+      },
+      {
+        "company": "Palantir",
+        "headline": "Shareholders Vote Down Human Rights Proposals at Annual Meeting",
+        "summary": "Investors rejected two proposals requesting independent reports on whether Palantir's AI surveillance software causes human rights abuses by government clients. Government revenue is on track to hit $3.8B in 2026 (up from $2.4B), reinforcing how central this business is to Palantir's model.",
+        "sourceUrl": "https://www.barrons.com/articles/palantir-stock-price-human-rights-99fc4356"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Claude Opus 4.8 Released — Near-Generational Leap in Agentic Performance",
+        "summary": "Anthropic released Opus 4.8 with stronger coding, agentic task, and professional work capabilities. Pricing unchanged at $5/$25 per million tokens. Early testers describe the improvement as close to a full model generation upgrade rather than a point release.",
+        "sourceUrl": "https://www.anthropic.com/news/claude-opus-4-8"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Project Glasswing Expands; Claude Security Launches",
+        "summary": "Anthropic expanded access to its powerful Claude Mythos Preview model to 150+ organizations and launched Claude Security — a product that scans enterprise codebases using frontier models — signaling a push into the enterprise security market.",
+        "sourceUrl": "https://www.anthropic.com/news/expanding-project-glasswing"
+      },
+      {
+        "company": "Mistral",
+        "headline": "Emmi AI Founders Fund a Rival Just 13 Days After Mistral Acquisition",
+        "summary": "Mistral acquired Austrian physics-AI startup Emmi AI on May 19. Thirteen days later, two of Emmi's own co-founders provided funding to a competing startup — raising serious questions about Mistral's acquisition integration and talent retention as it scales to a $14B valuation.",
+        "sourceUrl": "https://www.frenchtechjournal.com/mistral-bought-a-physics-ai-startup-then-its-founders-funded-rival-np/"
+      },
+      {
+        "company": "Mistral",
+        "headline": "CEO Arthur Mensch on Building Europe's $14B AI Challenger",
+        "summary": "Mensch spoke publicly about Mistral's $14B valuation and the AI compute race, arguing that access to compute ('AI tokens') is becoming the critical strategic resource — positioning Mistral as the key non-US player fighting for infrastructure parity.",
+        "sourceUrl": "https://www.msn.com/en-us/money/news/mistral-ceo-arthur-mensch-on-building-europe-s-14-billion-ai-challenger/vi-AA24H6nO"
+      }
+    ]
+  },
+  {
+    "id": "briefing-2026-06-03",
+    "date": "2026-06-03",
+    "displayDate": "June 3, 2026",
+    "items": [
+      {
+        "company": "NVIDIA",
+        "headline": "Jensen Huang Unveils RTX Spark at Computex 2026, Eyes Full AI Stack Ownership",
+        "summary": "NVIDIA CEO Jensen Huang introduced the RTX Spark at Computex 2026 in Taipei — a powerful laptop/PC superchip designed to bring advanced local AI capabilities to slim Windows laptops and compact desktops. ASUS, Dell, and others are set to launch RTX Spark-powered devices this fall. CNBC framed it as Huang's bid to own every part of the AI stack, moving aggressively into consumer hardware previously dominated by Intel and AMD.",
+        "sourceUrl": "https://www.cnbc.com/2026/06/02/nvidias-new-pc-chips-are-ceos-bid-to-own-every-part-of-ai-stack.html"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Anthropic Files Confidentially for IPO, Beats OpenAI to the Starting Line",
+        "summary": "Anthropic submitted a confidential draft S-1 to the SEC on June 1, 2026 — making it the world's most valuable AI startup to formally begin the IPO process. The filing positions Anthropic ahead of rival OpenAI in the race to Wall Street. The S-1 is expected to become public two weeks before its investor roadshow. Separately, Anthropic expanded enterprise access to its Claude Mythos-level models.",
+        "sourceUrl": "https://www.euronews.com/business/2026/06/02/worlds-most-valuable-ai-start-up-anthropic-files-for-ipo-five-things-to-know"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "OpenAI CFO Details IPO, New AI Device, and $100B+ Compute Spending; Florida Sues OpenAI",
+        "summary": "CFO Sarah Friar spoke publicly about OpenAI's IPO timeline, a forthcoming AI hardware device, and a commitment to spending over $100 billion on compute infrastructure. Florida became the first U.S. state to file a lawsuit against OpenAI and CEO Sam Altman, alleging ChatGPT provided dangerous instructions to users. Senator Bernie Sanders also proposed legislation giving the federal government a 50% ownership stake in OpenAI and Anthropic.",
+        "sourceUrl": "https://finance.yahoo.com/video/spacex-openai-anthropic-ipos-investors-141627771.html"
+      },
+      {
+        "company": "Palantir",
+        "headline": "Palantir Stock Falls 5.3% as Trump Executive Order Rattles AI Sector",
+        "summary": "Palantir shares dropped 5.3% after President Trump signed an executive order requiring AI companies to share previews of new frontier models with the government before public release — triggering a broad AI sector selloff on valuation concerns. Despite the dip, Q1 2026 revenue surged 85% YoY to $1.63B, with U.S. commercial revenue up 133% to $595M.",
+        "sourceUrl": "https://finance.yahoo.com/markets/stocks/articles/why-palantir-stock-sinking-today-192459194.html"
+      },
+      {
+        "company": "Snowflake",
+        "headline": "Snowflake Summit 2026: Iceberg v3 GA, Natoma Acquisition, $6B AWS Commitment",
+        "summary": "Snowflake's annual Summit delivered a wave of announcements: Apache Iceberg v3 support is now generally available. Snowflake announced plans to acquire Natoma, whose MCP platform brings governed agentic access to enterprise systems. Additional highlights: a $6B commitment to AWS infrastructure and the launch of CoWork, a personal AI agent for knowledge workers.",
+        "sourceUrl": "https://www.snowflake.com/en/news/press-releases/snowflake-pioneers-new-open-framework-for-interoperable-enterprise-data-and-ai/"
+      },
+      {
+        "company": "Mistral",
+        "headline": "Mistral Launches Aggressive US Push Targeting Wall Street Banks; Hits Copilot Studio",
+        "summary": "Fresh off its first corporate showcase in Paris, Mistral is aggressively courting American banks and enterprises as the European challenger to U.S. AI giants. CEO Arthur Mensch projects €1B+ in revenue in 2026. Microsoft also made Mistral Medium 3.5 available in Copilot Studio, expanding Mistral's enterprise reach in the U.S.",
+        "sourceUrl": "https://www.nbcnews.com/tech/tech-news/mistral-selling-wall-street-us-ai-giants-chat-rcna346578"
+      },
+      {
+        "company": "Databricks",
+        "headline": "Data + AI Summit 2026 Coming June 15–18 in San Francisco",
+        "summary": "No major product announcements from Databricks today. The company's flagship Data + AI Summit 2026 is scheduled for June 15–18 in San Francisco, featuring 759 sessions over 4 days. Major product announcements are expected at the event, particularly around enterprise AI and open data formats.",
+        "sourceUrl": "https://atlan.com/know/databricks-data-ai-summit-2026-must-attend-sessions/"
+      }
+    ]
+  },
+  {
+    "id": "briefing-2026-06-02",
+    "date": "2026-06-02",
+    "displayDate": "June 2, 2026",
+    "items": [
+      {
+        "company": "NVIDIA",
+        "headline": "RTX Spark superchip and Vera CPU unveiled at Computex 2026",
+        "summary": "Jensen Huang unveiled the RTX Spark superchip at Computex 2026 — an Arm Grace + Blackwell chip with ~128GB unified memory and nearly 1 petaflop of compute, designed to turn Windows PCs into personal AI agent platforms. NVIDIA also announced the Vera CPU purpose-built for AI agents, with major tech firms committing to adopt it. Intel and AMD stocks fell on the news.",
+        "sourceUrl": "https://nvidianews.nvidia.com/news/nvidia-microsoft-windows-pcs-agents-rtx-spark"
+      },
+      {
+        "company": "NVIDIA",
+        "headline": "US moves to block Nvidia chip exports to Chinese firms overseas subsidiaries",
+        "summary": "The US Commerce Department issued guidance to halt Nvidia AI chip shipments to overseas subsidiaries of Chinese AI firms, suggesting advanced chips had been reaching Chinese companies through this loophole despite existing restrictions.",
+        "sourceUrl": "https://www.reuters.com/world/china/us-takes-step-halt-nvidia-ai-chip-shipments-chinese-firms-outside-china-2026-05-31/"
+      },
+      {
+        "company": "Snowflake",
+        "headline": "Snowflake integrates Anthropic Claude into Cortex AI for enterprise agents",
+        "summary": "Snowflake deepened its Anthropic partnership, embedding Claude into Cortex AI to power governed, production-ready AI agents for enterprises, addressing rising demand for AI that operates within data governance frameworks.",
+        "sourceUrl": "https://www.snowflake.com/en/news/press-releases/snowflake-and-anthropic-accelerate-enterprise-ai-adoption-driven-by-rising-demand-for-governed-ai/"
+      },
+      {
+        "company": "Snowflake",
+        "headline": "Snowflake commits $6B to AWS over five years for AI infrastructure",
+        "summary": "Snowflake announced a $6 billion, five-year commitment to AWS to expand its AI infrastructure, reinforcing its cloud-native positioning as competition for enterprise AI data platforms intensifies.",
+        "sourceUrl": "https://www.instagram.com/p/DZC7xk8CRWz/"
+      },
+      {
+        "company": "Palantir",
+        "headline": "Norway $2.3T sovereign wealth fund backs human rights review at Palantir",
+        "summary": "Norway sovereign wealth fund voted in favor of all shareholder proposals at Palantir, including a human rights review, a governance pressure signal from one of the worlds largest institutional investors targeting Palantir defense and surveillance work.",
+        "sourceUrl": "https://www.bloomberg.com/news/articles/2026-05-29/-2-3-trillion-norway-fund-backs-human-rights-review-at-palantir"
+      },
+      {
+        "company": "Mistral",
+        "headline": "Mistral signs Airbus and BMW for manufacturing AI",
+        "summary": "Mistral struck deals with Airbus and BMW to deploy AI across advanced manufacturing, with Airbus acquiring licenses for Mistral full product suite for on-premises and cloud deployment. This marks a major expansion into industrial AI.",
+        "sourceUrl": "https://www.bloomberg.com/news/articles/2026-05-28/mistral-signs-airbus-and-bmw-as-it-brings-ai-to-manufacturing"
+      },
+      {
+        "company": "Mistral",
+        "headline": "BNP Paribas deepens Mistral partnership; new France data center announced",
+        "summary": "BNP Paribas expanded its Mistral partnership to harden cybersecurity defenses against threats posed by next-generation AI models. Mistral also announced a new 10-megawatt data center in Les Ulis, France, due to open in H2 2026.",
+        "sourceUrl": "https://www.reuters.com/business/finance/bnp-paribas-steps-up-mistral-partnership-bolster-rapid-ai-defences-2026-05-26/"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Anthropic confidentially files S-1 IPO prospectus at near-$1T valuation",
+        "summary": "Anthropic filed a confidential draft S-1 with the SEC to begin its IPO process, days after closing a $65B Series H round at a $965B post-money valuation, surpassing OpenAI $852B March valuation. It is expected to be among 2026 most consequential public listings alongside SpaceX and OpenAI.",
+        "sourceUrl": "https://www.anthropic.com/news/confidential-draft-s1-sec"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "OpenAI revives robotics team, hiring to build and manufacture robots",
+        "summary": "CEO Sam Altman announced the revival of OpenAI Robotics, recruiting hardware, systems, and ML engineers to program and manufacture robots, a direct challenge to Tesla Optimus humanoid program and a pivot from pure software into physical AI.",
+        "sourceUrl": "https://www.thenews.com.pk/latest/1404438-sam-altman-revives-openai-robotics-team-after-five-years"
+      },
+      {
+        "company": "Databricks",
+        "headline": "No major news today",
+        "summary": "No significant product, funding, or partnership announcements from Databricks in the past 24 hours.",
+        "sourceUrl": ""
+      }
+    ]
   }
-  // Update sidebar highlighting
-  document.querySelectorAll('.sidebar-item').forEach(el => {
-    if (activeFilter === 'All') {
-      el.classList.toggle('active', el.dataset.id === activeBriefingId);
-      el.classList.remove('dimmed');
-    } else {
-      el.classList.remove('active');
-      el.classList.add('dimmed');
-    }
+];
+
+const COMPANY_COLORS = {
+  'Databricks': '#FF3621',
+  'NVIDIA': '#76b900',
+  'Snowflake': '#29B5E8',
+  'Palantir': '#7B68EE',
+  'Mistral': '#FA520F',
+  'Anthropic': '#C96F1F',
+  'OpenAI': '#10a37f'
+};
+
+let selectedBriefingId = BRIEFINGS[0]?.id;
+let activeFilter = 'all';
+
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+function renderSidebar() {
+  const container = document.getElementById('sidebar-list');
+  container.innerHTML = '';
+  BRIEFINGS.forEach(b => {
+    const div = document.createElement('div');
+    div.className = 'sidebar-item' +
+      (b.id === selectedBriefingId && activeFilter === 'all' ? ' active' : '') +
+      (activeFilter !== 'all' ? ' dimmed' : '');
+    div.innerHTML = `<div class="date-label">${b.displayDate}</div><div class="item-count">${b.items.length} items</div>`;
+    div.onclick = () => selectBriefing(b.id);
+    container.appendChild(div);
   });
 }
 
-function renderSingleBriefing(id) {
-  const briefing = BRIEFINGS.find(b => b.id === id);
-  if (!briefing) return;
+function renderNews() {
+  const container = document.getElementById('news-content');
+  const banner = document.getElementById('filter-banner');
+  container.innerHTML = '';
 
-  const byCompany = {};
-  for (const item of briefing.items) {
-    if (!byCompany[item.company]) byCompany[item.company] = [];
-    byCompany[item.company].push(item);
-  }
+  if (activeFilter === 'all') {
+    banner.classList.remove('visible');
+    const briefing = BRIEFINGS.find(b => b.id === selectedBriefingId);
+    if (!briefing) { container.innerHTML = '<div class="empty-state"><h3>No briefing selected</h3></div>'; return; }
 
-  const allCompaniesInBriefing = COMPANIES.filter(c => byCompany[c]);
-  const chips = buildChips(allCompaniesInBriefing);
+    // Group by company
+    const grouped = {};
+    briefing.items.forEach(item => {
+      if (!grouped[item.company]) grouped[item.company] = [];
+      grouped[item.company].push(item);
+    });
 
-  let sections = '';
-  for (const company of allCompaniesInBriefing) {
-    const items = byCompany[company] || [];
-    const color = COLORS[company] || '#6366f1';
-    let itemsHtml = items.map(item => newsItemHtml(item, false)).join('');
-    if (!itemsHtml) itemsHtml = `<p class="no-news">No major news today.</p>`;
-    sections += `
-      <div class="company-section">
+    const section = document.createElement('div');
+    section.className = 'date-group';
+    Object.entries(grouped).forEach(([company, items]) => {
+      const color = COMPANY_COLORS[company] || '#8b949e';
+      let html = `<div class="company-section">
         <div class="company-header">
           <div class="company-dot" style="background:${color}"></div>
-          <div class="company-name">${company}</div>
-        </div>
-        ${itemsHtml}
-      </div>`;
-  }
-
-  document.getElementById('content').innerHTML = `
-    <div class="briefing-date">${briefing.date}</div>
-    ${chips}
-    ${sections}
-  `;
-}
-
-function renderCompanyHistory(company) {
-  const color = COLORS[company] || '#6366f1';
-  // Collect all items for this company across all briefings
-  let groups = [];
-  for (const b of BRIEFINGS) {
-    const items = b.items.filter(i => i.company === company);
-    if (items.length > 0) groups.push({ date: b.date, items });
-  }
-
-  const allCompanies = [...new Set(BRIEFINGS.flatMap(b => b.items.map(i => i.company)))].filter(c => COMPANIES.includes(c));
-  const chips = buildChips(allCompanies);
-
-  let sectionsHtml = '';
-  if (groups.length === 0) {
-    sectionsHtml = `<p class="no-news">No historical news found for ${company}.</p>`;
-  } else {
-    for (const g of groups) {
-      const itemsHtml = g.items.map(item => newsItemHtml(item, false)).join('');
-      sectionsHtml += `
-        <div class="date-group">
-          <div class="date-group-label">${g.date}</div>
-          ${itemsHtml}
+          <div class="company-name">${escapeHtml(company)}</div>
         </div>`;
+      items.forEach(item => {
+        html += `<div class="news-item">
+          <div class="news-headline">${escapeHtml(item.headline)}</div>
+          <div class="news-summary">${escapeHtml(item.summary)}</div>
+          ${item.sourceUrl ? `<a class="news-source" href="${escapeHtml(item.sourceUrl)}" target="_blank" rel="noopener">Source →</a>` : ''}
+        </div>`;
+      });
+      html += '</div>';
+      section.innerHTML += html;
+    });
+    container.appendChild(section);
+
+  } else {
+    // Company filter mode: show all historical items for this company
+    const allItems = [];
+    BRIEFINGS.forEach(b => {
+      const companyItems = b.items.filter(i => i.company === activeFilter);
+      if (companyItems.length > 0) {
+        allItems.push({ displayDate: b.displayDate, date: b.date, items: companyItems });
+      }
+    });
+
+    const totalItems = allItems.reduce((sum, g) => sum + g.items.length, 0);
+    banner.innerHTML = `<strong>Showing all ${escapeHtml(activeFilter)} news across ${allItems.length} briefing${allItems.length !== 1 ? 's' : ''} (${totalItems} item${totalItems !== 1 ? 's' : ''}).</strong> Click <strong>All</strong> to return to daily view.`;
+    banner.classList.add('visible');
+
+    const color = COMPANY_COLORS[activeFilter] || '#8b949e';
+
+    if (allItems.length === 0) {
+      container.innerHTML = `<div class="empty-state"><h3>No news found for ${escapeHtml(activeFilter)}</h3><p>Check back after more briefings are published.</p></div>`;
+      return;
     }
-  }
 
-  document.getElementById('content').innerHTML = `
-    <div class="history-banner">Showing all <strong>${company}</strong> news across ${groups.length} briefing${groups.length !== 1 ? 's' : ''}. Click <strong>All</strong> to return to daily view.</div>
-    ${chips}
-    <div class="company-header" style="margin-bottom:16px">
-      <div class="company-dot" style="background:${color}"></div>
-      <div class="company-name">${company} — Full History</div>
-    </div>
-    ${sectionsHtml}
-  `;
+    allItems.forEach(group => {
+      const dateGroup = document.createElement('div');
+      dateGroup.className = 'date-group';
+      let html = `<div class="date-group-header">${escapeHtml(group.displayDate)}</div>
+        <div class="company-section">`;
+      group.items.forEach(item => {
+        html += `<div class="news-item">
+          <div class="news-headline">${escapeHtml(item.headline)}</div>
+          <div class="news-summary">${escapeHtml(item.summary)}</div>
+          ${item.sourceUrl ? `<a class="news-source" href="${escapeHtml(item.sourceUrl)}" target="_blank" rel="noopener">Source →</a>` : ''}
+        </div>`;
+      });
+      html += '</div>';
+      dateGroup.innerHTML = html;
+      container.appendChild(dateGroup);
+    });
+  }
 }
 
-function buildChips(companiesInView) {
-  let chips = `<div class="filter-bar">`;
-  chips += `<div class="chip ${activeFilter === 'All' ? 'active' : ''}" data-company="All" onclick="setFilter('All')">All</div>`;
-  for (const c of COMPANIES) {
-    const color = COLORS[c] || '#6366f1';
-    const isActive = activeFilter === c;
-    const style = isActive ? `background:${color};` : `border-color:${color}33;color:${color};`;
-    chips += `<div class="chip ${isActive ? 'active' : ''}" data-company="${c}" style="${style}" onclick="setFilter('${c}')">${c}</div>`;
-  }
-  chips += `</div>`;
-  return chips;
-}
-
-function newsItemHtml(item, showCompany) {
-  const sourceHtml = item.sourceUrl ? `<div class="news-source"><a href="${item.sourceUrl}" target="_blank" rel="noopener">[Source]</a></div>` : '';
-  const companyHtml = showCompany ? `<div class="news-item-company" style="color:${COLORS[item.company] || '#6366f1'}">${item.company}</div>` : '';
-  return `
-    <div class="news-item">
-      ${companyHtml}
-      <div class="news-headline">${item.headline}</div>
-      <div class="news-summary">${item.summary}</div>
-      ${sourceHtml}
-    </div>`;
+function selectBriefing(id) {
+  selectedBriefingId = id;
+  activeFilter = 'all';
+  updateChips();
+  renderSidebar();
+  renderNews();
 }
 
 function setFilter(company) {
   activeFilter = company;
-  renderContent();
+  if (company === 'all') {
+    // Reset to most recent briefing
+    selectedBriefingId = BRIEFINGS[0]?.id;
+  }
+  updateChips();
+  renderSidebar();
+  renderNews();
 }
 
-function selectBriefing(id) {
-  activeBriefingId = id;
-  activeFilter = 'All';
-  renderContent();
+function updateChips() {
+  document.querySelectorAll('.filter-chip').forEach(chip => {
+    const c = chip.dataset.company;
+    chip.classList.toggle('active', c === activeFilter);
+    if (c !== 'all' && c === activeFilter) {
+      const color = COMPANY_COLORS[c] || '#8b949e';
+      chip.style.background = color;
+    } else if (c !== 'all') {
+      chip.style.background = '';
+    }
+  });
 }
 
-document.querySelectorAll('.sidebar-item').forEach(el => {
-  el.addEventListener('click', () => selectBriefing(el.dataset.id));
-});
-
-// Load most recent on start
-renderContent();
+// Init
+renderSidebar();
+renderNews();
 </script>
 </body>
 </html>
