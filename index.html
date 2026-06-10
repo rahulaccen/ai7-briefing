@@ -315,12 +315,13 @@ async function sendChat() {
       body: JSON.stringify({ action: 'chat_query', query: msg, session_id: sessionId })
     }).catch(() => {}); // fire-and-forget; we poll GitHub for the answer
     
-    // Poll for response
+    // Poll for response — cache-busted to avoid GitHub API 404 caching
     let found = false;
-    for (let i = 0; i < 30; i++) {
+    for (let i = 0; i < 40; i++) {
       await sleep(3000);
       try {
-        const r = await fetch(`https://api.github.com/repos/rahulaccen/ai7-briefing/contents/chat-responses/${sessionId}.json`);
+        const url = `https://api.github.com/repos/rahulaccen/ai7-briefing/contents/chat-responses/${sessionId}.json?_t=${Date.now()}`;
+        const r = await fetch(url, { cache: 'no-store' });
         if (r.ok) {
           const data = await r.json();
           const parsed = JSON.parse(atob(data.content.replace(/\n/g, '')));
