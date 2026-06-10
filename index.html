@@ -60,6 +60,29 @@
   /* Empty */
   .empty { padding: 40px; text-align: center; color: #8b949e; font-size: 14px; }
 
+  /* Chat Widget */
+  .chat-btn { position: fixed; bottom: 24px; right: 24px; width: 54px; height: 54px; border-radius: 50%; background: linear-gradient(135deg,#58a6ff,#1f6feb); border: none; cursor: pointer; box-shadow: 0 4px 24px rgba(88,166,255,0.45); display: flex; align-items: center; justify-content: center; font-size: 24px; z-index: 1000; transition: transform 0.2s, box-shadow 0.2s; }
+  .chat-btn:hover { transform: scale(1.1); box-shadow: 0 6px 32px rgba(88,166,255,0.6); }
+  .chat-panel { position: fixed; bottom: 90px; right: 24px; width: 360px; background: #161b22; border: 1px solid #30363d; border-radius: 14px; box-shadow: 0 12px 48px rgba(0,0,0,0.6); display: flex; flex-direction: column; z-index: 1000; overflow: hidden; transition: opacity 0.2s, transform 0.2s; }
+  .chat-panel.hidden { display: none; }
+  .chat-header { padding: 14px 16px; background: #21262d; border-bottom: 1px solid #30363d; display: flex; align-items: center; justify-content: space-between; }
+  .chat-header-info .chat-title { font-size: 14px; font-weight: 700; color: #e6edf3; }
+  .chat-header-info .chat-sub { font-size: 11px; color: #8b949e; margin-top: 2px; }
+  .chat-close { background: none; border: none; color: #8b949e; cursor: pointer; font-size: 20px; line-height: 1; padding: 0 2px; }
+  .chat-close:hover { color: #e6edf3; }
+  .chat-messages { flex: 1; overflow-y: auto; padding: 14px; display: flex; flex-direction: column; gap: 10px; min-height: 220px; max-height: 350px; }
+  .chat-msg { max-width: 88%; padding: 10px 13px; border-radius: 12px; font-size: 13px; line-height: 1.55; word-break: break-word; }
+  .chat-msg.user { background: #1f6feb; color: #fff; align-self: flex-end; border-radius: 12px 12px 3px 12px; }
+  .chat-msg.bot { background: #21262d; color: #e6edf3; align-self: flex-start; border-radius: 12px 12px 12px 3px; border: 1px solid #30363d; }
+  .chat-msg.thinking { color: #8b949e; font-style: italic; }
+  .chat-input-row { padding: 12px; border-top: 1px solid #30363d; display: flex; gap: 8px; background: #161b22; }
+  .chat-input { flex: 1; background: #0d1117; border: 1px solid #30363d; color: #e6edf3; padding: 9px 12px; border-radius: 8px; font-size: 13px; outline: none; font-family: inherit; }
+  .chat-input:focus { border-color: #58a6ff; }
+  .chat-input::placeholder { color: #484f58; }
+  .chat-send { background: #238636; border: none; color: #fff; padding: 9px 15px; border-radius: 8px; cursor: pointer; font-size: 13px; font-weight: 600; transition: background 0.15s; white-space: nowrap; }
+  .chat-send:hover { background: #2ea043; }
+  .chat-send:disabled { opacity: 0.45; cursor: not-allowed; }
+
   /* Mobile */
   @media (max-width: 640px) {
     .layout { flex-direction: column; }
@@ -70,6 +93,8 @@
     .main-header { padding: 16px; }
     .content { padding: 16px; }
     .banner { margin: 8px 16px 0; }
+    .chat-panel { width: calc(100vw - 32px); right: 16px; bottom: 82px; }
+    .chat-btn { right: 16px; bottom: 16px; }
   }
 </style>
 </head>
@@ -837,6 +862,87 @@ function render() {
 }
 
 render();
+
+// ── Chat Widget ──────────────────────────────────────────────
+const WEBHOOK_URL = 'WEBHOOK_URL_PLACEHOLDER';
+
+function toggleChat() {
+  const panel = document.getElementById('chatPanel');
+  panel.classList.toggle('hidden');
+  if (!panel.classList.contains('hidden')) document.getElementById('chatInput').focus();
+}
+
+async function sendChat() {
+  const input = document.getElementById('chatInput');
+  const btn = document.getElementById('chatSend');
+  const query = input.value.trim();
+  if (!query || btn.disabled) return;
+  addMsg('user', query);
+  input.value = '';
+  btn.disabled = true;
+  const sid = 'chat-' + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2,8);
+  const thinking = addMsg('bot thinking', '⏳ Searching AI news…');
+  try {
+    await fetch(WEBHOOK_URL, {
+      method: 'POST', mode: 'no-cors',
+      headers: { 'Content-Type': 'text/plain' },
+      body: JSON.stringify({ action: 'chat_query', query, session_id: sid })
+    });
+    const answer = await pollGitHub(sid);
+    thinking.remove();
+    addMsg('bot', answer);
+  } catch(e) {
+    thinking.remove();
+    addMsg('bot', '⚠️ No response yet — please try again in a moment.');
+  }
+  btn.disabled = false;
+}
+
+function addMsg(cls, text) {
+  const el = document.getElementById('chatMessages');
+  const d = document.createElement('div');
+  d.className = 'chat-msg ' + cls;
+  d.textContent = text;
+  el.appendChild(d);
+  el.scrollTop = el.scrollHeight;
+  return d;
+}
+
+async function pollGitHub(sid, maxMs=90000) {
+  const url = `https://api.github.com/repos/rahulaccen/ai7-briefing/contents/chat-responses/${sid}.json`;
+  const deadline = Date.now() + maxMs;
+  while (Date.now() < deadline) {
+    try {
+      const r = await fetch(url, { headers: { Accept: 'application/vnd.github.v3+json' } });
+      if (r.ok) {
+        const d = await r.json();
+        const parsed = JSON.parse(atob(d.content.replace(/\n/g,'')));
+        return parsed.answer;
+      }
+    } catch(_) {}
+    await new Promise(r => setTimeout(r, 3000));
+  }
+  throw new Error('timeout');
+}
 </script>
+
+<!-- Chat Widget -->
+<button class="chat-btn" id="chatBtn" onclick="toggleChat()" title="Ask AI7 Bot">💬</button>
+<div class="chat-panel hidden" id="chatPanel">
+  <div class="chat-header">
+    <div class="chat-header-info">
+      <div class="chat-title">AI7 News Bot ✨</div>
+      <div class="chat-sub">Ask anything about AI news</div>
+    </div>
+    <button class="chat-close" onclick="toggleChat()">×</button>
+  </div>
+  <div class="chat-messages" id="chatMessages">
+    <div class="chat-msg bot">Hi! Ask me anything about the latest AI news — NVIDIA, OpenAI, Anthropic, Databricks, Snowflake, Palantir, or Mistral. 🚀</div>
+  </div>
+  <div class="chat-input-row">
+    <input class="chat-input" id="chatInput" type="text" placeholder="Ask about AI news…" maxlength="500" onkeydown="if(event.key==='Enter')sendChat()">
+    <button class="chat-send" id="chatSend" onclick="sendChat()">Send</button>
+  </div>
+</div>
 </body>
 </html>
