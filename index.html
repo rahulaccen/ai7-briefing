@@ -311,9 +311,9 @@ async function sendChat() {
   try {
     fetch(WEBHOOK_URL, {
       method: 'POST',
-      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ action: 'chat_query', query: msg, session_id: sessionId })
-    });
+    }).catch(() => {}); // fire-and-forget; we poll GitHub for the answer
     
     // Poll for response
     let found = false;
