@@ -58,6 +58,26 @@ a:hover{text-decoration:underline}
 .chat-input-row input{flex:1;background:#0f1117;border:1px solid #2d3748;border-radius:6px;padding:7px 10px;color:#e2e8f0;font-size:13px;outline:none}
 .chat-input-row input:focus{border-color:#2563eb}
 .chat-send{background:#2563eb;color:white;border:none;border-radius:6px;padding:7px 13px;cursor:pointer;font-size:13px;font-weight:600}
+/* Sentiment panel */
+.sentiment-panel{width:290px;min-width:260px;background:#161b27;border-left:1px solid #2d3748;overflow-y:auto;flex-shrink:0;display:flex;flex-direction:column}
+.sentiment-header{padding:16px 16px 10px;border-bottom:1px solid #2d3748;position:sticky;top:0;background:#161b27;z-index:5}
+.sentiment-title{font-size:14px;font-weight:800;color:#f1f5f9;letter-spacing:-0.01em}
+.sentiment-subtitle{font-size:11px;color:#4b5563;margin-top:2px;text-transform:uppercase;letter-spacing:0.06em}
+.sentiment-body{padding:12px}
+.s-card{background:#0f1117;border-radius:8px;padding:12px 13px;margin-bottom:10px;border:1px solid #1e2537}
+.s-company-row{display:flex;align-items:center;gap:8px;margin-bottom:7px}
+.s-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.s-company-name{font-size:13px;font-weight:700;color:#f1f5f9;flex:1}
+.s-trend{font-size:14px;font-weight:800;letter-spacing:-0.05em}
+.s-label-row{display:flex;align-items:center;gap:6px;margin-bottom:7px}
+.s-emoji{font-size:13px}
+.s-label{font-size:12px;font-weight:600}
+.s-bar-track{background:#1e2537;border-radius:4px;height:5px;margin-bottom:7px;overflow:hidden}
+.s-bar-fill{height:100%;border-radius:4px;transition:width 0.6s ease}
+.s-meta{font-size:11px;color:#4b5563;display:flex;justify-content:space-between}
+.s-watch{font-size:11px;color:#64748b;margin-top:6px;padding-top:6px;border-top:1px solid #1e2537;line-height:1.4}
+.s-watch strong{color:#94a3b8}
+@media(max-width:960px){.sentiment-panel{display:none}}
 @media(max-width:640px){
   .app{flex-direction:column;height:auto}
   .sidebar{width:100%;height:auto;border-right:none;border-bottom:1px solid #2d3748;overflow-x:auto;white-space:nowrap;display:flex;flex-direction:row;align-items:stretch}
@@ -87,6 +107,13 @@ a:hover{text-decoration:underline}
       <div class="chips" id="chips"></div>
     </div>
     <div class="content" id="content"></div>
+  </div>
+  <div class="sentiment-panel" id="sentiment-panel">
+    <div class="sentiment-header">
+      <div class="sentiment-title">📊 Weekly Sentiment</div>
+      <div class="sentiment-subtitle" id="sentiment-range">Rolling 7-day analysis</div>
+    </div>
+    <div class="sentiment-body" id="sentiment-body"></div>
   </div>
 </div>
 
@@ -195,7 +222,61 @@ function selectDate(id){activeDate=id;activeCompany=null;renderSidebar();renderC
 function setCompany(c){activeCompany=c;renderSidebar();renderChips();renderContent()}
 function resetToAll(){activeCompany=null;renderSidebar();renderChips();renderContent()}
 
-renderSidebar();renderChips();renderContent();
+renderSidebar();renderChips();renderContent();renderSentiment();
+
+// Sentiment
+const POSITIVE_WORDS=['launch','partner','raise','fund','growth','record','deal','win','expand','milestone','agreement','invest','acqui','integrat','deploy','release','beat','profit','strong','sign','announce','accelerat','breakthrough','surge','soar','lead','ahead','success','award','new model','new product'];
+const NEGATIVE_WORDS=['layoff','cut','lawsuit','fine','penalt','drop','fall','loss','decline','concern','warn','risk','backla','controver','accus','breach','fail','delay','miss','suspend','cancel','exit','leave','probe','investigat','scrutin','reduct','weaken'];
+const WATCH_ITEMS={'NVIDIA':'Supply chain & HBM memory constraints ahead of Vera Rubin','Anthropic':'IPO scrutiny and safety governance post-Mythos launch','OpenAI':'S-1 regulatory review and for-profit conversion timeline','Snowflake':'Integration execution risk post-Summit product blitz','Palantir':'US government contract renewals and stock re-rating','Mistral':'TCS/acquisition integration and US market traction','Databricks':'$175B valuation justification at next funding round'};
+
+function renderSentiment(){
+  const cutoff=new Date();cutoff.setDate(cutoff.getDate()-7);
+  const recent=BRIEFINGS.filter(b=>new Date(b.date)>=cutoff);
+  const pool=recent.length>0?recent:BRIEFINGS.slice(0,Math.min(7,BRIEFINGS.length));
+  if(!pool.length)return;
+  const dates=pool.map(b=>b.displayDate);
+  const rangeEl=document.getElementById('sentiment-range');
+  if(dates.length>1)rangeEl.textContent=dates[dates.length-1]+' – '+dates[0];
+  else rangeEl.textContent=dates[0]||'Rolling analysis';
+  let html='';
+  COMPANIES.forEach(company=>{
+    let pos=0,neg=0,items=0;
+    pool.forEach(b=>{
+      b.items.filter(i=>i.company===company).forEach(item=>{
+        const text=(item.headline+' '+item.summary).toLowerCase();
+        POSITIVE_WORDS.forEach(w=>{if(text.includes(w))pos++});
+        NEGATIVE_WORDS.forEach(w=>{if(text.includes(w))neg++});
+        items++;
+      });
+    });
+    const total=pos+neg||1;
+    const raw=50+Math.round((pos-neg)/total*50);
+    const score=Math.max(5,Math.min(98,raw));
+    let label,emoji,trend,labelColor;
+    if(score>=80){label='Strong Positive';emoji='🟢';trend='↑↑';labelColor='#4ade80'}
+    else if(score>=60){label='Positive';emoji='🟢';trend='↑';labelColor='#86efac'}
+    else if(score>=45){label='Neutral';emoji='🟡';trend='→';labelColor='#fde68a'}
+    else if(score>=30){label='Mixed';emoji='🟠';trend='↓';labelColor='#fdba74'}
+    else{label='Cautious';emoji='🔴';trend='↓↓';labelColor='#f87171'}
+    const color=COMPANY_COLORS[company]||'#6b7280';
+    const watch=WATCH_ITEMS[company]||'Monitor upcoming announcements';
+    html+=`<div class="s-card">
+      <div class="s-company-row">
+        <div class="s-dot" style="background:${color}"></div>
+        <div class="s-company-name">${esc(company)}</div>
+        <div class="s-trend" style="color:${labelColor}">${trend}</div>
+      </div>
+      <div class="s-label-row">
+        <span class="s-emoji">${emoji}</span>
+        <span class="s-label" style="color:${labelColor}">${label}</span>
+      </div>
+      <div class="s-bar-track"><div class="s-bar-fill" style="width:${score}%;background:${labelColor}40;border-right:2px solid ${labelColor}"></div></div>
+      <div class="s-meta"><span>${score}/100</span><span>${items} item${items!==1?'s':''}</span></div>
+      <div class="s-watch">⚠️ <strong>Watch:</strong> ${esc(watch)}</div>
+    </div>`;
+  });
+  document.getElementById('sentiment-body').innerHTML=html;
+}
 
 // Chat
 function toggleChat(){
