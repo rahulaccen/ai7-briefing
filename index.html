@@ -262,6 +262,7 @@ let activeDate=BRIEFINGS[0]?.id||null;
 let activeCompany=null;
 
 function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+function fmtDate(d){try{const dt=new Date(d);return dt.toLocaleDateString('en-AU',{day:'numeric',month:'short',year:'numeric'})}catch(e){return d}}
 
 function renderSidebar(){
   const sb=document.getElementById('sidebar');
@@ -270,7 +271,7 @@ function renderSidebar(){
   BRIEFINGS.forEach(b=>{
     const isActive=activeCompany===null&&b.id===activeDate;
     const isDimmed=activeCompany!==null;
-    html+=`<div class="sidebar-item ${isActive?'active':''} ${isDimmed?'dimmed':''}" onclick="selectDate('${b.id}')">${esc(b.displayDate)}</div>`;
+    html+=`<div class="sidebar-item ${isActive?'active':''} ${isDimmed?'dimmed':''}" onclick="selectDate('${b.id}')">${esc(b.displayDate||fmtDate(b.date))}</div>`;
   });
   sb.insertAdjacentHTML('beforeend',html);
 }
