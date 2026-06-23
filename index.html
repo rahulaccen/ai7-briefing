@@ -743,6 +743,7 @@ function selectDate(id){activeDate=id;activeCompany=null;renderSidebar();renderC
 function setCompany(c){activeCompany=c;renderSidebar();renderChips();renderContent()}
 function resetToAll(){activeCompany=null;renderSidebar();renderChips();renderContent()}
 
+BRIEFINGS.forEach(b=>{if(!b.items)b.items=JSON.parse(b.items_json||'[]');if(!b.displayDate)b.displayDate=fmtDate(b.date);});
 renderSidebar();renderChips();renderContent();
 
 // Sentiment
