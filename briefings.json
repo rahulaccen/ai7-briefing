@@ -1,7 +1,7 @@
 [
   {
     "id": "briefing-2026-06-02",
-    "date": "2026-06-02",
+    "date": "2026-06-02T16:00:00.000Z",
     "items": [
       {
         "company": "NVIDIA",
@@ -67,7 +67,7 @@
   },
   {
     "id": "briefing-2026-06-03",
-    "date": "2026-06-03",
+    "date": "2026-06-03T06:00:00.000Z",
     "items": [
       {
         "company": "NVIDIA",
@@ -115,7 +115,7 @@
   },
   {
     "id": "briefing-2026-06-04",
-    "date": "2026-06-04",
+    "date": "2026-06-04T06:00:00.000Z",
     "items": [
       {
         "company": "NVIDIA",
@@ -193,7 +193,7 @@
   },
   {
     "id": "briefing-2026-06-05",
-    "date": "2026-06-05",
+    "date": "2026-06-05T06:00:00.000Z",
     "items": [
       {
         "company": "NVIDIA",
@@ -271,7 +271,7 @@
   },
   {
     "id": "briefing-2026-06-06",
-    "date": "2026-06-06",
+    "date": "2026-06-06T16:00:00.000Z",
     "items": [
       {
         "company": "NVIDIA",
@@ -367,7 +367,7 @@
   },
   {
     "id": "briefing-2026-06-07",
-    "date": "2026-06-07",
+    "date": "2026-06-07T06:03:11.000Z",
     "items": [
       {
         "company": "NVIDIA",
@@ -427,7 +427,7 @@
   },
   {
     "id": "briefing-2026-06-08",
-    "date": "2026-06-08",
+    "date": "2026-06-08T06:00:00.000Z",
     "items": [
       {
         "company": "NVIDIA",
@@ -493,7 +493,7 @@
   },
   {
     "id": "briefing-2026-06-09",
-    "date": "2026-06-09",
+    "date": "2026-06-09T08:00:00.000Z",
     "items": [
       {
         "company": "NVIDIA",
@@ -577,7 +577,7 @@
   },
   {
     "id": "briefing-2026-06-10",
-    "date": "2026-06-10",
+    "date": "2026-06-10T06:02:00.000Z",
     "items": [
       {
         "company": "NVIDIA",
@@ -631,7 +631,7 @@
   },
   {
     "id": "briefing-2026-06-11",
-    "date": "2026-06-11",
+    "date": "2026-06-11T06:02:00.000Z",
     "items": [
       {
         "company": "NVIDIA",
@@ -679,7 +679,7 @@
   },
   {
     "id": "briefing-2026-06-12",
-    "date": "2026-06-12",
+    "date": "2026-06-12T06:00:00.000Z",
     "items": [
       {
         "company": "NVIDIA",
@@ -745,7 +745,7 @@
   },
   {
     "id": "briefing-2026-06-13",
-    "date": "2026-06-13",
+    "date": "2026-06-13T16:00:00.000Z",
     "items": [
       {
         "company": "NVIDIA",
@@ -817,7 +817,7 @@
   },
   {
     "id": "briefing-2026-06-14",
-    "date": "2026-06-14",
+    "date": "2026-06-14T16:00:00.000Z",
     "items": [
       {
         "company": "NVIDIA",
@@ -865,7 +865,7 @@
   },
   {
     "id": "briefing-2026-06-15",
-    "date": "2026-06-15",
+    "date": "2026-06-15T16:00:00.000Z",
     "items": [
       {
         "company": "NVIDIA",
@@ -913,7 +913,7 @@
   },
   {
     "id": "briefing-2026-06-16",
-    "date": "2026-06-16",
+    "date": "2026-06-16T16:00:00.000Z",
     "items": [
       {
         "company": "NVIDIA",
@@ -961,7 +961,7 @@
   },
   {
     "id": "briefing-2026-06-17",
-    "date": "2026-06-17",
+    "date": "2026-06-17T16:00:00.000Z",
     "items": [
       {
         "company": "NVIDIA",
@@ -1021,7 +1021,7 @@
   },
   {
     "id": "briefing-2026-06-18",
-    "date": "2026-06-18",
+    "date": "2026-06-18T06:00:00.000Z",
     "items": [
       {
         "company": "Databricks",
@@ -1069,7 +1069,7 @@
   },
   {
     "id": "briefing-2026-06-19",
-    "date": "2026-06-19",
+    "date": "2026-06-19T06:00:00.000Z",
     "items": [
       {
         "company": "NVIDIA",
@@ -1147,7 +1147,7 @@
   },
   {
     "id": "briefing-2026-06-20",
-    "date": "2026-06-20",
+    "date": "2026-06-20T06:00:00.000Z",
     "items": [
       {
         "company": "Databricks",
@@ -1237,7 +1237,7 @@
   },
   {
     "id": "briefing-2026-06-21",
-    "date": "2026-06-21",
+    "date": "2026-06-21T06:00:00.000Z",
     "items": [
       {
         "company": "Anthropic",
@@ -1297,7 +1297,7 @@
   },
   {
     "id": "briefing-2026-06-22",
-    "date": "2026-06-22",
+    "date": "2026-06-22T06:00:00.000Z",
     "items": [
       {
         "company": "OpenAI",
@@ -1363,7 +1363,7 @@
   },
   {
     "id": "briefing-2026-06-23",
-    "date": "2026-06-23",
+    "date": "2026-06-23T06:00:00.000Z",
     "items": [
       {
         "company": "NVIDIA",
@@ -1423,7 +1423,7 @@
   },
   {
     "id": "briefing-2026-06-24",
-    "date": "2026-06-24",
+    "date": "2026-06-24T06:00:00.000Z",
     "items": [
       {
         "company": "NVIDIA",
@@ -1483,7 +1483,7 @@
   },
   {
     "id": "briefing-2026-06-25",
-    "date": "2026-06-25",
+    "date": "2026-06-25T06:00:00.000Z",
     "items": [
       {
         "company": "NVIDIA",
@@ -1543,7 +1543,7 @@
   },
   {
     "id": "briefing-2026-06-26",
-    "date": "2026-06-26",
+    "date": "2026-06-26T06:00:00.000Z",
     "items": [
       {
         "company": "NVIDIA",
@@ -1609,7 +1609,7 @@
   },
   {
     "id": "briefing-2026-06-27",
-    "date": "2026-06-27",
+    "date": "2026-06-27T16:00:00.000Z",
     "items": [
       {
         "company": "NVIDIA",
@@ -1657,7 +1657,7 @@
   },
   {
     "id": "briefing-2026-06-28",
-    "date": "2026-06-28",
+    "date": "2026-06-28T16:00:00.000Z",
     "items": [
       {
         "company": "OpenAI",
@@ -1717,7 +1717,7 @@
   },
   {
     "id": "briefing-2026-06-29",
-    "date": "2026-06-29",
+    "date": "2026-06-29T16:00:00.000Z",
     "items": [
       {
         "company": "NVIDIA",
@@ -1765,7 +1765,7 @@
   },
   {
     "id": "briefing-2026-06-30",
-    "date": "2026-06-30",
+    "date": "2026-06-30T16:00:00.000Z",
     "items": [
       {
         "company": "NVIDIA",
@@ -1837,7 +1837,7 @@
   },
   {
     "id": "briefing-2026-07-01",
-    "date": "2026-07-01",
+    "date": "2026-07-01T16:00:00.000Z",
     "items": [
       {
         "company": "NVIDIA",
@@ -1903,7 +1903,7 @@
   },
   {
     "id": "briefing-2026-07-02",
-    "date": "2026-07-02",
+    "date": "2026-07-02T16:00:00.000Z",
     "items": [
       {
         "company": "NVIDIA",
@@ -1963,7 +1963,7 @@
   },
   {
     "id": "briefing-2026-07-03",
-    "date": "2026-07-03",
+    "date": "2026-07-03T06:00:00.000Z",
     "items": [
       {
         "company": "NVIDIA",
@@ -2011,7 +2011,7 @@
   },
   {
     "id": "briefing-2026-07-04",
-    "date": "2026-07-04",
+    "date": "2026-07-04T06:00:00.000Z",
     "items": [
       {
         "company": "NVIDIA",
@@ -2059,7 +2059,7 @@
   },
   {
     "id": "briefing-2026-07-05",
-    "date": "2026-07-05",
+    "date": "2026-07-05T06:00:00.000Z",
     "items": [
       {
         "company": "NVIDIA",
@@ -2107,7 +2107,7 @@
   },
   {
     "id": "briefing-2026-07-06",
-    "date": "2026-07-06",
+    "date": "2026-07-06T06:00:00.000Z",
     "items": [
       {
         "company": "NVIDIA",
@@ -2173,7 +2173,7 @@
   },
   {
     "id": "briefing-2026-07-07",
-    "date": "2026-07-07",
+    "date": "2026-07-07T06:00:00.000Z",
     "items": [
       {
         "company": "NVIDIA",
@@ -2263,7 +2263,7 @@
   },
   {
     "id": "briefing-2026-07-08",
-    "date": "2026-07-08",
+    "date": "2026-07-08T06:00:00.000Z",
     "items": [
       {
         "company": "OpenAI",
@@ -2329,7 +2329,7 @@
   },
   {
     "id": "briefing-2026-07-09",
-    "date": "2026-07-09",
+    "date": "2026-07-09T06:00:00.000Z",
     "items": [
       {
         "company": "NVIDIA",
@@ -2377,7 +2377,7 @@
   },
   {
     "id": "briefing-2026-07-10",
-    "date": "2026-07-10",
+    "date": "2026-07-10T06:00:00.000Z",
     "items": [
       {
         "company": "NVIDIA",
@@ -2485,7 +2485,7 @@
   },
   {
     "id": "briefing-2026-07-13",
-    "date": "2026-07-13",
+    "date": "2026-07-13T06:02:55.000Z",
     "items": [
       {
         "company": "OpenAI",
@@ -2539,7 +2539,7 @@
   },
   {
     "id": "briefing-2026-07-14",
-    "date": "2026-07-14",
+    "date": "2026-07-14T06:01:56.000Z",
     "items": [
       {
         "company": "NVIDIA",
@@ -2587,7 +2587,7 @@
   },
   {
     "id": "briefing-2026-07-15",
-    "date": "2026-07-15",
+    "date": "2026-07-15T06:02:21.000Z",
     "items": [
       {
         "company": "NVIDIA",
@@ -2635,7 +2635,7 @@
   },
   {
     "id": "briefing-2026-07-16",
-    "date": "2026-07-16",
+    "date": "2026-07-16T06:00:00.000Z",
     "items": [
       {
         "company": "NVIDIA",
@@ -2707,7 +2707,7 @@
   },
   {
     "id": "briefing-2026-07-17",
-    "date": "2026-07-17",
+    "date": "2026-07-17T16:00:00.000Z",
     "items": [
       {
         "company": "Databricks",
@@ -2750,6 +2750,90 @@
         "headline": "Apple sues OpenAI in federal court over alleged stolen hardware secrets",
         "summary": "Apple filed a federal lawsuit against OpenAI alleging former Apple employees brought confidential hardware design secrets into OpenAI's secretive device project; Apple seeks damages and an order to halt the alleged conduct. OpenAI Chairman Bret Taylor appeared on CNBC to confirm there is 'no update' on IPO plans.",
         "sourceUrl": "https://www.news8000.com/lifestyle/money/apple-lawsuit-threatens-openai-plans-for-rival-devices/article_d0a1fa6c-d599-5018-968b-6faf1f476602.html"
+      }
+    ]
+  },
+  {
+    "id": "briefing-2026-07-20",
+    "date": "2026-07-20T06:00:00.000Z",
+    "items": [
+      {
+        "company": "Databricks",
+        "headline": "Databricks raises $3B at $188B valuation — up 40% in six months",
+        "summary": "Databricks is closing a $3B funding round led by Coatue Management, pushing its valuation to $188B — up from $134B in February. CEO Ali Ghodsi confirmed the capital goes toward GPU server expansion as enterprise AI demand surges. Revenue run rate exceeds $5.4B (up 65% YoY), with AI-specific annualized sales topping $1.4B.",
+        "sourceUrl": "https://finance.biggo.com/news/5df7afec-3479-4bcc-a587-90fb52c1cd75"
+      },
+      {
+        "company": "Databricks",
+        "headline": "New AI-era products: Lakebase, Unity, and Omnicent",
+        "summary": "At its Data+AI Summit, Databricks launched Lakebase (a database built for AI agents), Unity (an AI gateway for model routing), and Omnicent (a meta-governance platform for multi-agent management). The suite positions Databricks as a full AI infrastructure stack — not just a data analytics tool.",
+        "sourceUrl": "https://www.facebook.com/databricksinc/videos/missed-the-dataaisummit-2026-keynote-this-five-minute-recap-covers-every-major-p/1534031875405667/"
+      },
+      {
+        "company": "NVIDIA",
+        "headline": "Jensen Huang seals Japan's world's first national AI infrastructure — a $6.2B sovereign AI bet",
+        "summary": "After a two-day Tokyo visit, Huang launched Japan's Noetra project: a sovereign AI initiative backed by SoftBank, Sony, NEC, and Honda, with Tokyo committing 1 trillion yen ($6.2B) over five years. NVIDIA will build a Vera Rubin AI factory housing 13,750 Vera CPUs and 27,500 Rubin GPUs, expected online in 2028. Goal: AI-native robots across 18 Japanese industrial sectors by 2040.",
+        "sourceUrl": "https://techcrunch.com/2026/07/19/what-to-watch-for-after-jensen-huangs-japan-visit/"
+      },
+      {
+        "company": "NVIDIA",
+        "headline": "Japan's top robotics firms commit to Cosmos 3 Edge for factory-floor physical AI",
+        "summary": "Fanuc, Yaskawa, Kawasaki, Fujitsu, Hitachi, NEC, Sony, SoftBank, Honda R&D, and Toyota signed on to build on Cosmos 3 Edge — NVIDIA's on-device model running on Jetson Thor chips inside factory machines. This puts NVIDIA's AI directly in the hardware, targeting Japan's ambition to own 30%+ of the global AI robotics market (~$133B) by 2040.",
+        "sourceUrl": "https://techcrunch.com/2026/07/19/what-to-watch-for-after-jensen-huangs-japan-visit/"
+      },
+      {
+        "company": "Snowflake",
+        "headline": "AI Pulse event tomorrow showcases CoCo, CoWork, Cortex Agents, and real-time ML",
+        "summary": "Snowflake's July AI Pulse livestream (July 21, 10am PT) will demo new features including CoCo, CoWork (cross-domain data unification), Cortex Agents, AI Functions, and real-time ML — a live product reveal for enterprise customers navigating the AI data stack.",
+        "sourceUrl": "https://www.snowflake.com/en/ai-pulse/july-2026/"
+      },
+      {
+        "company": "Snowflake",
+        "headline": "Snowflake ties CEO Ramaswamy's RSU award to long-term AI milestones; stock up 15.8%",
+        "summary": "CEO Sridhar Ramaswamy received a performance-based RSU package linked to multi-year AI-driven platform adoption targets — a public signal of strategic direction. SNOW stock is up 15.8% over the past 30 days, trading at $268.90 against a consensus target of $293.97.",
+        "sourceUrl": "https://finance.yahoo.com/technology/ai/articles/snowflake-snow-ties-ceo-sridhar-220713964.html"
+      },
+      {
+        "company": "Palantir",
+        "headline": "Pentagon expands Maven Smart System across all U.S. military operations",
+        "summary": "The DoD has ordered Palantir's Maven Smart System deployed across all U.S. military operations — integrating satellite, drone, radar, and sensor data for real-time threat analysis. The expansion is the latest in a string of military AI wins driving Palantir's record revenue trajectory.",
+        "sourceUrl": "https://www.instagram.com/p/Da_VVYimfxK/"
+      },
+      {
+        "company": "Palantir",
+        "headline": "2026 revenue guidance raised to $7.65B — 71% growth, fastest since IPO",
+        "summary": "Palantir raised full-year 2026 revenue guidance to ~$7.65B (71% growth), with U.S. commercial revenue targeted at $3.2B+. Q1 2026 revenue hit $1.63B, up 85% YoY — its fastest growth rate ever as a public company. Stock is trading near record highs on AI contract momentum.",
+        "sourceUrl": "https://finance.yahoo.com/markets/stocks/articles/youd-put-10-000-palantir-191300453.html"
+      },
+      {
+        "company": "Mistral",
+        "headline": "Mistral releases Leanstral 1.5 — open model solves 587 of 672 Putnam Math Problems",
+        "summary": "Mistral released Leanstral 1.5, an open-weight model that solved 587 out of 672 Putnam Competition math problems — a strong benchmark for mathematical reasoning. CEO Arthur Mensch reiterated plans to keep upcoming models open-weight, positioning Mistral as the open alternative to closed AI incumbents. Mistral is valued at $13B+.",
+        "sourceUrl": "https://www.instagram.com/p/Da_SG9vya0Y/"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Claude Fable 5 subscription overhaul live today — Pro users moved to API billing",
+        "summary": "Effective July 20, Max and Team Premium subscribers keep Fable 5 at 50% of prior usage limits; Pro and Team Standard users lose access entirely and must switch to API billing. A one-time $100 API credit is offered. The shift reflects soaring compute costs and competitive pricing from OpenAI's GPT-5.6 Sol at roughly one-third the cost.",
+        "sourceUrl": "https://www.firstpost.com/tech/anthropic-revamps-claude-subscriptions-heres-whats-changing-for-users-starting-today-14032544.html"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Anthropic and Meta in $10B compute lease talks; India local pricing launched",
+        "summary": "Reuters reported Anthropic and Meta are negotiating a compute lease worth up to $10B, letting Anthropic run on Meta infrastructure for up to two years — confirming Anthropic is capacity-constrained. In parallel, Anthropic launched India-specific pricing (Claude Pro from Rs2,000/month), tapping its second-largest user market after the US.",
+        "sourceUrl": "https://www.firstpost.com/tech/anthropic-revamps-claude-subscriptions-heres-whats-changing-for-users-starting-today-14032544.html"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "GPT-5.6 launched with new ChatGPT desktop app: Codex, autonomous agents, and Sites",
+        "summary": "OpenAI launched three GPT-5.6 models and overhauled the ChatGPT desktop app — integrating Codex natively with new capabilities: Work (autonomous task execution), Sites (AI-built web pages), scheduled agents, and background computer use. The release reframes ChatGPT from chat tool to autonomous workforce platform.",
+        "sourceUrl": "https://x.com/theneurondaily/article/2078894578959294657"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "Apple sues OpenAI for trade secret theft; 400+ ex-Apple employees now at OpenAI",
+        "summary": "Apple filed a trade secrets lawsuit alleging OpenAI systematically poached Apple staff — including Chief Hardware Officer Tang Tan — to extract confidential information for competing hardware with Jony Ive. 400+ former Apple employees now work at OpenAI. The suit threatens OpenAI's planned hardware launch (a screenless AI speaker) and its confidential IPO filing expected late 2026.",
+        "sourceUrl": "https://finance.yahoo.com/technology/ai/articles/apple-lawsuit-derail-openai-hardware-192445049.html"
       }
     ]
   }
