@@ -2836,5 +2836,53 @@
         "sourceUrl": "https://finance.yahoo.com/technology/ai/articles/apple-lawsuit-derail-openai-hardware-192445049.html"
       }
     ]
+  },
+  {
+    "id": "briefing-2026-07-21",
+    "date": "2026-07-21T06:00:00.000Z",
+    "items": [
+      {
+        "company": "Databricks",
+        "headline": "Databricks seeks $188B valuation in new Coatue-led funding round",
+        "summary": "Databricks is raising fresh capital at a $188 billion valuation — up 40% from its February round — with Coatue Management leading and new and existing investors participating. The company is on track for $5.4B in annual revenue, including $1.4B from AI products, and plans to expand its Genie and Unity AI Gateway platforms for enterprise AI cost management.",
+        "sourceUrl": "https://finance.yahoo.com/technology/ai/articles/databricks-seeks-188-billion-valuation-204607089.html"
+      },
+      {
+        "company": "NVIDIA",
+        "headline": "NVIDIA releases Cosmos 3 Edge and DLSS 5 at SIGGRAPH 2026",
+        "summary": "At SIGGRAPH, NVIDIA unveiled Cosmos 3 Edge — a 4B-parameter open world model optimized for real-time on-device physical AI (Jetson Thor, RTX, DGX Spark) — completing the Cosmos 3 family alongside the 16B Nano and 64B Super released last month. NVIDIA also debuted DLSS 5, a neural rendering system that uses AI to generate photorealistic game frames in real time, shipping this fall.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/siggraph-news-2026/"
+      },
+      {
+        "company": "Snowflake",
+        "headline": "No major news today",
+        "summary": "No significant Snowflake announcements in the past 24 hours.",
+        "sourceUrl": ""
+      },
+      {
+        "company": "Palantir",
+        "headline": "Palantir lifts defense lobbying spend to $2M in Q2 2026",
+        "summary": "Palantir filed its Q2 2026 lobbying disclosure showing $2M in defense lobbying — a slight uptick from $1.98M in Q1 — as it deepens its push into government AI contracts. The company reported 133% YoY growth in US commercial revenue in Q1, and analysts have raised price targets to $150 for 2026.",
+        "sourceUrl": "https://legis1.com/news/palantir-lobbying-defense-boosts-to-2-million"
+      },
+      {
+        "company": "Mistral",
+        "headline": "Mistral in talks for €3B Series D at €20B valuation; signs AFP news deal",
+        "summary": "Mistral AI is reportedly in advanced talks for a €3 billion Series D led by EQT's new EU Scale-Up Fund, which would push its valuation to €20 billion and comes as the company approaches €1B ARR. Separately, global news agency AFP signed a deal giving Mistral's chatbot access to AFP reporting to respond to user queries.",
+        "sourceUrl": "https://european-champions.org/european-tech-news-mistral-ai-helsing-delft-quantum-system"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Federal judge approves Anthropic's landmark $1.5B copyright settlement",
+        "summary": "A federal judge gave final approval to Anthropic's $1.5 billion class action copyright settlement, resolving claims that Claude was trained on copyrighted material without authorization. The settlement is the largest of its kind in AI, though it doesn't resolve the broader industry question of using copyrighted works for AI training — Google now faces a similar lawsuit from major publishers.",
+        "sourceUrl": "https://techcrunch.com/2026/07/20/anthropics-landmark-1-5b-copyright-settlement-is-approved/"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "Developer backlash over GPT-5.6 Codex context cuts; Build Week deadline today",
+        "summary": "OpenAI's decision to reduce context window sizes in GPT-5.6 for Codex is drawing significant developer criticism, adding to concerns raised last week about agent transparency in Codex Multi-Agent V2. Meanwhile, OpenAI's Build Week global hackathon closes today (July 21) with a $100K prize pool for projects built with Codex and GPT-5.6.",
+        "sourceUrl": "https://www.infoworld.com/article/4198811/openais-codex-context-reduction-for-gpt-5-6-sparks-dissatisfaction-among-developers.html"
+      }
+    ]
   }
 ]
