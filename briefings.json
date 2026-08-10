@@ -3664,5 +3664,53 @@
         "sourceUrl": "https://www.databricks.com/blog/kimi-k3-moonshot-ai-now-available-databricks-through-unity-ai-gateway"
       }
     ]
+  },
+  {
+    "id": "briefing-2026-08-10",
+    "date": "2026-08-10",
+    "items": [
+      {
+        "company": "OpenAI",
+        "headline": "Astra model paused after hitting 'Critical' cybersecurity threshold — a first in AI",
+        "summary": "OpenAI has paused internal work on its unreleased Astra model after safety evaluations found it may be capable of autonomously identifying zero-day exploits and executing novel cyberattacks against hardened systems — the first model to reach the 'Critical' tier under its Preparedness Framework. The company has placed Astra under isolated testing, restricted network access, and chain-of-thought monitoring. Sam Altman confirmed public release is still planned, pending additional safety controls, with government agencies getting early evaluation access.",
+        "sourceUrl": "https://www.forbes.com/sites/jonmarkman/2026/08/09/openai-pauses-astra-after-it-nears-first-ever-critical-cyber-risk/"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Claude Code auto mode goes default Aug 14 — less human oversight, more autonomous coding",
+        "summary": "Anthropic is making auto mode the default in Claude Code for Pro, Max, and Team accounts starting August 14, replacing routine human approval prompts with an internal classifier that blocked 937 of 1,053 planted dangerous commands in testing — an 89% hit rate vs. 14% for paid human testers. The move significantly reduces developer friction but raises questions about the 11% miss rate on dangerous commands in production codebases.",
+        "sourceUrl": "https://techcrunch.com/2026/08/09/anthropic-is-turning-claude-codes-auto-mode-on-by-default/"
+      },
+      {
+        "company": "Mistral",
+        "headline": "Microsoft seals multi-billion dollar deal to fund Mistral's European data center buildout",
+        "summary": "Microsoft has signed a multi-billion dollar partnership with French AI lab Mistral, funding European data center infrastructure in exchange for compute capacity. The deal cements Mistral's role as Europe's AI backbone and means enterprise AI stacks in the EU may run on different underlying models than US deployments — a structurally significant shift for multinational AI procurement.",
+        "sourceUrl": "https://www.linkedin.com/pulse/ai-roi-weekly-summary-august-9-2026-ray-rike-prg6e"
+      },
+      {
+        "company": "NVIDIA",
+        "headline": "NVIDIA's China AI chip share forecast to collapse from 40% to 8% as Huawei takes 50%",
+        "summary": "Bernstein projects NVIDIA's AI chip market share in China will fall from ~40% in 2025 to just 8% by end of 2026, as Huawei ramps its Ascend 910C chip to ~600,000 units and targets ~50% market share. US export controls are accelerating China's domestic AI chip ecosystem, with Moore Threads planning a Hong Kong IPO. NVIDIA retains global leadership, but China — a key revenue driver — is effectively closing off.",
+        "sourceUrl": "https://www.marketscale.com/industries/transportation/nvidias-china-ai-chip-share-is-forecast-to-collapse-from-40-to-8-as-huawei-scales"
+      },
+      {
+        "company": "Palantir",
+        "headline": "Palantir challenges GSA AI acquisition rule; Q2 earnings surge 93% to $1.94bn",
+        "summary": "Palantir called on the General Services Administration (GSA) to withdraw its draft AI Acquisition Rule, which would impose baseline security requirements on LLMs processing government data. Separately, Palantir's Q2 earnings grew 93% YoY to $1.94bn, with US government contracts up 90% to $809M and 220+ contracts worth over $1M signed. The company has now secured over $6bn in global government contracts.",
+        "sourceUrl": "https://pubkgroup.com/cyber/palantir-calls-on-gsa-to-withdraw-draft-ai-acquisition-rule/"
+      },
+      {
+        "company": "Snowflake",
+        "headline": "Snowflake launches Cortex AI Gateway with Natoma integration; Saviynt adds AI agent risk module",
+        "summary": "Snowflake launched Cortex AI Gateway, integrating its May 2026 Natoma acquisition and seven identity partners to centralize AI model routing and access controls. Saviynt launched a Snowflake integration today for managing identity risk from third-party AI agents. Snowflake reported Q1 FY27 product revenue of $1.05bn, up 29-34% YoY, with RPO at $4.8bn.",
+        "sourceUrl": "https://securitybrief.com.au/story/saviynt-launches-snowflake-integration-for-ai-agent-risk"
+      },
+      {
+        "company": "Databricks",
+        "headline": "Databricks claims up to 90% AI coding cost cuts with open-weight model playbook",
+        "summary": "Databricks published a guide claiming up to 90% savings on internal AI coding costs using four techniques: switching to open-weight models for routine tasks, avoiding hard per-developer token budgets, using model routing, and optimizing prompt caching. The post sparked debate on whether the 90% figure accounts for hidden platform engineering costs required to implement these optimizations at scale.",
+        "sourceUrl": "https://chyshkala.com/blog/databricks-90-ai-savings-claim-hides-a-platform-engineering-bill"
+      }
+    ]
   }
 ]
