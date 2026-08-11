@@ -3712,5 +3712,89 @@
         "sourceUrl": "https://chyshkala.com/blog/databricks-90-ai-savings-claim-hides-a-platform-engineering-bill"
       }
     ]
+  },
+  {
+    "id": "briefing-2026-08-11",
+    "date": "2026-08-11",
+    "items": [
+      {
+        "company": "NVIDIA",
+        "headline": "NVIDIA assembles $500B AI financing war chest with Apollo, Blackstone, BlackRock",
+        "summary": "NVIDIA has struck deals with Apollo, Blackstone, BlackRock, and other Wall Street giants to collectively deploy over $500 billion in outside capital, financing the cost of NVIDIA computing infrastructure for the chipmaker's customers. The move dramatically lowers the barrier for enterprises to build AI capacity at scale, and positions NVIDIA as not just a chip supplier but the financial architect of the AI buildout.",
+        "sourceUrl": "https://www.wsj.com/business/deals/nvidia-wall-street-firms-strike-ai-financing-deal-targeting-500-billion-c50377db"
+      },
+      {
+        "company": "NVIDIA",
+        "headline": "NVIDIA set for Q2 sales beat on Vera Rubin ramp and cloud capex surge",
+        "summary": "Analysts expect NVIDIA to deliver another fiscal Q2 revenue beat and strong forward guidance, driven by Vera Rubin GPU shipments and continued surge in cloud provider capital expenditure. Investor focus is on any guidance uplift that confirms sustained demand through 2027.",
+        "sourceUrl": "https://finance.yahoo.com/markets/stocks/articles/nvidia-poised-second-quarter-sales-165513484.html"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Anthropic signs $9.1B, 20-year compute deal with Riot Platforms (ex-Bitcoin miner)",
+        "summary": "Anthropic has locked in a 20-year, $9.1 billion deal with Riot Platforms — a former Bitcoin miner now pivoting to AI data centers — securing 191 megawatts of compute from Riot's Rockdale, Texas campus. The deal can extend to $16.1B if options are exercised. Riot shares surged 25% after-hours on the announcement, reflecting the AI compute gold rush pulling in unexpected players.",
+        "sourceUrl": "https://www.bloomberg.com/news/articles/2026-08-11/anthropic-strikes-9-billion-deal-with-cloud-computing-firm-riot"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Anthropic, GIC, and Macquarie commit $10B to first dedicated European AI compute footprint",
+        "summary": "Anthropic is forming a joint venture with Singapore's GIC sovereign wealth fund and Macquarie Asset Management to build AI data centers across Europe — a 6-year, $10 billion commitment establishing Anthropic's first European compute presence. The deal signals Claude's global enterprise expansion and reduces reliance on US-only infrastructure.",
+        "sourceUrl": "https://finance.yahoo.com/technology/ai/articles/anthropic-locks-10b-european-compute-091730304.html"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "OpenAI pauses Astra model after it demonstrates autonomous cyberattack capability",
+        "summary": "OpenAI halted internal development activities on its new Astra model after safety evaluations revealed it could autonomously plan and execute cyberattacks — the first model to trigger such a pause under its Preparedness Framework. Access is now restricted to isolated testing environments, with government agencies getting early evaluation access before any public release.",
+        "sourceUrl": "https://www.cnbc.com/2026/08/10/openai-astra-cybersecurity-risks.html"
+      },
+      {
+        "company": "Palantir",
+        "headline": "Palantir Q2 2026: Revenue up 93% to $1.94B, EPS beats by 17%, raises full-year guidance",
+        "summary": "Palantir posted its strongest quarter yet — $1.935B revenue (+93% YoY, 6.8% above consensus), EPS of $0.41 vs $0.35 expected, and a Rule-of-40 score of 155. US commercial revenue surged 149% YoY, driven by AI Platform adoption. Management raised FY2026 guidance to $8.15–8.158B. Stock rallied to ~$175, up 37% since the report.",
+        "sourceUrl": "https://navellier.com/8-11-26-short-sellers-attack-u-s-based-ai-stocks/"
+      },
+      {
+        "company": "Snowflake",
+        "headline": "Snowflake commits $6B to AWS in largest infrastructure deal to date",
+        "summary": "Snowflake signed a multiyear, $6 billion commitment with Amazon Web Services — its largest infrastructure spend ever — as part of a broader strategic partnership expansion. The news drove Snowflake stock to a new annual high, up 26% over the past 30 days, underscoring renewed investor confidence following its recent platform re-acceleration.",
+        "sourceUrl": "https://sg.finance.yahoo.com/news/snowflake-snow-lands-6-billion-171253938.html"
+      },
+      {
+        "company": "Snowflake",
+        "headline": "Saviynt integrates with Snowflake for trusted AI agent interoperability",
+        "summary": "Identity security firm Saviynt announced a deep integration with Snowflake to secure AI agent-to-agent communication — a growing challenge as enterprises deploy multi-agent AI pipelines. The integration targets governance gaps in autonomous AI workflows running on Snowflake's data platform.",
+        "sourceUrl": "https://inaitoday.com/saviynt-integrates-with-snowflake-to-tackle-ais-next-security-frontier-trusted-agent-interoperability/"
+      },
+      {
+        "company": "Mistral",
+        "headline": "Microsoft expands Mistral partnership in multibillion-dollar sovereign AI push",
+        "summary": "Microsoft and Mistral announced a multibillion-dollar expansion of their strategic alliance, embedding Mistral's Medium 3.5 and OCR 4 models directly into Microsoft Foundry, Copilot Studio, and Azure. The deal specifically targets regulated enterprise sectors — healthcare, finance, manufacturing — running AI on public cloud, hybrid, and fully air-gapped systems, cementing Mistral as Microsoft's European sovereign AI partner.",
+        "sourceUrl": "https://theaisoftwarereport.com/microsoft-and-mistral-expand-strategic-alliance-in-multibillion-dollar-sovereign-ai-push/"
+      },
+      {
+        "company": "Mistral",
+        "headline": "Mistral releases Shieldstral 1.0 — 3B open-weights content safety model",
+        "summary": "Mistral AI launched Shieldstral 1.0, a 3-billion parameter open-weights model for content moderation and safety classification. The model is policy-adaptive and multimodal, and reportedly matches the safety performance of models up to 7× its size, making it highly deployable for enterprises seeking efficient, customizable guardrails.",
+        "sourceUrl": "https://www.threads.com/@yomimono.id/post/Db2wM5wDsWj/mistral-ai-releases-shieldstral-b-moderation-model-shieldstral-b-trades-the/"
+      },
+      {
+        "company": "Mistral",
+        "headline": "France deploys Mistral AI in live NATO battlefield command exercise",
+        "summary": "France debuted its AI-powered battlefield command system in a NATO exercise — developed with Mistral AI, Thales, and Airbus. The test marks a significant milestone for Mistral's defense ambitions and Europe's push for sovereign military AI that doesn't rely on US or Chinese technology.",
+        "sourceUrl": "https://www.eurasiareview.com/11082026-france-tests-new-ai-powered-battle-command-system-in-nato-exercise/"
+      },
+      {
+        "company": "Databricks",
+        "headline": "Databricks launches FILE type — native multimodal column for documents, images, and video",
+        "summary": "Databricks introduced FILE, a new native column type in its lakehouse that stores and queries unstructured data — documents, images, video — alongside structured data, without external object storage workarounds. The feature makes multimodal AI pipelines first-class citizens in the lakehouse, eliminating a key gap for enterprises building vision and document-processing agents.",
+        "sourceUrl": "https://www.databricks.com/blog/introducing-file-type-native-column-type-multimodal-data"
+      },
+      {
+        "company": "Databricks",
+        "headline": "Databricks Omnigent blocks prompt-injected agents from leaking data",
+        "summary": "Databricks published details on Omnigent's contextual policies — a security layer that intercepts AI agent actions in real time to block the 'lethal trifecta' of prompt injection, data exfiltration, and privilege escalation. Demonstrated at Berkeley RDI Summit, Omnigent acts as a meta-harness for governing multi-agent pipelines running on Databricks.",
+        "sourceUrl": "https://www.databricks.com/blog/innocent-until-combined-blocking-lethal-trifecta-omnigent-contextual-policies"
+      }
+    ]
   }
 ]
