@@ -3796,5 +3796,89 @@
         "sourceUrl": "https://www.databricks.com/blog/innocent-until-combined-blocking-lethal-trifecta-omnigent-contextual-policies"
       }
     ]
+  },
+  {
+    "id": "briefing-2026-08-12",
+    "date": "2026-08-12",
+    "items": [
+      {
+        "company": "Databricks",
+        "headline": "Databricks acquires Electric to bring WASM Postgres to AI agent sandboxes",
+        "summary": "Databricks acquired Electric, a WebAssembly-native Postgres database built for AI agent sandboxes. Electric's in-process, low-latency storage fills a critical gap for agentic workloads and will be integrated into the Databricks platform.",
+        "sourceUrl": "https://www.databricks.com/blog/electric-joins-databricks-bring-wasm-postgres-ai-agent-sandboxes"
+      },
+      {
+        "company": "Databricks",
+        "headline": "Databricks advances AUTO CDC with Apache Spark 4.2 open-source support",
+        "summary": "Databricks is expanding AUTO CDC (Change Data Capture) to handle the hardest real-world scenarios and open-sourcing these enhancements into Apache Spark 4.2, extending real-time data sync to the broader open-source ecosystem.",
+        "sourceUrl": "https://www.databricks.com/blog/taking-auto-cdc-next-level-solving-hardest-real-world-use-cases"
+      },
+      {
+        "company": "NVIDIA",
+        "headline": "NVIDIA lines up $500B in AI financing with 6 Wall Street firms",
+        "summary": "NVIDIA struck agreements with six of Wall Street's largest financial institutions to provide $500 billion in financing, enabling customers to borrow at scale for AI infrastructure buildout — Wall Street's biggest coordinated bet on continued AI expansion.",
+        "sourceUrl": "https://www.cnbc.com/2026/08/11/nvidia-ai-funding-jensen-huang-china-risk.html"
+      },
+      {
+        "company": "Snowflake",
+        "headline": "Snowflake rebrands AI tools as CoWork with Deep Research and User Memory",
+        "summary": "Snowflake rebranded its AI intelligence suite as CoWork, adding native Deep Research, User Memory, and custom AI skills — moving deeper into the enterprise AI workflow stack and competing with standalone AI assistants.",
+        "sourceUrl": "https://www.instagram.com/p/Db5bNoHBnHe/"
+      },
+      {
+        "company": "Snowflake",
+        "headline": "Snowflake AI security ecosystem expands with Alteryx, Aembit, and 1Password integrations",
+        "summary": "Alteryx, Aembit, and 1Password announced new integrations with Snowflake's AI Data Cloud security ecosystem, strengthening Snowflake's position as the secure enterprise AI data platform.",
+        "sourceUrl": "https://finance.yahoo.com/technology/ai/articles/snowflake-snow-ai-security-push-071301507.html"
+      },
+      {
+        "company": "Palantir",
+        "headline": "Pentagon preparing $244M no-bid contract for Palantir AI analytics",
+        "summary": "A draft DoD memo directs up to $243.9M to Palantir for AI data analytics services through 2027, bypassing competitive bidding. The sole-source award extends Palantir's entrenched DoD position, including its Maven Smart System for rapid target identification.",
+        "sourceUrl": "https://www.theregister.com/public-sector/2026/08/11/palantir-could-receive-244m-pentagon-no-bid-contract/5286438"
+      },
+      {
+        "company": "Palantir",
+        "headline": "Palantir Q2 2026: U.S. commercial revenue surges 149% to $764M, record $2.1B in new contracts",
+        "summary": "Palantir reported explosive Q2 2026 results — U.S. commercial revenue jumped 149% YoY to $764M, with a record $2.1B in new commercial contracts signed. Full-year guidance was raised, driven by accelerating enterprise AI sovereignty demand.",
+        "sourceUrl": "https://www.marketscale.com/industries/software-and-technology/palantirs-us-commercial-revenue-jumps-149-as-enterprise-ai-sovereignty-demand-accelerates"
+      },
+      {
+        "company": "Mistral",
+        "headline": "Mistral announces European sovereign AI push — 1GW compute by 2030",
+        "summary": "Mistral unveiled a major sovereign AI strategy: 200MW of European inference infrastructure by end 2027, scaling to 1GW by 2030. The initiative includes in-region inference and open models, targeting enterprises and governments seeking AI independence from US and Chinese providers.",
+        "sourceUrl": "https://mistral.ai/news/regional-inference-open-models-new-compute/"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Anthropic signs $9.1B 20-year compute deal with Riot Platforms",
+        "summary": "Anthropic struck a landmark $9.1 billion, 20-year compute agreement with Riot Platforms covering 191MW at Riot's Rockdale, Texas campus through June 2048 — one of the largest AI infrastructure commitments to date, as ex-Bitcoin miners pivot to AI compute.",
+        "sourceUrl": "https://www.cnbc.com/2026/08/11/riot-platforms-signs-anthropic-deal-as-miners-shift-to-ai-infrastructure-.html"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Anthropic to add invisible watermarks to Claude AI-generated text",
+        "summary": "New Claude models will embed machine-readable invisible watermarks in AI-generated text, partly to comply with EU AI Act requirements. The move is part of an industry-wide push to distinguish human writing from AI output.",
+        "sourceUrl": "https://techcrunch.com/2026/08/11/anthropic-says-it-will-watermark-text-generated-by-its-ai-models/"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "COO Brad Lightcap departs OpenAI to start something new",
+        "summary": "Brad Lightcap, one of OpenAI's longest-serving executives and its COO, is leaving to pursue a new venture. His exit is the latest in a string of senior leadership departures, raising questions about stability as OpenAI navigates its for-profit conversion.",
+        "sourceUrl": "https://techcrunch.com/2026/08/11/brad-lightcap-openais-longtime-coo-is-leaving-to-start-something-new/"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "OpenAI launches GPT-5.6-Cyber — reduced-safeguard model for offensive security",
+        "summary": "OpenAI released GPT-5.6-Cyber, a specialised model with reduced safety guardrails for offensive security research — completing 95% of advanced cyber requests and identifying zero-day vulnerabilities. A significant move into AI-powered penetration testing.",
+        "sourceUrl": "https://thehackernews.com/2026/08/openai-launches-gpt-56-cyber-with.html"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "OpenAI Daybreak cybersecurity models now available on AWS Bedrock",
+        "summary": "OpenAI's Daybreak cybersecurity models are now accessible through Amazon Bedrock, extending enterprise security capabilities to AWS customers and widening OpenAI's enterprise distribution beyond its own platform.",
+        "sourceUrl": "https://openai.com/index/daybreak-models-are-now-available-on-aws/"
+      }
+    ]
   }
 ]
