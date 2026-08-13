@@ -3880,5 +3880,53 @@
         "sourceUrl": "https://openai.com/index/daybreak-models-are-now-available-on-aws/"
       }
     ]
+  },
+  {
+    "id": "briefing-2026-08-13",
+    "date": "2026-08-13",
+    "items": [
+      {
+        "company": "Databricks",
+        "headline": "Databricks acquires Electric, supercharging Lakebase with WASM Postgres for AI agents",
+        "summary": "Databricks acquired Electric — the company behind PGlite (a WebAssembly Postgres that runs inside agent sandboxes and browsers) and a real-time sync engine. PGlite gives every agent its own ultra-low-latency local Postgres; Electric's sync engine keeps distributed agent state continuously synced back to Lakebase. Weekly downloads grew from 1M to 13M in 12 months. This is Databricks' 8th acquisition in 12 months, capping a $188B valuation. Terms not disclosed.",
+        "sourceUrl": "https://www.blocksandfiles.com/ai-ml/2026/08/12/oh-no-not-another-one-databricks-buys-electric/5286721"
+      },
+      {
+        "company": "NVIDIA",
+        "headline": "NVIDIA leads $500B AI infrastructure financing coalition with Goldman, BlackRock, Apollo, KKR and others",
+        "summary": "NVIDIA signed MOUs with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs, and KKR to jointly mobilize over $500 billion of third-party capital for AI infrastructure. The framework repositions data centers as long-life financeable assets, reducing dependency on Nvidia's balance sheet. Nvidia's own earnings are due August 26; CoreWeave and Super Micro's strong quarterly results this week reignited bullish expectations.",
+        "sourceUrl": "https://finance.yahoo.com/technology/ai/articles/nvidia-backed-ai-infrastructure-financing-231448947.html"
+      },
+      {
+        "company": "Snowflake",
+        "headline": "Snowflake beats Q1 estimates; Oppenheimer raises target to $400; Q2 earnings Sept. 2",
+        "summary": "Snowflake reported Q1 revenue of $1.39 billion (+33.5% YoY), adjusted EPS $0.39 vs $0.32 consensus. Q2 guidance: $1.415–$1.42B product revenue (~30% growth). Oppenheimer raised its price target from $295 to $400 citing stronger consumption trends. Sustainable Fitch also expanded ESG dataset availability on Snowflake Marketplace this week.",
+        "sourceUrl": "https://www.marketbeat.com/instant-alerts/filing-northside-capital-management-llc-sells-15550-shares-of-snowflake-inc-snow-2026-08-12/"
+      },
+      {
+        "company": "Palantir",
+        "headline": "Palantir Q2 revenue surges 94% YoY to $1.94B, stock up ~30%",
+        "summary": "Palantir blew past consensus with Q2 2026 revenue of $1.94 billion (+94% YoY) and EPS of $0.41, both well above estimates. U.S. operations crossed 100% YoY growth. Stock rallied ~30% post-earnings. Cathie Wood has been selling into every rally — offloaded $21M in shares since earnings.",
+        "sourceUrl": "https://seekingalpha.com/article/4935347-palantirs-bombshell-earnings-path-continues-risks-are-spreading"
+      },
+      {
+        "company": "Mistral",
+        "headline": "Mistral targets 1GW of European compute by 2030 and launches EU data residency",
+        "summary": "Mistral AI announced plans to build 1 gigawatt of European compute capacity by 2030, inviting enterprise customers to lock in now as part of a sovereign AI strategy. Separately launched EU-specific data processing with regional inference — data stays within European borders — aimed at enterprises subject to EU AI Act data residency requirements.",
+        "sourceUrl": "https://www.bankinfosecurity.com/mistral-expands-sovereign-ai-push-european-compute-a-32527"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Anthropic cancels Claude Sonnet 5 price hike; locks in $2/$10 pricing; in talks to raise $30B",
+        "summary": "Anthropic reversed its planned September price increase — Claude Sonnet 5 stays at $2 input / $10 output per million tokens permanently. Also cut the Claude Code system prompt by over 80%, pushing enterprises to slim their own — analysts flagged this as AI generating its own technical debt. Anthropic is also in early talks to raise at least $30 billion in a new funding round.",
+        "sourceUrl": "https://medium.com/@blurbrahlab/claude-sonnet-5-stays-at-2-10-forever-anthropic-cancels-september-price-hike-top-10-ai-518767b90c96"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "OpenAI reveals Astra — 'too powerful to launch' — and removes ChatGPT free tier rate limits",
+        "summary": "Sam Altman disclosed Astra, a next-generation model described as 'too powerful to launch' — no release date, pricing, or model card provided. On the product front, OpenAI removed rate limits for free ChatGPT users, granting unlimited text messaging on GPT-5.6 Luna. Former CPO Kevin Weil (departed 4 months ago) is now seeking $150M for a new startup with no public product.",
+        "sourceUrl": "https://www.stokastic.com/articles/prediction-markets/gpt-6-release-date-odds"
+      }
+    ]
   }
 ]
