@@ -3976,5 +3976,53 @@
         "sourceUrl": "https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai"
       }
     ]
+  },
+  {
+    "id": "briefing-2026-08-17",
+    "date": "2026-08-17T06:00:00.000Z",
+    "items": [
+      {
+        "company": "Databricks",
+        "headline": "Databricks closes $5B round at $190B valuation as revenue run-rate surpasses $7B",
+        "summary": "Databricks wrapped a $5 billion funding round valuing the company at $190 billion, after its Q2 revenue run-rate cleared $7 billion — up over 80% year-on-year. Proceeds will fund Lakebase (its AI-native database product) and broader platform expansion.",
+        "sourceUrl": "https://www.instagram.com/boringdude.in/p/DcGkvxMk8VP/"
+      },
+      {
+        "company": "NVIDIA",
+        "headline": "NVIDIA stock up ~19% ahead of Aug 26 earnings; analysts call it the 'Federal Reserve of AI'",
+        "summary": "NVIDIA's Q2 FY2027 earnings report (Aug 26) is Wall Street's most-watched event of the season, with shares rising ~19% since July 29 to $225. Seeking Alpha analysis describes NVIDIA as the 'Federal Reserve of AI', financing neocloud buildouts when traditional capital markets fall short — a role Morgan Stanley says could unlock a significant new revenue stream.",
+        "sourceUrl": "https://seekingalpha.com/news/4633593-nvidia-is-becoming-the-federal-reserve-of-ai"
+      },
+      {
+        "company": "Snowflake",
+        "headline": "Zeotap launches zero-copy composable CDP entirely within Snowflake",
+        "summary": "Customer data platform Zeotap launched a native app on Snowflake's marketplace (Aug 16) that runs fully inside a customer's Snowflake account, eliminating data copies and keeping all data within the Snowflake perimeter. The move targets regulated industries (finance, healthcare) where data residency is non-negotiable.",
+        "sourceUrl": "https://www.marketscale.com/industries/marketing-tech/zeotaps-composable-cdp-now-runs-entirely-inside-a-customers-snowflake-account-eliminating-data-copies"
+      },
+      {
+        "company": "Palantir",
+        "headline": "Palantir Q2 2026: $1.94B revenue, $1.06B net income — AI-driven profitability accelerates",
+        "summary": "Palantir reported Q2 2026 results with revenue of $1.94 billion and net income of $1.06 billion, reflecting strong AI-driven margin expansion. The company holds $3.92 billion in active federal contracts, outpacing defence-tech rival Anduril's $2.43 billion portfolio.",
+        "sourceUrl": "https://simplywall.st/stocks/us/software/nasdaq-pltr/palantir-technologies/news/palantirs-profit-jump-and-defense-deal-might-change-the-case"
+      },
+      {
+        "company": "Mistral",
+        "headline": "Mistral releases more advanced open-weight model; pre-sells compute capacity it hasn't yet built",
+        "summary": "WSJ reports (Aug 17) that Mistral released a more advanced open-weight model this week, with analysts arguing open-weight AI won't dampen infrastructure demand. Separately, Mistral is pre-selling compute capacity it has not yet built — an 'AI Power Purchase Agreement' model that signals aggressive expansion ambitions and balance-sheet risk in equal measure.",
+        "sourceUrl": "https://www.wsj.com/tech/ai/open-weight-ai-wont-crimp-demand-for-picks-and-shovels-523e6410"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "CEO: AI backlash is a 'crisis of trust'; Claude watermarks land; 42-min outage hits 15K+ users",
+        "summary": "Dario Amodei went public on X (Aug 15) arguing the AI backlash is fundamentally a trust problem and that the industry must deliver real breakthroughs — like curing cancer — to rebuild credibility. Separately, Anthropic confirmed Claude's upcoming text-watermarking feature (invisible machine-readable patterns in generated output) which has already prompted a counter-tool from Cardano founder Charles Hoskinson. Claude also suffered a 42-minute widespread outage on Aug 16 (authentication failures across claude.ai, Claude Code, Claude Cowork and the API), peaking at 15,000+ outage reports.",
+        "sourceUrl": "https://techcrunch.com/2026/08/16/anthropic-ceo-says-ai-backlash-is-fundamentally-a-crisis-of-trust/"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "ChatGPT Work launches; GPT-5.6 family rolls out with unlimited free-tier chats; COO Brad Lightcap exits",
+        "summary": "OpenAI shipped ChatGPT Work — an agentic mode for multi-step tasks and finished deliverables — alongside the full GPT-5.6 model family (Sol for reasoning, Terra, Luna as default for Free/Go tiers). Free users now get unlimited text chats. Premium Business seats launched at $125/user/month. COO Brad Lightcap announced his departure; Dali Rajic joins as Chief Revenue Officer.",
+        "sourceUrl": "https://medium.com/@btibor91/openai-and-anthropic-this-week-ultrafast-cyber-riemann-bound-model-2-watermarks-week-33-c7f3407ed0cb"
+      }
+    ]
   }
 ]
