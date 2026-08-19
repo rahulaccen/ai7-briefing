@@ -4072,5 +4072,53 @@
         "sourceUrl": "https://www.winzheng.com/en/article/databricks-50-billion-funding-1900-billion-valuation-agent-i"
       }
     ]
+  },
+  {
+    "id": "briefing-2026-08-19",
+    "date": "2026-08-19",
+    "items": [
+      {
+        "company": "NVIDIA",
+        "headline": "NVIDIA backs $105B OpenAI Ohio data centre; AI moat shifts from chips to capital",
+        "summary": "NVIDIA confirmed it will provide up to $105 billion in financing for a massive OpenAI AI factory in Ohio, working with SB Energy at the PORTS-Pike Technology Campus. This is a deliberate strategic pivot — NVIDIA is using its enormous cash generation to become the financier of AI infrastructure, locking in GPU demand by backing the customers who buy them.",
+        "sourceUrl": "https://www.cnbc.com/2026/08/18/nvidias-ai-moat-is-shifting-from-chips-to-capital.html"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "OpenAI launches ChatGPT for Teens with stronger safety guardrails and Study Mode",
+        "summary": "OpenAI rolled out a dedicated ChatGPT experience for 13–17 year olds, featuring content restrictions around self-harm, suicide, and sexual content, plus Study Mode that pushes teens to think through problems. The launch comes amid mounting legal pressure — Meta is currently on trial over addictive behaviour allegations involving minors.",
+        "sourceUrl": "https://www.cnbc.com/2026/08/18/openai-chatgpt-for-teens-safety.html"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Anthropic revenue run rate tops $65B; IPO momentum builds for Q4 2026",
+        "summary": "Bloomberg reports Anthropic's annualised revenue surpassed $65 billion as of mid-August — up from $47B in May and $19B in March. The surge fuels expectations for a potential Q4 2026 IPO that could rival or surpass SpaceX as the year's largest. Separately, Anthropic extended Claude Code weekly usage limits through August 31.",
+        "sourceUrl": "https://finance.yahoo.com/markets/stocks/article/anthropic-could-beat-elon-musks-spacex-for-largest-2026-ipo-prediction-markets-show-122619825.html"
+      },
+      {
+        "company": "Snowflake",
+        "headline": "Snowflake launches dynamic model routing in Cortex AI Gateway for AI cost control",
+        "summary": "Snowflake announced dynamic model routing for its Cortex AI Gateway, automatically directing AI queries to the most cost-effective model based on complexity. The feature gives enterprises a native cost-management lever inside Snowflake's AI platform. Next earnings are due September 2.",
+        "sourceUrl": "https://www.snowflake.com/en/news/press-releases/snowflake-unlocks-better-ai-economics-dynamic-model-routing/"
+      },
+      {
+        "company": "Palantir",
+        "headline": "Palantir Q2 revenue +93% YoY; Michael Burry renews bearish bet on valuation",
+        "summary": "Palantir's Q2 2026 results show revenue jumped 93% year-over-year, with US government revenue up 90% to $809M driven by AI-native military contracts. Despite the blowout quarter, Michael Burry re-entered put options against PLTR, citing ~109x consensus EPS and ~74x sales. Analysts debate whether PLTR can reach a $1 trillion valuation.",
+        "sourceUrl": "https://www.marketbeat.com/articles/michael-burry-is-betting-against-palantir-againshould-investors-care/"
+      },
+      {
+        "company": "Mistral",
+        "headline": "France selects Mistral as sovereign AI provider for government cybersecurity testing",
+        "summary": "French Budget Minister David Amiel announced France will hire 'sovereign' AI providers — explicitly naming Mistral — to test public-sector systems for vulnerabilities following a DGFiP tax agency breach affecting ~700,000 taxpayers. Mistral's 'Notre IA' plan, running on SecNumCloud-certified infrastructure, already serves ~1 million civil servants.",
+        "sourceUrl": "https://www.thestar.com.my/tech/tech-news/2026/08/18/france-to-use-ai-tools-to-test-cybsecurity-vulnerabilities-after-tax-agency-hacking"
+      },
+      {
+        "company": "Databricks",
+        "headline": "Databricks Ventures backs UK consulting firm Advancing Analytics in first direct UK investment",
+        "summary": "Databricks Ventures made a strategic investment in Advancing Analytics on August 18, making it the first UK-headquartered consulting firm to receive direct investment from Databricks Ventures. The move deepens Databricks' UK partner ecosystem following its $5B fundraise at a $190B valuation.",
+        "sourceUrl": "https://www.hpcwire.com/bigdatawire/this-just-in/advancing-analytics-secures-strategic-investment-from-databricks-ventures/"
+      }
+    ]
   }
 ]
