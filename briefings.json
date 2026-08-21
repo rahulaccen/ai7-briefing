@@ -4186,5 +4186,83 @@
         "sourceUrl": "https://docs.databricks.com/aws/en/release-notes/product/2026/august"
       }
     ]
+  },
+  {
+    "id": "briefing-2026-08-21",
+    "date": "2026-08-21T06:00:00.000Z",
+    "items": [
+      {
+        "company": "NVIDIA",
+        "headline": "China Begins Receiving H200 Chips — ByteDance & Tencent Get 10,000 Each Under NDRC Gate",
+        "summary": "NVIDIA's H200 chips have begun flowing into mainland China for the first time, with ByteDance and Tencent each receiving ~10,000 units — just 13% of the 75,000-per-buyer ceiling cleared by Washington. China's NDRC now controls the remaining 87% via an individual sign-off process requiring buyers to justify why domestic alternatives won't suffice. NVIDIA holds ~500,000 H200 chips in inventory staged for Chinese customers, each still awaiting separate NDRC approval.",
+        "sourceUrl": "https://www.techtimes.com/articles/325078/20260820/nvidia-h200-chips-enter-china-13-quota-beijing-not-washington-controls-rest.htm"
+      },
+      {
+        "company": "NVIDIA",
+        "headline": "NVIDIA Denies Report of Downgraded China-Specific AI Chip Launching by Year-End",
+        "summary": "NVIDIA pushed back against a report that it was set to roll out a downgraded AI chip for China by end of 2026, designed to comply with US export controls post its Vera Rubin system becoming unavailable in China. Reuters reported the chip would have modified software to work with China-available processors; NVIDIA denied the timeline. The company has a history of designing China-specific chips (A800, H800) to navigate successive export rule changes.",
+        "sourceUrl": "https://www.reuters.com/world/china/nvidia-ship-ai-chip-china-by-year-end-information-reports-2026-08-20/"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Anthropic Targets IPO to Match or Top SpaceX's Record $75B Listing",
+        "summary": "Anthropic is preparing to file publicly for its mega-IPO as soon as end of August, with bankers (Morgan Stanley, Goldman Sachs, JPMorgan) targeting a deal size that matches or beats SpaceX's record $75B raise — which would make it the largest IPO in US history. The company's annualized revenue has already hit $65B as of July. Newly listed companies have raised $160.6B in 2026 YTD, still trailing the 2021 high-water mark of $195.2B.",
+        "sourceUrl": "https://www.japantimes.co.jp/business/2026/08/21/companies/anthropic-ipo-record-spacex/"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Anthropic Watermarks Claude Outputs to Meet EU AI Act Disclosure Rules",
+        "summary": "Anthropic has deployed invisible machine-readable watermarks in Claude's generated text to comply with EU AI Act Article 50, which mandates that AI-generated content be marked as such. Early testing by researchers showed the watermark can be partially defeated by translating text to Arabic and back — highlighting the ongoing 'arms race' between AI content labelling and evasion techniques.",
+        "sourceUrl": "https://businesschief.com/news/anthropic-watermarks-claude-to-meet-new-eu-ai-act-rules"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "ChatGPT Can Now Control iMessage — Raising Apple Privacy Concerns",
+        "summary": "OpenAI expanded ChatGPT's system-level integrations to include iMessage control, allowing the AI to read and send messages on behalf of users. The move raises significant privacy concerns, as iMessage traffic is end-to-end encrypted but now potentially accessible to OpenAI's systems via Apple-granted permissions. The integration is opt-in, but Apple has not publicly commented on what data-access agreements underpin it.",
+        "sourceUrl": "https://www.japantimes.co.jp/business/2026/08/21/tech/chatgpt-imessage-apple-privacy/"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "Greg Brockman: Open-Weight Models Like GLM-5.3 Will 'Significantly Accelerate the Threat Landscape'",
+        "summary": "OpenAI President Greg Brockman publicly warned that open-weight models — citing Z.ai's GLM-5.3 specifically — are closing the capability gap with frontier models fast enough to 'significantly accelerate the threat landscape' for AI-enabled cyberattacks. Brockman referenced OpenAI's own incident where models were used to breach Hugging Face infrastructure, and called for enterprise security teams to act immediately. OpenAI launched its Trusted Access for Cyber program in February to restrict frontier model access to vetted security professionals.",
+        "sourceUrl": "https://www.develeap.com/news/openai-s-greg-brockman-z-ai-s-glm-5-3-likely-to-significantl/"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "OpenAI Slows Model Training to Bolster Security After Hugging Face Hack",
+        "summary": "OpenAI has halted AI model training temporarily and is deploying new monitoring systems to oversee AI testing activities, following a hacking incident in which AI models were used to breach Hugging Face infrastructure. The slowdown signals OpenAI is prioritising safety infrastructure over shipping speed — a notable shift as it competes with Anthropic and Google DeepMind on frontier capability.",
+        "sourceUrl": "https://cfo.economictimes.indiatimes.com/news/cfo-tech/openai-slows-model-training-to-bolster-security-after-hugging-face-hack/133391686"
+      },
+      {
+        "company": "Snowflake",
+        "headline": "Snowflake Showcases Agentic Enterprise AI with Westpac and NSW Health at World Tour Sydney",
+        "summary": "At Snowflake World Tour Sydney (Aug 21), Westpac and NSW Health detailed real-world deployments of Snowflake's Cortex AI platform — demonstrating how trusted, governed data enables production AI agents rather than just pilots. The event marks part of Snowflake's 23-city World Tour (Aug–Oct), with enterprise agentic AI adoption — humans and agents working together — as the central thesis.",
+        "sourceUrl": "https://www.arnnet.com.au/article/4211745/snowflake-westpac-nsw-health-showcase-how-trusted-data-is-turning-ai-into-business-outcomes.html"
+      },
+      {
+        "company": "Snowflake",
+        "headline": "Director Frank Slootman Sells $97.4M in Snowflake Shares Under Pre-set Plan",
+        "summary": "Former Snowflake CEO and current board director Frank Slootman sold 348,020 shares on August 18–19 for $97.4M total, under a pre-arranged 10b5-1 trading plan. The sale is consistent with planned liquidity events rather than a signal of concern, but its size — at ~$320 per share — comes as Snowflake's stock has rallied sharply over the past 90 days.",
+        "sourceUrl": "https://m.ph.investing.com/news/stock-market-news/snowflake-director-frank-slootman-sells-974m-in-shares-93CH-2561952"
+      },
+      {
+        "company": "Palantir",
+        "headline": "Michael Burry Bets $912M Against Palantir as Valuation Hits 74× Sales",
+        "summary": "Michael Burry's Scion Asset Management has accumulated $912M in put contracts against Palantir (PLTR), renewing his bearish stance as the stock trades at ~74× sales and ~109× consensus EPS after surging 70%+ since Q2 earnings. JPMorgan separately disclosed buying 7.94M Palantir shares, reflecting the deep institutional divide on whether PLTR's 93% revenue growth justifies its current multiple. Palantir management is making its case at the Sovereignty Bootcamp with enterprise AI platform partners.",
+        "sourceUrl": "https://www.marketbeat.com/articles/michael-burry-is-betting-against-palantir-againshould-investors-care/"
+      },
+      {
+        "company": "Mistral",
+        "headline": "Mistral Acquires Vienna's Emmi AI to Build Europe's Physics and Engineering AI Stack",
+        "summary": "Mistral AI has acquired Emmi AI, a Vienna-based physics simulation and engineering AI startup, to accelerate large-scale engineering models for factory-floor automation and manufacturing — complementing Mistral's sovereign AI platform pivot. The acquisition (price undisclosed in latest coverage, earlier reported at >€300M) brings Emmi's team of AI-for-physics specialists into Mistral's engineering model efforts, positioning it as the go-to AI partner for European heavy industry.",
+        "sourceUrl": "https://www.hpcwire.com/aiwire/2026/08/20/sas-and-aws-bring-new-insights-to-ai-enterprise-conference-2026/"
+      },
+      {
+        "company": "Databricks",
+        "headline": "Databricks Surpasses Major Revenue Milestone Powered by Rapid AI Infrastructure Growth",
+        "summary": "Databricks has crossed a significant revenue milestone driven by accelerating AI infrastructure demand, with its $7B+ annualized run rate growing over 80% year-over-year following its $5B funding round at a $190B valuation. Enterprise demand for its open-source data lakehouse platform — as a cost-control alternative to proprietary AI stacks — is the primary growth driver, with the Microsoft partnership extension through the 2030s adding long-term visibility.",
+        "sourceUrl": "https://hyperight.com/databricks-surpasses-major-revenue-milestone/"
+      }
+    ]
   }
 ]
