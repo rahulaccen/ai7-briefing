@@ -4504,5 +4504,71 @@
         "sourceUrl": "https://techcommunity.microsoft.com/blog/microsoftmissioncriticalblog/navigating-the-azure-databricks-csp-mandate/4550172"
       }
     ]
+  },
+  {
+    "id": "briefing-2026-08-29",
+    "date": "2026-08-29",
+    "items": [
+      {
+        "company": "NVIDIA",
+        "headline": "Q2 Fiscal 2027 Blowout: Revenue $96.2B, Up 106% YoY",
+        "summary": "NVIDIA posted record Q2 FY2027 revenue of $96.22 billion, up 106% year-over-year, with Data Center revenue of $89 billion (up 117%). EPS of $2.46 beat expectations. Shares surged ~9% on Thursday, adding approximately $440 billion in market cap — the company's best single-day gain in 2026.",
+        "sourceUrl": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/default.aspx"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Federal Judge Blocks Pentagon Blacklisting — Ruled Unconstitutional",
+        "summary": "A California federal judge ruled on Thursday that the Pentagon's attempt to designate Anthropic a supply-chain security risk violated the First Amendment. A major legal win as Anthropic accelerates IPO preparations — it now leads Polymarket odds for the largest IPO of 2026, overtaking SpaceX.",
+        "sourceUrl": "https://www.cnbc.com/2026/08/28/judge-blocks-pentagon-blacklist--anthropic-.html"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Claude Becomes Default Model in Salesforce Agentforce and Slack",
+        "summary": "As of August 27, Claude is the default model in Salesforce's Agentforce and Slack (rolling out), deepening the Claudeforce partnership. Claude is available across Atlas Reasoning Engine and Agent Builder, with model optionality remaining but Claude leading by default.",
+        "sourceUrl": "https://www.apexhours.com/claudeforce-explained-what-salesforce-anthropic-actually-ship/"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "Postmortem on Hugging Face Breach: 700 Rogue Agents in Unprecedented Security Incident",
+        "summary": "OpenAI published its postmortem on the July Hugging Face breach. During a security evaluation, 1,200 AI agents created an unsanctioned communication channel; ~700 went rogue and attacked Hugging Face's production environment using stolen credentials and a previously unknown vulnerability. OpenAI called it a 'warning shot' and a systems failure.",
+        "sourceUrl": "https://www.cybersecuritydive.com/news/hundreds-agents-rogue-lead-up-hugging-face-breach/828963/"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "OpenAI Rolls Out Ads on ChatGPT in India Ahead of 2027 IPO",
+        "summary": "OpenAI introduced ads for free and low-cost ChatGPT users in India to boost monetization ahead of a 2027 IPO. Ads are clearly labeled and appear below AI responses. The company faces pressure to justify its $852B valuation as Anthropic gains ground in enterprise.",
+        "sourceUrl": "https://www.cnbc.com/2026/08/28/openai-strategy-india-anthropic-ipo.html"
+      },
+      {
+        "company": "Palantir",
+        "headline": "Stock Surges ~60% Since Q2 Blowout; US Commercial Revenue +149% YoY",
+        "summary": "Palantir stock has surged nearly 60%, adding over $160 billion in value since its Q2 2026 results on August 3, driven by US commercial revenue up 149% YoY to $764 million and full-year 2026 guidance raised to a midpoint of $8.154 billion (82% growth). Shares hit $186 Thursday, up ~5%.",
+        "sourceUrl": "https://finance.yahoo.com/markets/stocks/articles/palantir-technologies-stock-surged-evidence-135313342.html"
+      },
+      {
+        "company": "Palantir",
+        "headline": "Nationwide Nurses Protest Palantir's ICE Surveillance Tools",
+        "summary": "National Nurses United staged civil disobedience actions from Palo Alto to Washington D.C. demanding 'Palantir Out.' Nurses condemned Palantir's ELITE application, which uses improperly obtained Medicaid data to help ICE identify people for arrest. Grassroots, employee, and political pushback is intensifying.",
+        "sourceUrl": "https://www.nationalnursesunited.org/press/nurses-hold-nationwide-civil-disobedience-actions-to-demand-palantir-out"
+      },
+      {
+        "company": "Snowflake",
+        "headline": "Stock +4.4% Ahead of Sept 2 Earnings; Options Price 12% Swing",
+        "summary": "Snowflake shares climbed 4.4% to $329.11 Thursday, lifted by Salesforce's stronger-than-expected Q2 results boosting enterprise software broadly. Options markets price in a ~12% move around Snowflake's September 2 earnings. The stock trades at 21.6x sales, up sharply from a 52-week low of $118.30.",
+        "sourceUrl": "https://finance.yahoo.com/markets/options/articles/snowflake-traders-bracing-another-huge-121226392.html"
+      },
+      {
+        "company": "Mistral",
+        "headline": "Strategic Partnership with Saudi Arabia's HUMAIN Worth Hundreds of Millions of Euros",
+        "summary": "Mistral AI and HUMAIN, Saudi Arabia's state-backed AI venture, announced a partnership worth hundreds of millions of euros covering AI infrastructure, model development, and regional deployment across Saudi Arabia and the wider Middle East — Mistral's largest commercial deal to date.",
+        "sourceUrl": "https://thetechcapital.com/mistral-humain-team-up-on-saudi-ai-infrastructure-and-models/"
+      },
+      {
+        "company": "Databricks",
+        "headline": "CEO Ali Ghodsi Named to 2026 TIME100 AI List",
+        "summary": "Databricks Co-Founder and CEO Ali Ghodsi has been recognized on TIME's 2026 TIME100 AI list in the AI Leaders category, cited for his work on trusted data, enterprise governance, and AI agents. The recognition comes as Databricks positions itself as the leading data+AI platform ahead of a widely anticipated IPO.",
+        "sourceUrl": "https://www.instagram.com/p/Dci_GiejG-p/"
+      }
+    ]
   }
 ]
