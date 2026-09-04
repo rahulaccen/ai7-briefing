@@ -4672,5 +4672,65 @@
         "sourceUrl": "https://community.databricks.com/t5/announcements/bd-p/Announcements"
       }
     ]
+  },
+  {
+    "id": "briefing-2026-09-05",
+    "date": "2026-09-05",
+    "items": [
+      {
+        "company": "NVIDIA",
+        "headline": "NVIDIA acquires Hugging Face for ~$13 billion",
+        "summary": "NVIDIA agreed to buy AI model-sharing platform Hugging Face for nearly $13B, expanding its footprint up the AI stack from chips to models and developer tools. CEO Jensen Huang said open models are 'critically important' to NVIDIA's strategy.",
+        "sourceUrl": "https://www.cnbc.com/video/2026/09/03/nvidia-agrees-to-buy-hugging-face-for-almost-13-billion-expanding-up-ai-stack.html"
+      },
+      {
+        "company": "NVIDIA",
+        "headline": "Jensen Huang donates $10M to Nepal flood relief",
+        "summary": "NVIDIA CEO Jensen Huang donated $10 million as Nepal faces an estimated $5 billion in rebuilding costs from recent devastating floods.",
+        "sourceUrl": "https://www.cnn.com/2026/09/03/world/video/nepal-flood-rebuilding-nvidia-donation-costs-economy"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "OpenAI launches GPT-6 'Astra' — declares the AGI era has arrived",
+        "summary": "OpenAI released GPT-6 Astra, calling it 'the most intelligent and aligned model in the world' and declaring the 'AGI era' has begun. The model sets new benchmarks in computer use, software engineering, science, and cybersecurity. Initially rolling out via 'Daybreak Access' program, with broader ChatGPT availability imminent.",
+        "sourceUrl": "https://www.forbes.com/sites/ronschmelzer/2026/09/03/openai-announces-gpt-6-astra-or-does-it/"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Anthropic launches Claude Fable 5.1 and Mythos 5.1 — top coding benchmarks",
+        "summary": "Anthropic released Claude Fable 5.1 and Mythos 5.1, claiming them the world's most advanced models for coding and knowledge work. Fable 5.1 scores ~81% on SWE-bench Pro, surpassing prior Opus 5. Anthropic also announced that Claude will now watermark its text outputs.",
+        "sourceUrl": "https://www.anthropic.com/claude-fable-and-mythos-5-1"
+      },
+      {
+        "company": "Snowflake",
+        "headline": "Snowflake Q2 crushes estimates — stock surges 25%, raises FY2027 guidance",
+        "summary": "Snowflake posted Q2 product revenue of $1.49B (+37% YoY), non-GAAP EPS of $0.62 (vs. $0.45 consensus), and expanded non-GAAP operating margin to 15.3%. Management raised FY2027 product revenue guidance to $6.07B (36% growth implied). Shares surged more than 20% after the announcement.",
+        "sourceUrl": "https://www.reuters.com/business/snowflake-shares-surge-ai-demand-powers-growth-lifts-outlook-2026-09-03/"
+      },
+      {
+        "company": "Palantir",
+        "headline": "CEO Alex Karp at G20: being left behind in AI is the world's greatest national risk",
+        "summary": "Palantir CEO Alex Karp participated in a fireside chat with US Commerce Secretary Howard Lutnick at the G20 Innovation Ministerial in Chapel Hill, NC, warning that countries falling behind in the AI race face a greater existential threat. He advocated for sovereign AI infrastructure.",
+        "sourceUrl": "https://newindiaabroad.com/english/news/being-left-behind-in-ai-poses-biggest-risk-to-countries-karp"
+      },
+      {
+        "company": "Mistral",
+        "headline": "France's Finance Minister: EU AI sovereignty can't rely solely on Mistral — 'we're doomed'",
+        "summary": "France's Finance Minister publicly warned that Europe's AI sovereignty strategy cannot hinge on a single startup like Mistral, signaling pressure for a broader European AI ecosystem.",
+        "sourceUrl": "https://www.malaymail.com/amp/news/tech-gadgets/2026/09/03/were-doomed-french-minister-warns-against-relying-on-mistral-for-ai/233729"
+      },
+      {
+        "company": "Mistral",
+        "headline": "Cote d'Ivoire signs Mistral AI deal for national digital transformation",
+        "summary": "Cote d'Ivoire announced a formal partnership with Mistral AI to deploy AI across key national sectors, making it one of the first African nations to adopt a major European AI provider at government scale.",
+        "sourceUrl": "https://techafricanews.com/2026/09/03/cote-divoire-partners-with-mistral-ai-to-drive-national-digital-transformation/"
+      },
+      {
+        "company": "Databricks",
+        "headline": "No major news today",
+        "summary": "No significant Databricks announcements in the past 24 hours.",
+        "sourceUrl": ""
+      }
+    ]
   }
 ]
