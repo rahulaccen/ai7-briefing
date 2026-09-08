@@ -1,7 +1,7 @@
 [
   {
     "id": "briefing-2026-06-02",
-    "date": "2026-06-02T16:00:00.000Z",
+    "date": "2026-06-02",
     "items": [
       {
         "company": "NVIDIA",
@@ -67,7 +67,7 @@
   },
   {
     "id": "briefing-2026-06-03",
-    "date": "2026-06-03T06:00:00.000Z",
+    "date": "2026-06-03",
     "items": [
       {
         "company": "NVIDIA",
@@ -115,7 +115,7 @@
   },
   {
     "id": "briefing-2026-06-04",
-    "date": "2026-06-04T06:00:00.000Z",
+    "date": "2026-06-04",
     "items": [
       {
         "company": "NVIDIA",
@@ -193,7 +193,7 @@
   },
   {
     "id": "briefing-2026-06-05",
-    "date": "2026-06-05T06:00:00.000Z",
+    "date": "2026-06-05",
     "items": [
       {
         "company": "NVIDIA",
@@ -271,7 +271,7 @@
   },
   {
     "id": "briefing-2026-06-06",
-    "date": "2026-06-06T16:00:00.000Z",
+    "date": "2026-06-06",
     "items": [
       {
         "company": "NVIDIA",
@@ -367,7 +367,7 @@
   },
   {
     "id": "briefing-2026-06-07",
-    "date": "2026-06-07T06:03:11.000Z",
+    "date": "2026-06-07",
     "items": [
       {
         "company": "NVIDIA",
@@ -427,7 +427,7 @@
   },
   {
     "id": "briefing-2026-06-08",
-    "date": "2026-06-08T06:00:00.000Z",
+    "date": "2026-06-08",
     "items": [
       {
         "company": "NVIDIA",
@@ -493,7 +493,7 @@
   },
   {
     "id": "briefing-2026-06-09",
-    "date": "2026-06-09T08:00:00.000Z",
+    "date": "2026-06-09",
     "items": [
       {
         "company": "NVIDIA",
@@ -577,7 +577,7 @@
   },
   {
     "id": "briefing-2026-06-10",
-    "date": "2026-06-10T06:02:00.000Z",
+    "date": "2026-06-10",
     "items": [
       {
         "company": "NVIDIA",
@@ -631,7 +631,7 @@
   },
   {
     "id": "briefing-2026-06-11",
-    "date": "2026-06-11T06:02:00.000Z",
+    "date": "2026-06-11",
     "items": [
       {
         "company": "NVIDIA",
@@ -679,7 +679,7 @@
   },
   {
     "id": "briefing-2026-06-12",
-    "date": "2026-06-12T06:00:00.000Z",
+    "date": "2026-06-12",
     "items": [
       {
         "company": "NVIDIA",
@@ -745,7 +745,7 @@
   },
   {
     "id": "briefing-2026-06-13",
-    "date": "2026-06-13T16:00:00.000Z",
+    "date": "2026-06-13",
     "items": [
       {
         "company": "NVIDIA",
@@ -817,7 +817,7 @@
   },
   {
     "id": "briefing-2026-06-14",
-    "date": "2026-06-14T16:00:00.000Z",
+    "date": "2026-06-14",
     "items": [
       {
         "company": "NVIDIA",
@@ -865,7 +865,7 @@
   },
   {
     "id": "briefing-2026-06-15",
-    "date": "2026-06-15T16:00:00.000Z",
+    "date": "2026-06-15",
     "items": [
       {
         "company": "NVIDIA",
@@ -913,7 +913,7 @@
   },
   {
     "id": "briefing-2026-06-16",
-    "date": "2026-06-16T16:00:00.000Z",
+    "date": "2026-06-16",
     "items": [
       {
         "company": "NVIDIA",
@@ -961,7 +961,7 @@
   },
   {
     "id": "briefing-2026-06-17",
-    "date": "2026-06-17T16:00:00.000Z",
+    "date": "2026-06-17",
     "items": [
       {
         "company": "NVIDIA",
@@ -1021,7 +1021,7 @@
   },
   {
     "id": "briefing-2026-06-18",
-    "date": "2026-06-18T06:00:00.000Z",
+    "date": "2026-06-18",
     "items": [
       {
         "company": "Databricks",
@@ -1069,7 +1069,7 @@
   },
   {
     "id": "briefing-2026-06-19",
-    "date": "2026-06-19T06:00:00.000Z",
+    "date": "2026-06-19",
     "items": [
       {
         "company": "NVIDIA",
@@ -1147,7 +1147,7 @@
   },
   {
     "id": "briefing-2026-06-20",
-    "date": "2026-06-20T06:00:00.000Z",
+    "date": "2026-06-20",
     "items": [
       {
         "company": "Databricks",
@@ -1237,7 +1237,7 @@
   },
   {
     "id": "briefing-2026-06-21",
-    "date": "2026-06-21T06:00:00.000Z",
+    "date": "2026-06-21",
     "items": [
       {
         "company": "Anthropic",
@@ -1297,7 +1297,7 @@
   },
   {
     "id": "briefing-2026-06-22",
-    "date": "2026-06-22T06:00:00.000Z",
+    "date": "2026-06-22",
     "items": [
       {
         "company": "OpenAI",
@@ -1363,7 +1363,7 @@
   },
   {
     "id": "briefing-2026-06-23",
-    "date": "2026-06-23T06:00:00.000Z",
+    "date": "2026-06-23",
     "items": [
       {
         "company": "NVIDIA",
@@ -1423,7 +1423,7 @@
   },
   {
     "id": "briefing-2026-06-24",
-    "date": "2026-06-24T06:00:00.000Z",
+    "date": "2026-06-24",
     "items": [
       {
         "company": "NVIDIA",
@@ -1483,7 +1483,7 @@
   },
   {
     "id": "briefing-2026-06-25",
-    "date": "2026-06-25T06:00:00.000Z",
+    "date": "2026-06-25",
     "items": [
       {
         "company": "NVIDIA",
@@ -1543,7 +1543,7 @@
   },
   {
     "id": "briefing-2026-06-26",
-    "date": "2026-06-26T06:00:00.000Z",
+    "date": "2026-06-26",
     "items": [
       {
         "company": "NVIDIA",
@@ -1609,7 +1609,7 @@
   },
   {
     "id": "briefing-2026-06-27",
-    "date": "2026-06-27T16:00:00.000Z",
+    "date": "2026-06-27",
     "items": [
       {
         "company": "NVIDIA",
@@ -1657,7 +1657,7 @@
   },
   {
     "id": "briefing-2026-06-28",
-    "date": "2026-06-28T16:00:00.000Z",
+    "date": "2026-06-28",
     "items": [
       {
         "company": "OpenAI",
@@ -1717,7 +1717,7 @@
   },
   {
     "id": "briefing-2026-06-29",
-    "date": "2026-06-29T16:00:00.000Z",
+    "date": "2026-06-29",
     "items": [
       {
         "company": "NVIDIA",
@@ -1765,7 +1765,7 @@
   },
   {
     "id": "briefing-2026-06-30",
-    "date": "2026-06-30T16:00:00.000Z",
+    "date": "2026-06-30",
     "items": [
       {
         "company": "NVIDIA",
@@ -1837,7 +1837,7 @@
   },
   {
     "id": "briefing-2026-07-01",
-    "date": "2026-07-01T16:00:00.000Z",
+    "date": "2026-07-01",
     "items": [
       {
         "company": "NVIDIA",
@@ -1903,7 +1903,7 @@
   },
   {
     "id": "briefing-2026-07-02",
-    "date": "2026-07-02T16:00:00.000Z",
+    "date": "2026-07-02",
     "items": [
       {
         "company": "NVIDIA",
@@ -1963,7 +1963,7 @@
   },
   {
     "id": "briefing-2026-07-03",
-    "date": "2026-07-03T06:00:00.000Z",
+    "date": "2026-07-03",
     "items": [
       {
         "company": "NVIDIA",
@@ -2011,7 +2011,7 @@
   },
   {
     "id": "briefing-2026-07-04",
-    "date": "2026-07-04T06:00:00.000Z",
+    "date": "2026-07-04",
     "items": [
       {
         "company": "NVIDIA",
@@ -2059,7 +2059,7 @@
   },
   {
     "id": "briefing-2026-07-05",
-    "date": "2026-07-05T06:00:00.000Z",
+    "date": "2026-07-05",
     "items": [
       {
         "company": "NVIDIA",
@@ -2107,7 +2107,7 @@
   },
   {
     "id": "briefing-2026-07-06",
-    "date": "2026-07-06T06:00:00.000Z",
+    "date": "2026-07-06",
     "items": [
       {
         "company": "NVIDIA",
@@ -2173,7 +2173,7 @@
   },
   {
     "id": "briefing-2026-07-07",
-    "date": "2026-07-07T06:00:00.000Z",
+    "date": "2026-07-07",
     "items": [
       {
         "company": "NVIDIA",
@@ -2263,7 +2263,7 @@
   },
   {
     "id": "briefing-2026-07-08",
-    "date": "2026-07-08T06:00:00.000Z",
+    "date": "2026-07-08",
     "items": [
       {
         "company": "OpenAI",
@@ -2329,7 +2329,7 @@
   },
   {
     "id": "briefing-2026-07-09",
-    "date": "2026-07-09T06:00:00.000Z",
+    "date": "2026-07-09",
     "items": [
       {
         "company": "NVIDIA",
@@ -2377,7 +2377,7 @@
   },
   {
     "id": "briefing-2026-07-10",
-    "date": "2026-07-10T06:00:00.000Z",
+    "date": "2026-07-10",
     "items": [
       {
         "company": "NVIDIA",
@@ -2485,7 +2485,7 @@
   },
   {
     "id": "briefing-2026-07-13",
-    "date": "2026-07-13T06:02:55.000Z",
+    "date": "2026-07-13",
     "items": [
       {
         "company": "OpenAI",
@@ -2539,7 +2539,7 @@
   },
   {
     "id": "briefing-2026-07-14",
-    "date": "2026-07-14T06:01:56.000Z",
+    "date": "2026-07-14",
     "items": [
       {
         "company": "NVIDIA",
@@ -2587,7 +2587,7 @@
   },
   {
     "id": "briefing-2026-07-15",
-    "date": "2026-07-15T06:02:21.000Z",
+    "date": "2026-07-15",
     "items": [
       {
         "company": "NVIDIA",
@@ -2635,7 +2635,7 @@
   },
   {
     "id": "briefing-2026-07-16",
-    "date": "2026-07-16T06:00:00.000Z",
+    "date": "2026-07-16",
     "items": [
       {
         "company": "NVIDIA",
@@ -2707,7 +2707,7 @@
   },
   {
     "id": "briefing-2026-07-17",
-    "date": "2026-07-17T16:00:00.000Z",
+    "date": "2026-07-17",
     "items": [
       {
         "company": "Databricks",
@@ -2755,7 +2755,7 @@
   },
   {
     "id": "briefing-2026-07-20",
-    "date": "2026-07-20T06:00:00.000Z",
+    "date": "2026-07-20",
     "items": [
       {
         "company": "Databricks",
@@ -2839,7 +2839,7 @@
   },
   {
     "id": "briefing-2026-07-21",
-    "date": "2026-07-21T06:00:00.000Z",
+    "date": "2026-07-21",
     "items": [
       {
         "company": "Databricks",
@@ -2887,7 +2887,7 @@
   },
   {
     "id": "briefing-2026-07-22",
-    "date": "2026-07-22T06:00:00.000Z",
+    "date": "2026-07-22",
     "items": [
       {
         "company": "OpenAI",
@@ -2935,7 +2935,7 @@
   },
   {
     "id": "briefing-2026-07-23",
-    "date": "2026-07-23T06:00:00.000Z",
+    "date": "2026-07-23",
     "items": [
       {
         "company": "NVIDIA",
@@ -3001,7 +3001,7 @@
   },
   {
     "id": "briefing-2026-07-24",
-    "date": "2026-07-24T16:00:00.000Z",
+    "date": "2026-07-24",
     "items": [
       {
         "company": "OpenAI",
@@ -3085,7 +3085,7 @@
   },
   {
     "id": "briefing-2026-07-27",
-    "date": "2026-07-27T16:00:00.000Z",
+    "date": "2026-07-27",
     "items": [
       {
         "company": "NVIDIA",
@@ -3163,7 +3163,7 @@
   },
   {
     "id": "briefing-2026-07-28",
-    "date": "2026-07-28T06:00:00.000Z",
+    "date": "2026-07-28",
     "items": [
       {
         "company": "NVIDIA",
@@ -3223,7 +3223,7 @@
   },
   {
     "id": "briefing-2026-07-29",
-    "date": "2026-07-29T06:00:00.000Z",
+    "date": "2026-07-29",
     "items": [
       {
         "company": "NVIDIA",
@@ -3301,7 +3301,7 @@
   },
   {
     "id": "briefing-2026-07-30",
-    "date": "2026-07-30T06:00:00.000Z",
+    "date": "2026-07-30",
     "items": [
       {
         "company": "NVIDIA",
@@ -3373,7 +3373,7 @@
   },
   {
     "id": "briefing-2026-07-31",
-    "date": "2026-07-31T06:00:00.000Z",
+    "date": "2026-07-31",
     "items": [
       {
         "company": "NVIDIA",
@@ -3421,7 +3421,7 @@
   },
   {
     "id": "briefing-2026-08-03",
-    "date": "2026-08-03T16:00:00.000Z",
+    "date": "2026-08-03",
     "items": [
       {
         "company": "NVIDIA",
@@ -3469,7 +3469,7 @@
   },
   {
     "id": "briefing-2026-08-04",
-    "date": "2026-08-04T16:00:00.000Z",
+    "date": "2026-08-04",
     "items": [
       {
         "company": "Palantir",
@@ -3517,7 +3517,7 @@
   },
   {
     "id": "briefing-2026-08-05",
-    "date": "2026-08-05T16:00:00.000Z",
+    "date": "2026-08-05",
     "items": [
       {
         "company": "NVIDIA",
@@ -3571,7 +3571,7 @@
   },
   {
     "id": "briefing-2026-08-06",
-    "date": "2026-08-06T06:00:00.000Z",
+    "date": "2026-08-06",
     "items": [
       {
         "company": "OpenAI",
@@ -3619,7 +3619,7 @@
   },
   {
     "id": "briefing-2026-08-07",
-    "date": "2026-08-07T16:00:00.000Z",
+    "date": "2026-08-07",
     "items": [
       {
         "company": "NVIDIA",
@@ -3667,7 +3667,7 @@
   },
   {
     "id": "briefing-2026-08-10",
-    "date": "2026-08-10T16:00:00.000Z",
+    "date": "2026-08-10",
     "items": [
       {
         "company": "OpenAI",
@@ -3715,7 +3715,7 @@
   },
   {
     "id": "briefing-2026-08-11",
-    "date": "2026-08-11T06:00:00.000Z",
+    "date": "2026-08-11",
     "items": [
       {
         "company": "NVIDIA",
@@ -3799,7 +3799,7 @@
   },
   {
     "id": "briefing-2026-08-12",
-    "date": "2026-08-12T16:00:00.000Z",
+    "date": "2026-08-12",
     "items": [
       {
         "company": "Databricks",
@@ -3883,7 +3883,7 @@
   },
   {
     "id": "briefing-2026-08-13",
-    "date": "2026-08-13T06:00:00.000Z",
+    "date": "2026-08-13",
     "items": [
       {
         "company": "Databricks",
@@ -3931,7 +3931,7 @@
   },
   {
     "id": "briefing-2026-08-14",
-    "date": "2026-08-14T16:00:00.000Z",
+    "date": "2026-08-14",
     "items": [
       {
         "company": "Databricks",
@@ -3979,7 +3979,7 @@
   },
   {
     "id": "briefing-2026-08-17",
-    "date": "2026-08-17T06:00:00.000Z",
+    "date": "2026-08-17",
     "items": [
       {
         "company": "Databricks",
@@ -4027,7 +4027,7 @@
   },
   {
     "id": "briefing-2026-08-18",
-    "date": "2026-08-18T16:00:00.000Z",
+    "date": "2026-08-18",
     "items": [
       {
         "company": "NVIDIA",
@@ -4075,7 +4075,7 @@
   },
   {
     "id": "briefing-2026-08-19",
-    "date": "2026-08-19T16:00:00.000Z",
+    "date": "2026-08-19",
     "items": [
       {
         "company": "NVIDIA",
@@ -4123,7 +4123,7 @@
   },
   {
     "id": "briefing-2026-08-20",
-    "date": "2026-08-20T06:00:00.000Z",
+    "date": "2026-08-20",
     "items": [
       {
         "company": "NVIDIA",
@@ -4189,7 +4189,7 @@
   },
   {
     "id": "briefing-2026-08-21",
-    "date": "2026-08-21T06:00:00.000Z",
+    "date": "2026-08-21",
     "items": [
       {
         "company": "NVIDIA",
@@ -4267,7 +4267,7 @@
   },
   {
     "id": "briefing-2026-08-25",
-    "date": "2026-08-25T06:00:00.000Z",
+    "date": "2026-08-25",
     "items": [
       {
         "company": "Databricks",
@@ -4315,7 +4315,7 @@
   },
   {
     "id": "briefing-2026-08-26",
-    "date": "2026-08-26T06:00:00.000Z",
+    "date": "2026-08-26",
     "items": [
       {
         "company": "NVIDIA",
@@ -4393,7 +4393,7 @@
   },
   {
     "id": "briefing-2026-08-27",
-    "date": "2026-08-27T06:00:00.000Z",
+    "date": "2026-08-27",
     "items": [
       {
         "company": "NVIDIA",
@@ -4459,7 +4459,7 @@
   },
   {
     "id": "briefing-2026-08-28",
-    "date": "2026-08-28T06:00:00.000Z",
+    "date": "2026-08-28",
     "items": [
       {
         "company": "NVIDIA",
@@ -4507,7 +4507,7 @@
   },
   {
     "id": "briefing-2026-08-29",
-    "date": "2026-08-29T06:00:00.000Z",
+    "date": "2026-08-29",
     "items": [
       {
         "company": "NVIDIA",
@@ -4573,7 +4573,7 @@
   },
   {
     "id": "briefing-2026-09-03",
-    "date": "2026-09-03T06:00:00.000Z",
+    "date": "2026-09-03",
     "items": [
       {
         "company": "NVIDIA",
@@ -4627,7 +4627,7 @@
   },
   {
     "id": "briefing-2026-09-04",
-    "date": "2026-09-04T06:00:00.000Z",
+    "date": "2026-09-04",
     "items": [
       {
         "company": "NVIDIA",
@@ -4675,7 +4675,7 @@
   },
   {
     "id": "briefing-2026-09-05",
-    "date": "2026-09-05T06:00:00.000Z",
+    "date": "2026-09-05",
     "items": [
       {
         "company": "NVIDIA",
@@ -4735,7 +4735,7 @@
   },
   {
     "id": "briefing-2026-09-08",
-    "date": "2026-09-08T06:00:00.000Z",
+    "date": "2026-09-08",
     "items": [
       {
         "company": "NVIDIA",
@@ -4784,6 +4784,66 @@
         "headline": "No major news today",
         "summary": "No significant Databricks news found in the past 24 hours.",
         "sourceUrl": ""
+      }
+    ]
+  },
+  {
+    "id": "briefing-2026-09-09",
+    "date": "2026-09-09",
+    "items": [
+      {
+        "company": "OpenAI",
+        "headline": "GPT-6 Astra rolls out broadly — Brockman declares 'AGI era'",
+        "summary": "OpenAI began its controlled release of GPT-6 Astra on Sep 3 and is now expanding access to all ChatGPT Plus, Pro, Business, and Enterprise users via the API, Azure, and AWS Bedrock. Co-founder Greg Brockman declared 'Welcome to the AGI era,' calling Astra the most intelligent and aligned model OpenAI has built — capable of end-to-end professional work at unmatched speed. CEO Sam Altman acknowledged the rollout has been 'messy' as enterprise demand outpaces supply; full model family drops at DevDay on September 29.",
+        "sourceUrl": "https://www.csoonline.com/article/4219249/sam-altman-calls-gpt-6-astra-rollout-messy-as-enterprise-users-wait-for-access.html"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "NVIDIA-backed Firmus signs OpenAI as anchor customer for Malaysia data centers",
+        "summary": "Australia's Firmus (backed by NVIDIA) signed a multi-year deal with OpenAI to supply compute from two Malaysian data centers, making OpenAI its anchor customer and pushing Firmus's total contracted capacity past 900 megawatts. The deal underscores OpenAI's aggressive global infrastructure buildout to support GPT-6 Astra demand.",
+        "sourceUrl": "https://www.reuters.com/world/asia-pacific/nvidia-backed-firmus-signs-deal-with-openai-malaysia-data-centre-capacity-2026-09-08/"
+      },
+      {
+        "company": "NVIDIA",
+        "headline": "Jensen Huang declares 'AGI has arrived,' touts $96.2B quarterly revenue and 400K GPUs incoming",
+        "summary": "NVIDIA CEO Jensen Huang posted on X (Sep 6): 'AGI has arrived. Congratulations @OpenAI team,' crediting GPT-6 Astra — trained on NVIDIA chips. He also announced 400,000 more GPUs coming online imminently. Context: NVIDIA's latest quarter delivered $96.2B in revenue (data center alone: $89B), more than doubling year-over-year, cementing its position as the backbone of the AI industry. AI researchers pushed back, arguing Astra doesn't meet standard AGI definitions.",
+        "sourceUrl": "https://www.businessinsider.com/nvidia-jensen-huang-agi-openai-astra-ai-2026-9"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Walks away from $6B Decart acquisition; IPO now targeting Q4 2026",
+        "summary": "Anthropic has ended talks to acquire AI startup Decart AI (~$6B deal) after completing due diligence, Bloomberg reports. The company is instead focused on an IPO targeting Q4 2026 (possibly October), aiming to raise as much as or more than SpaceX's record. At a $965B valuation, Anthropic would rank among the most valuable tech companies at IPO. Anthropic rarely makes large acquisitions, preferring to invest in compute ahead of the listing.",
+        "sourceUrl": "https://www.bloomberg.com/news/articles/2026-09-08/anthropic-said-to-walk-away-from-6-billion-decart-acquisition"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Claude Fable 5.1 released — takes on GPT-6 Astra in coding and reasoning",
+        "summary": "Anthropic released Claude Fable 5.1, its latest flagship model built for advanced coding and knowledge work. Early benchmarks and head-to-head tests show Fable 5.1 competitive with — but trailing — GPT-6 Astra on most tasks. The two models are now defining the frontier, with enterprise buyers actively comparing them across coding, long-context, and agentic use cases.",
+        "sourceUrl": "https://www.instagram.com/p/Dc-pCwjmY6W/"
+      },
+      {
+        "company": "Mistral",
+        "headline": "Raises €3B at $24B valuation — Europe's largest-ever private tech equity round",
+        "summary": "Mistral AI closed a €3 billion ($3.5B) funding round at a €21B (~$24B) valuation — the largest equity round ever raised by a privately owned European tech company. The round was co-led by PSG Equity, Samsung Electronics (first-time investor), and the EU-backed Scaleup Europe Fund. Funds will be used for frontier model research and inference infrastructure. Mistral is on track for $1B ARR by year-end, with growing traction in Asia and North America. An IPO is 'always an option' but no active discussions underway.",
+        "sourceUrl": "https://www.aol.com/articles/french-ai-company-mistral-hits-050155000.html"
+      },
+      {
+        "company": "Snowflake",
+        "headline": "Stock surges 17%+ on earnings beat; $1B Observe acquisition and FY26 guidance raised to $4.365B",
+        "summary": "Snowflake shares jumped over 17% after the company reported stronger-than-expected results, with AI demand cited as a key growth driver. The company also completed its ~$1B acquisition of Observe (announced in its Sep 2 earnings release) and raised its FY26 revenue forecast to $4.365B. The Observe deal bolsters Snowflake's observability and analytics capabilities, adding to its AI Data Cloud platform.",
+        "sourceUrl": "https://www.facebook.com/miamiherald/posts/snowflake-stock-explodes-17-as-ai-fears-suddenly-flip/1541729327992692/"
+      },
+      {
+        "company": "Palantir",
+        "headline": "Expanded PwC alliance triggers 7.7% stock jump; PLTR surged 51% in August",
+        "summary": "Palantir's deepened strategic partnership with PwC drove a 7.7% stock jump on September 3, extending a historic run: PLTR surged 51% in August — the largest monthly gain of any major tech stock — following Q2 earnings with revenue of $828M. Shares have since pulled back slightly to ~$174. The PwC alliance expands enterprise AI deployment at scale across PwC's global client base.",
+        "sourceUrl": "https://finance.yahoo.com/markets/stocks/articles/palantir-stock-leads-august-rally-215855985.html"
+      },
+      {
+        "company": "Databricks",
+        "headline": "$190B valuation confirmed as annualized revenue crosses $7B with 80%+ YoY growth",
+        "summary": "Deep-dive analysis confirms Databricks' August $5B funding round at a $190B valuation, with annualized revenue crossing $7B and growing over 80% year-over-year. The company's Data + AI Summit 2026 key takeaways were also widely circulated this week, highlighting Lakebase and agentic AI capabilities as the next platform bets. An IPO remains on the horizon as revenue milestones accelerate.",
+        "sourceUrl": "https://valueaddvc.com/blog/databricks-190b-data-and-ai-lakehouse-platform-company-deep-dive"
       }
     ]
   }
