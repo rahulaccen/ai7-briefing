@@ -4846,5 +4846,71 @@
         "sourceUrl": "https://valueaddvc.com/blog/databricks-190b-data-and-ai-lakehouse-platform-company-deep-dive"
       }
     ]
+  },
+  {
+    "id": "briefing-2026-09-10",
+    "date": "2026-09-10",
+    "items": [
+      {
+        "company": "NVIDIA",
+        "headline": "Q2 FY2027 Earnings Beat — Revenue $96B (+106% YoY); Vera Rubin in Full Production",
+        "summary": "NVIDIA reported Q2 FY2027 revenue of $96B (+106% YoY) and profit of $59B (+126% YoY), with data center revenue of $89B. Vera Rubin — the next-generation GPU platform — is now in full production and expected to represent ~20% of data center revenue in Q3. CEO Jensen Huang presents at Goldman Sachs Communacopia + Technology Conference today (Sept 10) to provide further guidance on the Rubin ramp and entry into the standalone CPU market.",
+        "sourceUrl": "https://www.fool.com/investing/2026/09/08/prediction-sept-10-will-be-a-big-day-for-nvidia-shareholders-here-s-what-to-watch/"
+      },
+      {
+        "company": "NVIDIA",
+        "headline": "NVIDIA Announces CUDA Rust — Native GPU Kernel Programming in Rust",
+        "summary": "NVIDIA launched CUDA Rust on September 8, introducing two programming tracks — cuda-oxide (for SIMT GPU programming) and cutile-rs (tile-based, compile-time safe kernels). The move gives the Rust ecosystem first-class GPU kernel support and signals NVIDIA's commitment to expanding developer tooling beyond C++ and Python into 2027 and beyond.",
+        "sourceUrl": "https://www.marktechpost.com/2026/09/08/nvidia-announces-cuda-rust-with-cuda-oxide-simt-and-cutile-rs-tile-for-compile-time-safe-gpu-kernels/"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "OpenAI Launches GPT-6 Astra — New Flagship Model with $10/$50 Pricing on ChatGPT, Azure, and AWS",
+        "summary": "OpenAI launched GPT-6 Astra on September 3 as its most capable and aligned model to date, excelling at computer use, coding, cybersecurity, and scientific research. The model is rolling out to ChatGPT Plus/Pro/Business/Enterprise users and via the API, Microsoft Azure, and AWS Bedrock. Pricing: $10/M input, $50/M output tokens. Jensen Huang declared 'the AGI era has arrived' in response.",
+        "sourceUrl": "https://openai.com/index/gpt-6-astra/"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "ChatGPT Images 2.5 Launches — Two New API Models for Creative Work",
+        "summary": "OpenAI launched ChatGPT Images 2.5 on September 8, rolling it out to all ChatGPT and Codex users. Two API variants: GPT-Image-2.5 Flare (speed + quality) and GPT-Image-2.5 Sunburst (precision for detailed creative work). The update brings improved quality, editing, and speed improvements over prior image models.",
+        "sourceUrl": "https://community.openai.com/t/introducing-chatgpt-images-2-5/1395897"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Anthropic Launches Claude Fable 5.1 and Mythos 5.1 — 25-45% Cost Reduction, New Privacy Architecture",
+        "summary": "Anthropic released Claude Fable 5.1 and Claude Mythos 5.1 — its most advanced models for coding and knowledge work. Fable 5.1 is 25% cheaper for typical workloads and up to 45% cheaper for agentic work (via reduced cache read pricing). New Enterprise Frontier Safeguards (EFS) keep data on customer-controlled cloud infrastructure rather than Anthropic's, effectively delivering zero-data-retention privacy. Mythos 5.1 is restricted to trusted access programs for cybersecurity and life sciences.",
+        "sourceUrl": "https://www.anthropic.com/claude-fable-and-mythos-5-1"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Anthropic IPO Shifts to Mid-October; Expected $2T Valuation Could Be 'Heavily Oversubscribed'",
+        "summary": "Reuters reports Anthropic has pushed its IPO timeline to mid-October. An IPO adviser projected the offering could be 'heavily oversubscribed' with a valuation approaching $2 trillion — up from its last private valuation of ~$965B following May's $65B Series H. The IPO would be Wall Street's marquee event this fall.",
+        "sourceUrl": "https://finance.yahoo.com/markets/stocks/articles/exclusive-anthropic-ipo-could-heavily-162238397.html"
+      },
+      {
+        "company": "Mistral",
+        "headline": "Mistral Raises EUR 3 Billion in Record Funding Round at EUR 21B+ Valuation — Sovereign AI Push",
+        "summary": "French AI startup Mistral closed a EUR 3 billion funding round on September 8 — the largest-ever equity raise by a French AI company — valuing it at over EUR 21 billion. The funds will fuel Mistral's sovereign AI strategy, enabling European enterprises and governments to run AI on infrastructure independent of US tech giants.",
+        "sourceUrl": "https://www.reutersconnect.com/item/photo-illustrations-mistral-ai-raises-3-billion-in-record-funding-round/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMU5VUlBITzAwMEhFRVZSUw"
+      },
+      {
+        "company": "Snowflake",
+        "headline": "Snowflake Q2 FY2027 — Revenue $1.55B (+35%), Raises Full-Year Guidance; AI Agents Drive Consumption",
+        "summary": "Snowflake beat Q2 FY2027 estimates: revenue $1.55B (+35% YoY, above $1.49B consensus), product revenue $1.49B (+37%), non-GAAP EPS $0.62 (vs $0.35 a year ago). CoCo (AI coding assistant) reached 9,100+ accounts; CoWork (agentic AI) expanded to 5,800. The company raised FY2027 product revenue guidance to $6.07B and operating margin outlook to 14.5%. CEO Sridhar Ramaswamy: 'The Agentic Enterprise runs on Snowflake.'",
+        "sourceUrl": "https://futurumgroup.com/insights/snowflake-q2-fy-2027-coco-and-cowork-expand-ai-consumption/"
+      },
+      {
+        "company": "Palantir",
+        "headline": "Palantir Names Nebius Preferred Sovereign AI Partner — NBIS Surges 6-10%, PLTR Slips 2%",
+        "summary": "Palantir named Nebius as its preferred sovereign AI infrastructure partner, plugging Nebius's GPU cloud ($40B+ in customer commitments, 5 GW of power) directly into Palantir's AIP software stack. Enterprise clients can now fine-tune open models on proprietary data while keeping it sovereign. Markets rewarded the compute side — NBIS up 5-10% — while PLTR slipped ~2% on valuation concerns and an Army contract pullback.",
+        "sourceUrl": "https://247wallst.com/investing/2026/09/08/nebius-rises-6-as-palantir-names-it-preferred-sovereign-ai-partner-palantir-stock-slips/"
+      },
+      {
+        "company": "Databricks",
+        "headline": "Databricks Publishes Lakebase + Temporal Blueprint for Durable AI Agents; Lakebase Hackathon Announced",
+        "summary": "Databricks published a technical blueprint on September 9 showing how to build durable, long-running AI agents using Temporal for workflow orchestration and Lakebase for persistent, transactional state storage. The pattern addresses a key enterprise challenge: AI agents that survive failures, refreshed credentials, and extended multi-step tasks. Databricks also announced a Lakebase Hackathon on September 23 (virtual) for developers to build on the platform.",
+        "sourceUrl": "https://www.databricks.com/blog/build-durable-agents-temporal-and-lakebase"
+      }
+    ]
   }
 ]
