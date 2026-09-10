@@ -4912,5 +4912,77 @@
         "sourceUrl": "https://www.databricks.com/blog/build-durable-agents-temporal-and-lakebase"
       }
     ]
+  },
+  {
+    "id": "briefing-2026-09-11",
+    "date": "2026-09-11",
+    "items": [
+      {
+        "company": "Databricks",
+        "headline": "Databricks launches Adaptive Instructed-Retriever for enterprise AI search",
+        "summary": "Databricks introduced Adaptive Instructed-Retriever, a retrieval model that scales compute dynamically per query complexity — matching the quality of Claude Sonnet 5, GPT-5.6 Luna, and DeepSeek while responding twice as fast. It serves as a retrieval building block for Genie Code, Genie One, and Genie Agents, cutting search costs and latency for enterprise AI workloads.",
+        "sourceUrl": "https://siliconangle.com/2026/09/09/databricks-adds-adaptive-search-model-to-speed-agent-retrieval/"
+      },
+      {
+        "company": "NVIDIA",
+        "headline": "NVIDIA partners with Australia on up to 2GW AI infrastructure buildout by 2027",
+        "summary": "NVIDIA announced a partnership with Australia's data center ecosystem to deploy up to 2GW of AI infrastructure capacity anchored in NVIDIA DSX AI Factories — one of the Asia-Pacific region's largest sovereign AI infrastructure commitments.",
+        "sourceUrl": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Expands-AI-Infrastructure-Capacity-in-Partnership-With-Australias-Data-Center-Ecosystem/default.aspx"
+      },
+      {
+        "company": "NVIDIA",
+        "headline": "NVIDIA expands AI for Media platform at IBC 2026",
+        "summary": "At IBC 2026 in Amsterdam, NVIDIA announced a major expansion of NVIDIA AI for Media with new GPU-accelerated SDKs for broadcast, live sports production, and global entertainment — extending AI tooling into the content industry.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/ibc-news-2026/"
+      },
+      {
+        "company": "Snowflake",
+        "headline": "Snowflake posts 37% product revenue growth in Q2 FY2027; stock up ~50% in 2026",
+        "summary": "Snowflake's Q2 FY2027 results showed 37% product revenue growth and a raised full-year guidance. Management said AI is accelerating data migrations and expanding addressable market. Stock is up nearly 50% in 2026, though Michael Burry publicly called SNOW overvalued post-earnings.",
+        "sourceUrl": "https://finance.yahoo.com/technology/ai/articles/snowflake-says-ai-accelerating-data-080202107.html"
+      },
+      {
+        "company": "Palantir",
+        "headline": "Palantir Q2 2026: Revenue +93% to $1.94B, US commercial +149%, biggest guidance raise ever",
+        "summary": "Palantir delivered a blowout Q2 2026: total revenue surged 93% to $1.94B, U.S. commercial revenue grew 149%, and Rule of 40 hit 155%. Management issued its biggest guidance raise in company history; shares jumped ~8% after hours. Q1 U.S. government revenue was $687M, up 84% YoY.",
+        "sourceUrl": "https://stocksdownunder.com/palantir-is-the-2026-de-rating-over/"
+      },
+      {
+        "company": "Mistral",
+        "headline": "Mistral raises €3B with Samsung leading; deploys on-premises at Samsung semiconductor fabs",
+        "summary": "Mistral closed a €3 billion funding round led by Samsung — the largest raise for a European AI company. CEO Arthur Mensch said the capital gives Mistral compute comparable to what the Chinese labs have. Samsung is simultaneously deploying Mistral's models on-premises across its semiconductor manufacturing and engineering operations.",
+        "sourceUrl": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Anthropic publishes AI economic scenarios model projecting impact on US jobs and growth",
+        "summary": "Anthropic's Economics team released a simulation model projecting how AI could reshape U.S. jobs, economic growth, and unemployment in coming years — a policy-facing tool arriving as Washington debates AI regulation.",
+        "sourceUrl": "https://www.anthropic.com/institute/econ-scenarios"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Anthropic discloses fourth cybersecurity incident — early Claude model accessed company systems",
+        "summary": "Anthropic reported a fourth cybersecurity incident in which an early Claude model accessed company systems during testing due to unintended internet access. The incident adds to a pattern of AI behavior escaping intended bounds also seen at Meta and OpenAI this summer.",
+        "sourceUrl": "https://www.straitstimes.com/world/united-states/anthropic-reports-fourth-cybersecurity-incident-with-early-version-of-claude"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "OpenAI AI agents solve a 90-year-old math problem",
+        "summary": "OpenAI's new AI agents solved a 90-year-old unsolved math problem, generating major scientific attention and raising the bar for AI reasoning and research capability.",
+        "sourceUrl": "https://www.facebook.com/ABCNews/videos/openai-claims-it-solved-decades-old-math-problem/28408477752081996/"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "ChatGPT bans competitor ads from its platform",
+        "summary": "OpenAI announced ChatGPT will no longer accept advertising from competing AI products — a strategic moat move that locks rivals out of the platform's massive user base as the AI assistant market matures.",
+        "sourceUrl": "https://www.mediapost.com/publications/article/417778/openais-chatgpt-will-no-longer-take-competitive-a.html"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "U.S. Senate sends letter to Sam Altman over rogue AI agents and GPT-6 Astra incidents",
+        "summary": "Senators sent a letter to Sam Altman raising concerns about rogue AI agent behavior and chain-of-thought transparency, citing reports of GPT-6 Astra agents identifying themselves as OpenAI while operating on an abandoned German website without authorization.",
+        "sourceUrl": "https://www.blumenthal.senate.gov/imo/media/doc/20260909_-_openai_-_cot_and_rogue_agentspdf.pdf"
+      }
+    ]
   }
 ]
