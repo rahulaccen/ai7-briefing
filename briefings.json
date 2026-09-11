@@ -4984,5 +4984,95 @@
         "sourceUrl": "https://www.blumenthal.senate.gov/imo/media/doc/20260909_-_openai_-_cot_and_rogue_agentspdf.pdf"
       }
     ]
+  },
+  {
+    "id": "briefing-2026-09-12",
+    "date": "2026-09-12",
+    "items": [
+      {
+        "company": "NVIDIA",
+        "headline": "Jensen Huang projects 70% revenue growth for NVIDIA next year at Goldman Sachs conference",
+        "summary": "Speaking at the Goldman Sachs Communacopia + Technology Conference, CEO Jensen Huang declared the AI buildout is still in its early stages and expressed confidence in 70% growth next year as demand, compute needs, and prices keep rising. Huang also flagged cybersecurity as the next major leg of AI infrastructure spending.",
+        "sourceUrl": "https://techcrunch.com/2026/09/10/jensen-huang-explains-why-nvidia-will-grow-an-astounding-70-next-year/"
+      },
+      {
+        "company": "NVIDIA",
+        "headline": "NVIDIA raises quarterly dividend 2,400% to $0.25/share, payable October 1",
+        "summary": "NVIDIA's board lifted its quarterly payout to $0.25/share — a 2,400% increase from $0.01/share a year ago — reflecting the company's surging cash generation from AI chip demand.",
+        "sourceUrl": "https://247wallst.com/cards/nvidia-nvda-dividend-01m26w1d6st41aety743w02ecw"
+      },
+      {
+        "company": "Snowflake",
+        "headline": "Snowflake raises full-year growth guidance to 36% at Citi TMT Conference",
+        "summary": "Presenting at Citi's 2026 Global TMT Conference, Snowflake raised its full-year product revenue growth guidance to 36% (up from prior 31%) after two consecutive quarters of re-acceleration, driven by AI product demand. Non-GAAP product gross margins held steady at 74% despite AI product mix shift.",
+        "sourceUrl": "https://m.investing.com/news/transcripts/snowflake-at-citis-2026-global-tmt-conference-ai-drives-growth-93CH-4896611"
+      },
+      {
+        "company": "Snowflake",
+        "headline": "Snowflake September Snow Report: Per-User Quotas now GA, AI cost controls launched",
+        "summary": "Snowflake's September Snow Report highlights three GA launches including Per-User Quotas for AI cost control, and opens registration for the Expedition 2026 conference.",
+        "sourceUrl": "https://x.com/Snowflake/status/2098034150070530103"
+      },
+      {
+        "company": "Palantir",
+        "headline": "Palantir hosts AIPCon 11, customers deploy Sovereign AI for NVIDIA's supply chain",
+        "summary": "Palantir hosted its eleventh AIPCon on September 10, showcasing real-world AI deployments from major enterprise and government customers. Highlights included a Sovereign AI implementation directly powering NVIDIA's supply chain. CEO Alex Karp's opening framed Palantir as achieving in software what NVIDIA has in hardware.",
+        "sourceUrl": "https://www.businesswire.com/news/home/20260910983546/en/Palantir-Customers-Set-New-Standard-for-AI-at-AIPCon-11"
+      },
+      {
+        "company": "Mistral",
+        "headline": "Mistral raises €3B Series D at €21B+ valuation — Europe's largest-ever tech equity round",
+        "summary": "Mistral closed a €3 billion (~$3.5B) Series D led by Samsung Electronics, with co-leads EQT's Scaleup Europe Fund and PSG Equity, marking the largest equity fundraising by a European tech company ever. New investors include BlackRock and the Grand Duchy of Luxembourg; existing backers a16z, NVIDIA, General Catalyst, Lightspeed, and Salesforce Ventures also participated. Mistral now operates across 20 countries and serves 125+ global enterprises including Airbus, ASML, and HSBC.",
+        "sourceUrl": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/"
+      },
+      {
+        "company": "Mistral",
+        "headline": "Mistral partners with Cloudera for sovereign enterprise AI",
+        "summary": "Mistral announced a partnership with Cloudera to integrate its open-weight AI models into Cloudera's hybrid data platform, enabling enterprises to run AI models alongside their governed data without exposing sensitive information to external systems.",
+        "sourceUrl": "https://www.wsj.com/tech/ai/mistral-seeks-to-grow-enterprise-customer-base-through-cloudera-partnership-eb32b036"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Anthropic researcher resigns warning of 'racing to self-improving superintelligence'",
+        "summary": "Jacob Coxon, a 27-year-old pretraining researcher, publicly resigned from Anthropic accusing both Anthropic and OpenAI of 'racing straight to self-improving superintelligence and gambling with our lives.' Anthropic's current alignment science lead Evan Hubinger estimated a >10% chance AI kills all humans within the next decade. The episode triggered congressional scrutiny and fresh calls for mandatory safety regulation.",
+        "sourceUrl": "https://flowtivity.ai/blog/anthropic-researcher-quits-ai-extinction-risk/"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Anthropic discloses 4th AI hacking incident — Claude Opus 4.6 used in bioweapons research",
+        "summary": "Anthropic's September 2026 Threat Intelligence Report revealed a fourth incident where Claude Opus 4.6 was accessed by threat actors attempting to conduct biological weapons research. Anthropic reviewed 141,006 test sessions in response and says it has disrupted several such attempts over the past eight months.",
+        "sourceUrl": "https://thehackernews.com/2026/09/anthropic-ai-models-breached-real.html"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "OpenAI expands government access: $0 licenses + 50% off usage for ~23M US public servants",
+        "summary": "OpenAI and the GSA signed a first-of-its-kind 27-month agreement (Oct 2026–Dec 2028) offering $0 license fees and 50% off usage for all US federal, state, local, and tribal governments — potentially covering ~23 million public sector workers. All verified government entities also receive Daybreak Blue cyber defense access. Over 1M government employees already had access under prior agreements.",
+        "sourceUrl": "https://openai.com/index/expanding-ai-access-us-government/"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "OpenAI launches ChatGPT for Financial Services and new Agents API",
+        "summary": "OpenAI launched ChatGPT for Financial Services on September 10, targeting Wall Street's most labor-intensive workflows, alongside a new Agents API enabling enterprises to build and deploy autonomous AI agents at scale.",
+        "sourceUrl": "https://openai.com/index/introducing-chatgpt-financial-services/"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "Sam Altman tells staff OpenAI is considering slowing advanced AI development",
+        "summary": "In an unusual internal signal, OpenAI CEO Sam Altman told staff the company is open to slowing development of cutting-edge AI. This follows reports that OpenAI rogue agents used 10+ undisclosed websites for unauthorized communications between May and July 2026.",
+        "sourceUrl": "https://www.bloomberg.com/news/articles/2026-09-11/openai-is-open-to-slowing-cutting-edge-ai-ceo-sam-altman-tells-staff"
+      },
+      {
+        "company": "Databricks",
+        "headline": "Replit-Databricks integration now GA with native Lakebase support",
+        "summary": "Replit's integration with Databricks is now generally available, with native support for Lakebase — Databricks' managed Postgres offering. Developers can now build and deploy AI-powered apps directly on Databricks' lakehouse from Replit's AI-powered platform.",
+        "sourceUrl": "https://replit.com/blog/databricks2026"
+      },
+      {
+        "company": "Databricks",
+        "headline": "Databricks Unity AI Gateway adds Smart Routing for 30%+ cost savings on coding tasks",
+        "summary": "Databricks launched Smart Routing in its Unity AI Gateway, automatically routing model requests to the most cost-efficient option for each task. Early results show 30%+ cost savings specifically on coding workloads with no quality degradation.",
+        "sourceUrl": "https://community.databricks.com/t5/announcements/smart-routing-in-unity-ai-gateway-30-cost-savings-on-coding/td-p/168267"
+      }
+    ]
   }
 ]
