@@ -5188,5 +5188,89 @@
         "sourceUrl": "https://ca.finance.yahoo.com/news/math-behind-databricks-190b-price-084100123.html"
       }
     ]
+  },
+  {
+    "id": "briefing-2026-09-16",
+    "date": "2026-09-16T06:00:00.000Z",
+    "items": [
+      {
+        "company": "Databricks",
+        "headline": "Databricks to invest $350M+ in Singapore",
+        "summary": "Databricks announced plans to invest more than $350 million in Singapore as enterprise AI demand accelerates — a major bet on Asia-Pacific infrastructure expansion and regional market presence.",
+        "sourceUrl": "https://x.com/FirstSquawk/status/2100074751368847812"
+      },
+      {
+        "company": "Databricks",
+        "headline": "Genie AI Analytics drives 3x data usage, 85% adoption",
+        "summary": "Databricks published an internal case study showing its Genie AI analytics assistant tripled data usage among marketers and reached 85% adoption — a concrete proof point for its self-service analytics platform pitch.",
+        "sourceUrl": "https://www.databricks.com/blog/databricks-marketers-use-data-3x-genie-ai-analytics-assistant"
+      },
+      {
+        "company": "NVIDIA",
+        "headline": "NVIDIA and Salesforce launch Koa — first CRM reasoning model at Dreamforce 2026",
+        "summary": "Jensen Huang joined Marc Benioff at Dreamforce 2026 to announce Koa, Salesforce's first CRM reasoning model built on NVIDIA Nemotron 3 Super. Huang declared 'Now we can know everything and do anything,' cementing NVIDIA as the AI infrastructure backbone for enterprise CRM.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/jensen-huang-dreamforce/"
+      },
+      {
+        "company": "NVIDIA",
+        "headline": "NVIDIA and Anthropic CEOs publicly split on AI safety pace at Dreamforce",
+        "summary": "At Dreamforce, Jensen Huang pushed for AI acceleration arguing speed and safety are not mutually exclusive, directly clashing with Anthropic's Dario Amodei who called for slowing frontier AI development — a headline-grabbing split shaping regulatory discourse.",
+        "sourceUrl": "https://www.cnbc.com/2026/09/15/nvidia-and-anthropic-ceos-diverge-on-ai-safety-at-dreamforce.html"
+      },
+      {
+        "company": "Snowflake",
+        "headline": "September Snow Report: new features GA; stock up ~50% YTD despite heavy shorting",
+        "summary": "Snowflake released its September Snow Report detailing new GA features. Despite being one of the most heavily shorted stocks, SNOW is up nearly 50% in 2026. Shares dipped 2.8% today as investors assess whether AI-driven momentum is sustainable.",
+        "sourceUrl": "https://www.linkedin.com/posts/timothyspann_catch-up-on-the-latest-snowflake-news-in-activity-7505691751215570944-6er8"
+      },
+      {
+        "company": "Palantir",
+        "headline": "UBS raises Palantir price target to $250, citing AI sovereignty momentum",
+        "summary": "UBS lifted its Palantir price target to $250 (stock near $173) citing strong AI sovereignty demand — reinforcing Palantir's positioning as the premier government and enterprise AI platform. Institutional sentiment is mixed: Burry closed short-dated puts while ARK trimmed its stake.",
+        "sourceUrl": "https://www.ad-hoc-news.de/boerse/news/corporate-news/palantir-stock-gains-as-ubs-lifts-price-target-after-ai-sovereignty-push/70105617"
+      },
+      {
+        "company": "Palantir",
+        "headline": "Congressional Hispanic Caucus Institute severs ties with Palantir",
+        "summary": "CHCI ended its relationship with Palantir Technologies and returned its donation — a reputational risk signal as Palantir faces mounting scrutiny over its government surveillance and immigration enforcement contracts.",
+        "sourceUrl": "https://chci.org/chci-statement-regarding-palantir-relationship/"
+      },
+      {
+        "company": "Mistral",
+        "headline": "Mistral AI raises €3B Series D, valuation surpasses €21B",
+        "summary": "Mistral AI closed a €3 billion Series D funding round, pushing its valuation above €21 billion. The capital funds Mistral's full-stack sovereign AI strategy — open-weight models, infrastructure, and compute — positioning it as the European alternative to US AI vendor lock-in.",
+        "sourceUrl": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/"
+      },
+      {
+        "company": "Mistral",
+        "headline": "TotalEnergies and Mistral AI launch joint oil & gas exploration AI program",
+        "summary": "TotalEnergies and Mistral AI announced a joint AI program for oil and gas exploration, extending Mistral's reach into the energy sector and demonstrating serious industrial AI ambitions beyond tech.",
+        "sourceUrl": "https://www.worldoil.com/news/2026/9/15/totalenergies-mistral-launch-ai-program-for-oil-and-gas-exploration/"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Dario Amodei at Dreamforce: calls for collective AI slowdown; OpenAI & Google join safety talks",
+        "summary": "Anthropic CEO Dario Amodei renewed his call for slowing frontier AI at Dreamforce 2026. Following his Saturday essay, OpenAI, Anthropic, and Google DeepMind confirmed they have been in talks on AI safety for weeks — a rare moment of cross-competitor alignment on existential risk.",
+        "sourceUrl": "https://techcrunch.com/2026/09/15/openai-anthropic-google-have-been-in-talks-on-ai-safety-for-weeks/"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Anthropic co-founder calls AI slowing a 'collective action problem'",
+        "summary": "Jack Clark, Anthropic co-founder, told NPR that slowing AI is a collective action problem — no single lab can unilaterally pause without ceding ground, signaling internal tension between Anthropic's safety-first messaging and its growth imperatives.",
+        "sourceUrl": "https://www.npr.org/2026/09/15/nx-s1-5968852/anthropic-jack-clark-ai-risks-safety"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "OpenAI backs FRONTIER Act for third-party AI safety audits; confirms safety talks with rivals",
+        "summary": "OpenAI's global policy chief Chris Lehane confirmed the company has been working with Anthropic and Google DeepMind on AI safety for weeks. OpenAI also endorsed the bipartisan FRONTIER Act requiring frontier labs to allow independent safety evaluators inside — a significant pivot toward regulatory acceptance.",
+        "sourceUrl": "https://www.reuters.com/technology/openai-is-working-with-anthropic-google-ai-safety-bloomberg-news-reports-2026-09-15/"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "OpenAI rules out 2026 IPO citing safety obligations",
+        "summary": "Sam Altman officially took the 2026 IPO off the table, citing AI safety obligations as the primary reason — a notable pivot as the company's commercial structure evolves and safety pressures mount post-Amodei essay.",
+        "sourceUrl": "https://finance.yahoo.com/technology/ai/articles/openai-rules-2026-ipo-citing-001350631.html"
+      }
+    ]
   }
 ]
