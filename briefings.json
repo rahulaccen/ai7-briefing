@@ -5428,5 +5428,77 @@
         "sourceUrl": "https://casrai.org/news/openai-rules-out-2026-ipo-safety"
       }
     ]
+  },
+  {
+    "id": "briefing-2026-09-22",
+    "date": "2026-09-22",
+    "items": [
+      {
+        "company": "NVIDIA",
+        "headline": "Jensen Huang doubles NVIDIA chip sales forecast to $1 trillion through 2027",
+        "summary": "Appearing on CBS Face the Nation, NVIDIA CEO Jensen Huang announced the company expects to sell roughly twice as many AI chips as previously projected, targeting $1 trillion in cumulative chip revenue through 2027. He simultaneously rejected AI doomsday predictions as irresponsible and pushed back against Congressional efforts to restrict chip exports to China.",
+        "sourceUrl": "https://finance.yahoo.com/markets/stocks/articles/jensen-huang-just-gave-nvidia-194727629.html"
+      },
+      {
+        "company": "NVIDIA",
+        "headline": "NVIDIA to localize AI supercomputer and chip manufacturing entirely in the US",
+        "summary": "NVIDIA announced plans to produce its AI supercomputers and chips domestically in the United States, a major supply chain shift aligned with national AI strategy goals and political pressure.",
+        "sourceUrl": "https://www.foxbusiness.com/technology/nvidias-jensen-huang-rejects-ai-doomsday-fears-2030-not-going-end-world"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Anthropic bans accounts attempting to use AI for biological weapons research",
+        "summary": "Anthropic disclosed it has banned multiple accounts attempting to use its AI models to assist in biological weapons research. The incidents come as CEO Dario Amodei published We Must Pace the Frontier, calling for slower AI development to prevent catastrophic misuse including bioterrorism.",
+        "sourceUrl": "https://news.harvard.edu/gazette/story/2026/09/one-effort-to-safeguard-humanity-ai-constitutions/"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Anthropic publishes safety framework with 3 metrics for monitoring frontier AI development",
+        "summary": "Anthropic released a framework outlining three measurable metrics for monitoring the safe development of frontier AI models, positioning itself as a leader on AI governance ahead of a wave of regulatory pressure and before OpenAI released its own proposal.",
+        "sourceUrl": "https://www.cnbc.com/2026/09/21/open-ai-alignment-rsi.html"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "OpenAI urges US government to lead global AI safety standards effort",
+        "summary": "OpenAI formally asked Washington to spearhead an international collaboration to establish global AI safety and security standards, positioning US leadership as the alternative to EU or Chinese-dominated governance frameworks.",
+        "sourceUrl": "https://www.wsj.com/tech/ai/openai-urges-u-s-government-to-create-global-ai-safety-standards-a8afba96"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "OpenAI DevDay on September 29 expected to debut enterprise-grade managed AI agents",
+        "summary": "OpenAI annual developer conference DevDay (Sept 29, San Francisco) is widely expected to launch a new managed agents service. CEO Sam Altman teased a big launch earlier this month. The move directly targets enterprise software incumbents.",
+        "sourceUrl": "https://www.forbes.com/sites/jonmarkman/2026/09/21/openai-plans-to-introduce-managed-agents-at-devday-2026/"
+      },
+      {
+        "company": "Palantir",
+        "headline": "Palantir secures $448M US Navy deal; Q2 revenue surges 93% YoY to $1.93B",
+        "summary": "Palantir secured a reported $448M Navy contract as Q2 2026 revenue hit $1.935 billion, up 93% year-over-year, the fastest growth in company history. Management raised 2026 full-year guidance to $8.15-$8.16 billion implying ~82% growth. Stock trading around $182.",
+        "sourceUrl": "https://www.youtube.com/watch?v=McMh7jj8mBw"
+      },
+      {
+        "company": "Palantir",
+        "headline": "European sovereignty concerns create headwinds for Palantir EU expansion",
+        "summary": "Thales CEO positioned his company Hexaforce system as a sovereign ITAR-free alternative to Palantir NATO-backed Maven Smart System, citing EU data sovereignty concerns. Wall Street simultaneously issued its highest-ever PLTR price target as EU access risks mount.",
+        "sourceUrl": "https://www.tikr.com/blog/wall-street-just-gave-palantir-its-highest-ever-price-target-right-when-europe-started-saying-no"
+      },
+      {
+        "company": "Snowflake",
+        "headline": "Snowflake Cortex AI integrated deeper into QAD|Redzone manufacturing platform",
+        "summary": "QAD|Redzone announced a deeper Snowflake Cortex AI integration for its ChampionAI agentic platform targeting frontline manufacturing gaps. Snowflake product revenue grew 37% to $1.49 billion with full-year guidance raised to $6.07 billion.",
+        "sourceUrl": "https://www.linkedin.com/pulse/what-qad-redzones-snowflake-move-tells-manufacturing-ai-mark-g6kpe"
+      },
+      {
+        "company": "Mistral",
+        "headline": "Mistral AI launches Vibe coding product; valuation exceeds 21 billion euros",
+        "summary": "Mistral AI launched Vibe (vibe.mistral.ai/code), a new coding-focused AI product, as the company valuation surpassed 21 billion euros following its September 8 funding round. Mistral is aggressively expanding its product surface area in the competitive AI developer tools market.",
+        "sourceUrl": "https://x.com/mistralvibe/status/2102056996849508449"
+      },
+      {
+        "company": "Databricks",
+        "headline": "Databricks launches Omnigent Beta managed agent layer across coding tools",
+        "summary": "Databricks introduced Omnigent Beta, a managed agent orchestration layer that lets one agent definition run uniformly across coding tools via a single control surface. Separately, GPT-6 Astra is now deployed to Databricks ~3500 engineers, reducing AI inference costs by 60% versus prior models.",
+        "sourceUrl": "https://superpowerdaily.com/topics/products"
+      }
+    ]
   }
 ]
