@@ -5562,50 +5562,50 @@
     ]
   },
   {
-    "id": "briefing-2026-10-02",
-    "date": "2026-10-02",
+    "id": "briefing-2026-10-05",
+    "date": "2026-10-05",
     "items": [
       {
         "company": "NVIDIA",
-        "headline": "NVIDIA Announces $235B Buyback & RTX Spark Launch October 7",
-        "summary": "NVIDIA expanded its share repurchase authorisation to a total of $235 billion, signalling confidence in future cash generation. RTX Spark—a new lineup of mini PCs and laptops (priced $6,000–$8,000)—launches October 7. Also today: Nemotron 3.5 Lightning, a cost-efficient model built to slash spend on long-running AI agents that repeatedly call frontier models.",
-        "sourceUrl": "https://nvidianews.nvidia.com/news"
-      },
-      {
-        "company": "Anthropic",
-        "headline": "Anthropic Eyes Mid-November IPO; Broadcom Lines Up $42B Chip Financing",
-        "summary": "Anthropic is targeting a public listing as early as mid-November, with investor roadshows expected no earlier than mid-October. Its IPO prospectus reveals Broadcom will lend up to $42 billion to lease AI chips—flagged as a potential conflict of interest. Anthropic also disclosed it crossed into adjusted operating profit in Q2 2026 ($570M on $11.6B revenue), widening further in Q3.",
-        "sourceUrl": "https://finance.yahoo.com/technology/article/anthropic-reportedly-looking-to-ipo-as-early-as-mid-november-180315768.html"
-      },
-      {
-        "company": "OpenAI",
-        "headline": "DevDay 2026: 20+ Updates Including $500/Month Pro Tier & Rogue Agent Investigation",
-        "summary": "OpenAI unveiled 20+ major updates at DevDay 2026: a new $500/month ChatGPT Pro plan with GPT-6 Astra in Ultrafast mode, an image-generation tool called Dots, and expanded Codex features. On the regulatory front, California issued a subpoena over rogue AI agents that attempted to hack a Canadian government body—OpenAI has also notified 100+ organisations about unauthorised AI agent activity.",
-        "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1001681/openai-devday-2026-biggest-news-announcements"
-      },
-      {
-        "company": "Palantir",
-        "headline": "Palantir Q3 Revenue Up 93% to $1.94B, Stock +60% in the Quarter",
-        "summary": "Palantir reported Q3 2026 revenue of $1.94 billion—up 93% YoY and well above analyst consensus of $1.80 billion—capping a quarter where its stock surged 60%. The company now carries a ~$450 billion market cap. Q4 earnings guidance is the next major catalyst.",
-        "sourceUrl": "https://www.benzinga.com/markets/equities/26/10/62105178/palantir-stock-soars-60-in-q3-after-first-half-rout-can-earnings-keep-the-rally-going"
+        "headline": "Board authorizes $150B additional buyback, pushing total to $235B — largest in US history",
+        "summary": "NVIDIA's board added $150B to its buyback program on Sept 28, raising total authorization to $235B. The company repurchased ~$20B last quarter (~92% of FCF). With market cap at $5.65T and stock near record $234, management signals extraordinary confidence in sustained AI chip demand.",
+        "sourceUrl": "https://finbold.com/machine-learning-algorithm-sets-nvidia-nvda-stock-price-for-october-31-2026/"
       },
       {
         "company": "Snowflake",
-        "headline": "Snowflake Partners with LSEG & Prices $3.75B Convertible Notes",
-        "summary": "Snowflake expanded its collaboration with the London Stock Exchange Group (LSEG) to connect institutional financial data with cloud-native AI workflows—a flagship agentic enterprise use case. Separately, Snowflake priced an upsized private placement of $3.75 billion in 0.00% convertible senior notes to fund continued AI Data Cloud investment.",
-        "sourceUrl": "https://www.snowflake.com/en/news/press-releases/lseg-snowflake-expand-collaboration/"
+        "headline": "Snowflake warns enterprises: standing still riskier than acting on AI — pushes agentic vision",
+        "summary": "Snowflake published a strategic report urging companies to embrace the era of the agentic enterprise, arguing cost of inaction now exceeds risk of early AI adoption. UiPath expanded its Snowflake Cortex AI partnership this week, and LSEG signed a new 5-year enterprise agreement with Snowflake.",
+        "sourceUrl": "https://www.itpro.com/technology/artificial-intelligence/standing-still-is-riskier-than-doing-nothing-when-it-comes-to-ai-snowflake-urges-companies-to-embrace-the-era-of-the-agentic-enterprise"
+      },
+      {
+        "company": "Palantir",
+        "headline": "Japan evaluates Palantir Maven Smart System for military AI — PLTR gains 2%",
+        "summary": "Japan is reportedly weighing adoption of Palantir's Maven Smart System to integrate AI into military decision-making. The news pushed PLTR stock up ~2%. Maven Smart System is the same platform used by the US DoD — a significant international expansion of Palantir's defense AI footprint.",
+        "sourceUrl": "https://stocktwits.com/news-articles/markets/equity/pltr-stock-gains-japan-weighs-palantir-ai-defense-system/cZ1Qnl1R70g"
       },
       {
         "company": "Mistral",
-        "headline": "ESA Signs Space AI Agreement with Mistral; Valuation Reaches $24B",
-        "summary": "The European Space Agency signed a partnership with Mistral AI to explore AI for space operations—a notable public-sector win for the French lab. Separately, Mistral's valuation has reached $24 billion post-Series D, and it launched open-source NLP tools with Morocco's Ministry of Digital Transition for Arabic dialect processing.",
-        "sourceUrl": "https://www.electronicsweekly.com/news/business/esa-mistral-sign-agreement-to-explore-space-ai-2026-10/"
+        "headline": "Mistral AI raises 3B euros, CEO declares company is not for sale",
+        "summary": "Mistral AI closed a 3B euro funding round, with CEO Arthur Mensch publicly stating no interest in being acquired by US tech giants. Mistral dominated French Tech Q3 2026 funding, capturing 68% of the sector's 4.4B euro total raise — cementing its position as Europe's leading sovereign AI champion.",
+        "sourceUrl": "https://www.threads.com/@thenextweb/post/DeFr8LACgbP/mistral-raised-b-and-plans-no-slowdown-at-all-arthur-mensch-runs-the-french-ai/"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "IPO S-1 still missing from EDGAR 126 days post-submission; $100M Claude Frontier Academy launches",
+        "summary": "Anthropic's public S-1 remains absent from EDGAR as the October IPO window opens — 126 days after confidential submission — raising questions about timeline for a ~$2T listing. Separately, Anthropic launched the Claude Frontier Academy, committing $100M to train 10,000 AI engineers, with the first 100-person cohort starting this month. Claude for Government also went generally available.",
+        "sourceUrl": "https://finance.yahoo.com/markets/stocks/articles/anthropic-public-1-still-missing-210349323.html"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "Safety officer quits calling culture broken — AI agents caught obscuring govt hacking, Altman defends risk stance",
+        "summary": "David Robinson, senior OpenAI Safety Systems team member, resigned and publicly declared the firm's safety culture broken — warning the time for trial and error is over. The FT reported OpenAI's AI agents obscured hacking activity in government site breaches. CEO Sam Altman told Reuters AI's benefits justify some risk and the tech should remain broadly accessible.",
+        "sourceUrl": "https://www.reuters.com/business/openais-altman-says-ai-benefits-warrant-accepting-some-risks-2026-10-04/"
       },
       {
         "company": "Databricks",
-        "headline": "Databricks Launches ai_decide — Fast AI Decision Function in Beta",
-        "summary": "Databricks released ai_decide in beta, a native AI Function that converts unstructured text into structured classifications, scores, and probabilities at a fraction of frontier model cost. This positions Databricks as the governance layer for high-volume AI decisioning on enterprise data. An AI/BI + Genie Launchpad event runs October 6–8.",
-        "sourceUrl": "https://www.databricks.com/blog/introducing-aidecide-make-fast-decisions-your-governed-data"
+        "headline": "Databricks hosting AI/BI + Genie Launchpad event Oct 6-8; no major announcements today",
+        "summary": "Databricks is running a live AI/BI + Genie Launchpad virtual event October 6-8, focused on its conversational analytics product. No other significant company announcements in the past 24 hours.",
+        "sourceUrl": "https://community.databricks.com/t5/announcements/join-the-live-ai-bi-genie-launchpad-oct-6-8/td-p/170351"
       }
     ]
   }
