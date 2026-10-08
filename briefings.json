@@ -5746,5 +5746,23 @@
         "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1005004/openai-math-release-github"
       }
     ]
+  },
+  {
+    "date": "2026-10-08",
+    "id": "briefing-2026-10-08",
+    "items": [
+      {
+        "company": "Anthropic",
+        "headline": "Anthropic launches Claude Haiku 5.5 at sharply lower cost",
+        "summary": "Anthropic introduced Haiku 5.5 for high-volume tasks including classification, summaries and live support; Reuters reports it costs 75% less than Haiku 4.5, with under-100k-token pricing of $0.10 per million input and $0.50 per million output tokens.",
+        "sourceUrl": "https://www.reuters.com/business/anthropic-launches-third-claude-55-model-expanding-ai-lineup-before-planned-ipo-2026-10-07/"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "GPT-6 rollout brings interactive interfaces to ChatGPT",
+        "summary": "OpenAI began a global rollout of GPT-6 with Intelligent UI, enabling interactive graphics, forms, charts and task-specific experiences in ChatGPT. The launch targets more than 1.2 billion weekly users; OpenAI says GPT-6 Instant starts web-search answers 44% sooner than GPT-5.6 Instant.",
+        "sourceUrl": "https://openai.com/index/gpt-6-for-everyone/"
+      }
+    ]
   }
 ]
