@@ -5764,5 +5764,41 @@
         "sourceUrl": "https://openai.com/index/gpt-6-for-everyone/"
       }
     ]
+  },
+  {
+    "id": "briefing-2026-10-09",
+    "date": "2026-10-09",
+    "items": [
+      {
+        "company": "Databricks",
+        "headline": "Workday data federation enters public beta",
+        "summary": "Databricks released a public beta connector that queries Workday HR and finance data without copying it. Unity Catalog governs access and lineage, while Databricks SQL and Genie analyze current Workday data alongside other enterprise datasets.",
+        "sourceUrl": "https://www.databricks.com/blog/announcing-workday-data-connect-federation-unity-catalog"
+      },
+      {
+        "company": "NVIDIA",
+        "headline": "NVIDIA commits $1 billion to U.S. science over five years",
+        "summary": "NVIDIA pledged commitments valued at $1 billion over five years for U.S. scientific AI and quantum computing, supporting universities and government-serving cloud providers. At the same Genesis Mission event, Anthropic committed $150 million over three years to provide Claude access and support across more than 15 federal agencies.",
+        "sourceUrl": "https://nvidianews.nvidia.com/news/nvidia-commits-1-billion-to-advance-us-science-over-the-next-five-years"
+      },
+      {
+        "company": "Palantir",
+        "headline": "Goldman upgrades Palantir to Buy with a $230 target",
+        "summary": "Goldman Sachs upgraded Palantir from Neutral to Buy with a $230 12-month target, citing sovereign AI demand and its customer-engineering model. Shares closed up 2.4% at $198.78; the target implies roughly 18% upside from Wednesday’s close, not a company forecast.",
+        "sourceUrl": "https://finance.yahoo.com/technology/article/palantir-stock-nears-all-time-high-after-goldman-sachs-upgrade-highlights-next-phase-of-growth-145244094.html"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Claude policy update adds safeguards for autonomous hardware",
+        "summary": "Anthropic’s updated Usage Policy takes effect November 12, adding operator oversight and safe-disconnection requirements for AI-controlled equipment that could cause injury. It also clarifies existing high-risk-use rules and prohibits sustained, purposeless abusive behavior toward its models.",
+        "sourceUrl": "https://www.anthropic.com/news/2026-usage-policy-update"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "Reported revenue run rate is near $50 billion, not $70 billion",
+        "summary": "Reuters reports OpenAI told investors September’s annualized revenue was almost $50 billion, about $20 billion below its earlier signal. The discrepancy largely reflects efforts to compare with Anthropic, which counts cloud-partner sales differently; this is a run-rate comparison, not evidence of a $20 billion fall in booked revenue.",
+        "sourceUrl": "https://www.reuters.com/business/openais-annualized-revenue-20-billion-less-than-previously-signaled-ft-reports-2026-10-08/"
+      }
+    ]
   }
 ]
