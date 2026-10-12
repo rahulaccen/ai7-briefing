@@ -5800,5 +5800,17 @@
         "sourceUrl": "https://www.reuters.com/business/openais-annualized-revenue-20-billion-less-than-previously-signaled-ft-reports-2026-10-08/"
       }
     ]
+  },
+  {
+    "id": "briefing-2026-10-12",
+    "date": "2026-10-12",
+    "items": [
+      {
+        "company": "OpenAI",
+        "headline": "US reportedly clears OpenAI and Anthropic to resume UK pre-release safety testing",
+        "summary": "The Trump administration reversed its request that OpenAI and Anthropic withhold unreleased models from Britain's AI Security Institute, Reuters reported, citing the Telegraph. The change permits renewed cross-border safety testing; neither company nor the White House immediately confirmed it to Reuters.",
+        "sourceUrl": "https://www.reuters.com/legal/litigation/us-reverses-course-britains-testing-ai-models-telegraph-says-2026-10-11/"
+      }
+    ]
   }
 ]
