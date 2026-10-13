@@ -5812,5 +5812,53 @@
         "sourceUrl": "https://www.reuters.com/legal/litigation/us-reverses-course-britains-testing-ai-models-telegraph-says-2026-10-11/"
       }
     ]
+  },
+  {
+    "id": "briefing-2026-10-13",
+    "date": "2026-10-13",
+    "items": [
+      {
+        "company": "NVIDIA",
+        "headline": "NVIDIA opens Vera Rubin infrastructure designs at OCP",
+        "summary": "NVIDIA contributed Vera Rubin rack and compute-tray designs to the Open Compute Project and released DSX infrastructure software. The MGX 1.2 architecture supports racks up to 250 kW, giving builders shared power, cooling and networking standards to accelerate AI-factory deployment.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/"
+      },
+      {
+        "company": "NVIDIA",
+        "headline": "Microsoft unveils Maia 300 to reduce reliance on NVIDIA",
+        "summary": "Microsoft unveiled Maia 300 and plans large-scale deployment in 2027, aiming to make its own chips the primary inference system for Microsoft products. It claims 40% more AI output per watt than leading GPU systems—a competitive threat to NVIDIA, which remains a major supplier.",
+        "sourceUrl": "https://www.geekwire.com/2026/microsoft-makes-biggest-bet-yet-on-its-own-silicon-unveils-new-ai-chip-to-reduce-reliance-on-nvidia/"
+      },
+      {
+        "company": "Snowflake",
+        "headline": "Dynatrace launches end-to-end Snowflake observability",
+        "summary": "Dynatrace made Snowflake Observability generally available, combining cost, performance, security, operations and data-quality monitoring. Automated telemetry and 14 prebuilt dashboards help teams control warehouse spend and diagnose data issues that can undermine analytics and AI applications.",
+        "sourceUrl": "https://www.dynatrace.com/news/blog/end-to-end-snowflake-observability-is-now-generally-available-in-dynatrace/"
+      },
+      {
+        "company": "Snowflake",
+        "headline": "G2 brings buyer-intelligence data into Snowflake",
+        "summary": "G2 joined Snowflake’s AI Data Cloud as a premier Data Partner, bringing buyer-intent signals, reviews and software taxonomy alongside customers’ CRM and usage data. Revenue teams can prioritize accounts, track competitors and measure sourced versus influenced pipeline without stitching together separate systems.",
+        "sourceUrl": "https://company.g2.com/news/g2-partners-with-snowflake?hsLang=en"
+      },
+      {
+        "company": "Palantir",
+        "headline": "Ondas forms Regna AI with Palantir for sovereign AI",
+        "summary": "Ondas announced Regna AI, an initially wholly owned company powered by Palantir, to build mission-specific models that run inside customer-controlled environments and on edge hardware. Ondas will be its first customer; Palantir supplies training infrastructure and engineering for defense and enterprise deployments.",
+        "sourceUrl": "https://www.ondas.com/post/ondas-announces-regna-ai-powered-by-palantir-to-advance-sovereign-ai"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Anthropic says new defenses cut distillation data theft by 90–99%",
+        "summary": "Anthropic says new safeguards reduced data harvested from Claude by unauthorized model-copying campaigns by 90–99%, with fewer than 0.1% false positives. The measures restrict access to protected reasoning and block proxy-based extraction, raising the cost of copying frontier capabilities; these are company-reported results.",
+        "sourceUrl": "https://www.anthropic.com/research/distillation-defenses"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "OpenAI reportedly explores reviving Sora through a filmmaking startup",
+        "summary": "OpenAI is discussing giving a filmmaking startup co-founded by Jeffrey Katzenberg, former Sora research lead Bill Peebles and ex-Dropbox CFO Sujay Jaswa deep access to Sora, according to The Information, as reported by PYMNTS. The talks could revive its video model through a partner; no deal or transfer of model weights is confirmed.",
+        "sourceUrl": "https://www.pymnts.com/news/artificial-intelligence/2026/openais-video-model-sora-could-get-a-second-act/"
+      }
+    ]
   }
 ]
