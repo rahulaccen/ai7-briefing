@@ -5860,5 +5860,53 @@
         "sourceUrl": "https://www.pymnts.com/news/artificial-intelligence/2026/openais-video-model-sora-could-get-a-second-act/"
       }
     ]
+  },
+  {
+    "id": "briefing-2026-10-14",
+    "date": "2026-10-14",
+    "items": [
+      {
+        "company": "NVIDIA",
+        "headline": "NVIDIA pledges $2 billion in European AI investments",
+        "summary": "Jensen Huang announced plans for $2 billion in European deals, adding to $8 billion NVIDIA invested in the region over the past year. New funding includes French startups Doctolib, Genesis AI, Pigment and Entalpic—expanding NVIDIA's role in Europe's AI ecosystem beyond chip sales.",
+        "sourceUrl": "https://www.bloomberg.com/news/articles/2026-10-13/nvidia-s-huang-plans-2-billion-in-europe-ai-deals-in-next-week"
+      },
+      {
+        "company": "Palantir",
+        "headline": "UK financial regulator reviews next steps after Palantir pilot ends",
+        "summary": "The UK's Financial Conduct Authority said it has completed its Palantir proof-of-concept and is considering options for future intelligence-technology contracts to tackle financial crime. The pilot's completion is not a follow-on contract award; the procurement decision remains open.",
+        "sourceUrl": "https://www.law360.com/articles/2537092/fca-weighs-next-step-for-contracts-as-palantir-deal-ends"
+      },
+      {
+        "company": "Mistral",
+        "headline": "Mistral pushes back against Europe's shift away from frontier AI",
+        "summary": "Mistral told POLITICO that Europe settling for AI applications rather than building frontier models would be a strategic mistake, arguing much of the value stays with model builders. The response highlights a policy split as European leaders increasingly prioritize adoption over competing with US and Chinese labs.",
+        "sourceUrl": "https://www.politico.eu/article/europe-ai-strategy-frontier-models-us-china/"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Anthropic plans first Q3 financial disclosure to prospective IPO investors",
+        "summary": "Anthropic will share third-quarter financials with prospective institutional investors at its headquarters this week, CNBC reports. The disclosure will test investor appetite and clarify growth and profitability ahead of a potential IPO; its S-1 financials and listing date remain unconfirmed publicly.",
+        "sourceUrl": "https://www.cnbc.com/2026/10/13/anthropic-q3-financials-ipo.html"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Anthropic seeks rehearing over Pentagon supply-chain-risk designation",
+        "summary": "Anthropic asked the US appeals court in Washington to reconsider September's ruling upholding its Pentagon supply-chain-risk designation. It argues the law was misapplied and the designation retaliated against its AI-safety stance; the company says the blacklisting has cost billions in business.",
+        "sourceUrl": "https://japannews.yomiuri.co.jp/news-services/reuters/20261014-353659/"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "OpenAI discloses alleged executive-room bugging by fired employee",
+        "summary": "US prosecutors disclosed charges against a former OpenAI employee accused of hiding a recorder in an executive conference room; he was arrested October 9 and appeared in court Tuesday. OpenAI says it used its models to trace the device and has no indication of model-weight, source-code or customer-data theft—an insider-security warning, not a confirmed data breach.",
+        "sourceUrl": "https://www.cnbc.com/2026/10/13/openai-employee-arrested-recording-device.html"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "OpenAI faces proposed class action over children's training data",
+        "summary": "A proposed US class action alleges ChatGPT collected minors' sensitive data without effective parental consent and used it to train models. Plaintiffs seek an equity stake or equivalent cash; OpenAI disputes the claims and cites its age-specific safeguards, adding a fresh legal challenge to its consumer AI business.",
+        "sourceUrl": "https://news.bloomberglaw.com/litigation/openai-accused-of-taking-minors-data-without-parental-consent"
+      }
+    ]
   }
 ]
