@@ -5908,5 +5908,77 @@
         "sourceUrl": "https://news.bloomberglaw.com/litigation/openai-accused-of-taking-minors-data-without-parental-consent"
       }
     ]
+  },
+  {
+    "id": "briefing-2026-10-15",
+    "date": "2026-10-15",
+    "items": [
+      {
+        "company": "Databricks",
+        "headline": "Databricks makes real-time document APIs generally available",
+        "summary": "Databricks made document parsing, classification and extraction REST APIs generally available, with its decision API in beta. Applications and agents can process contracts, invoices and claims as they arrive rather than wait for batch pipelines—reducing the manual handoff between documents and business decisions.",
+        "sourceUrl": "https://www.databricks.com/blog/power-real-time-applications-and-agents-document-intelligence"
+      },
+      {
+        "company": "Databricks",
+        "headline": "Databricks previews private-network access for serverless workloads",
+        "summary": "Private Network Gateway is in public preview on Azure and private preview on AWS, connecting Databricks serverless workloads to private databases and services through one network-level setup. It targets a key migration barrier: over 75% of interviewed customers cited networking complexity as a reason workloads remained on classic compute.",
+        "sourceUrl": "https://www.databricks.com/blog/introducing-private-network-gateway"
+      },
+      {
+        "company": "Databricks",
+        "headline": "Databricks adds predictive AI functions for SQL and Genie users",
+        "summary": "Databricks introduced four SQL-native functions for identifying metric drivers, detecting anomalies and predicting values or classes, alongside an upgraded forecasting function. Available through SQL, dashboards and Genie workflows, the tools let business teams run predictive analysis without building and maintaining their own machine-learning models.",
+        "sourceUrl": "https://www.databricks.com/blog/unlock-powerful-insights-and-forecasts-predictive-ai-functions"
+      },
+      {
+        "company": "Databricks",
+        "headline": "Pricefx partners with Databricks on governed pricing intelligence",
+        "summary": "Pricefx announced a Databricks partnership to connect B2B pricing and deal optimization to enterprises' governed lakehouse data. The planned integration will roll out in three milestones, aiming to reduce custom data movement and stale pricing inputs; it is a roadmap announcement, not an already-completed deployment.",
+        "sourceUrl": "https://finance.yahoo.com/technology/ai/articles/pricefx-announces-partnership-databricks-bring-150000420.html"
+      },
+      {
+        "company": "NVIDIA",
+        "headline": "NVIDIA and Danaher team up on AI-enabled autonomous laboratories",
+        "summary": "Danaher and NVIDIA will connect scientific instruments, laboratory workflows and experimental data with accelerated computing and AI models. Initial work targets selected instruments, aiming to close the loop between AI predictions and physical experiments; the collaboration is an early-stage development effort, with no financial terms disclosed.",
+        "sourceUrl": "https://www.prnewswire.com/news-releases/danaher-collaborates-with-nvidia-to-advance-autonomous-science-302907891.html"
+      },
+      {
+        "company": "NVIDIA",
+        "headline": "NVIDIA joins Earthshot to help scale environmental AI solutions",
+        "summary": "NVIDIA became an Earthshot Prize founding partner, giving finalists free technical training, engineering support and access to AI computing resources, including DGX Spark systems. The partnership targets climate-risk forecasting, nature monitoring and other environmental applications; no monetary commitment was disclosed.",
+        "sourceUrl": "https://earthshotprize.org/news/the-earthshot-prize-teams-up-with-nvidia/"
+      },
+      {
+        "company": "Palantir",
+        "headline": "Palantir settles London dispute over blocked £50 million police deal",
+        "summary": "Palantir and London's mayoral policing office settled their lawsuit over a blocked two-year, £50 million Metropolitan Police contract and withdrew their allegations. The office says it has no policy against contracting with Palantir, which remains in the procurement process; the settlement is not a contract award.",
+        "sourceUrl": "https://news.sky.com/story/tech-giant-palantir-and-sadiq-khan-settle-legal-battle-over-police-contract-13599306"
+      },
+      {
+        "company": "Mistral",
+        "headline": "Mistral acquires New Material to strengthen enterprise AI design",
+        "summary": "Mistral acquired AI design studio New Material and is establishing a Solutions Design team spanning design, engineering and AI. The team will co-develop deployments with enterprise and government customers and feed lessons back into Mistral's products; financial terms were not disclosed.",
+        "sourceUrl": "https://newmaterial.ai/stories/newmaterial-joins-mistral"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Anthropic reports $16.8 billion quarterly revenue and adjusted profit to investors",
+        "summary": "Anthropic told prospective IPO investors that third-quarter revenue reached $16.8 billion, up about 45% from $11.6 billion in Q2, and that it was profitable on an adjusted basis, CNBC reports. The actual financial disclosure materially advances yesterday's meeting preview, but adjusted profit is not GAAP net income.",
+        "sourceUrl": "https://www.cnbc.com/2026/10/15/anthropics-third-quarter-revenue-hits-16point8-billion-ipo.html"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "Eight US states sue OpenAI over alleged harms to children",
+        "summary": "Eight states filed separate lawsuits alleging ChatGPT is unsafe, has harmed children and misled parents. OpenAI cites age-specific safeguards and says it will keep strengthening protections; the coordinated state enforcement adds regulatory exposure beyond the private children's-data lawsuit covered yesterday.",
+        "sourceUrl": "https://www.cnbc.com/2026/10/14/openai-sued-by-8-states-over-chatgpt-safety-concerns-.html"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "OpenAI computing chief Sachin Katti to leave next month",
+        "summary": "OpenAI's head of computing capacity, Sachin Katti, will depart next month after roughly a year, The Wall Street Journal reports. The leadership change comes as the unit oversees hundreds of billions of dollars in infrastructure investment, putting execution continuity at the center of OpenAI's compute expansion.",
+        "sourceUrl": "https://www.wsj.com/tech/ai/openai-computing-chief-to-depart-6ffb7d7e"
+      }
+    ]
   }
 ]
