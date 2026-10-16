@@ -5980,5 +5980,71 @@
         "sourceUrl": "https://www.wsj.com/tech/ai/openai-computing-chief-to-depart-6ffb7d7e"
       }
     ]
+  },
+  {
+    "id": "briefing-2026-10-16",
+    "date": "2026-10-16",
+    "items": [
+      {
+        "company": "Databricks",
+        "headline": "Databricks adds real-time geospatial queries to Lakehouse//RT",
+        "summary": "Spatial SQL and spatial joins are now available in beta on Lakehouse//RT, letting companies serve location-based analytics without a separate geospatial stack. Databricks reports up to 38× faster queries than a traditional cloud warehouse at 50 concurrent users; that is a vendor benchmark, not an independent comparison.",
+        "sourceUrl": "https://www.databricks.com/blog/geospatial-queries-are-38x-faster-lakehousert"
+      },
+      {
+        "company": "NVIDIA",
+        "headline": "NVIDIA releases open Nemotron models for enterprise and local AI agents",
+        "summary": "NVIDIA released the 120-billion-parameter Nemotron 3.5 Super VL and a Bolt model that fits in 24GB of memory, extending customizable agents from servers to local hardware. A smaller 4GB Bolt model follows October 23; organizations can fine-tune and run the open models on their own infrastructure rather than depend on closed-model APIs.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
+      },
+      {
+        "company": "NVIDIA",
+        "headline": "Germany reportedly plans industrial AI agreement with NVIDIA",
+        "summary": "Germany plans an NVIDIA cooperation agreement involving hundreds of millions of euros, Handelsblatt reported, with an announcement expected next week. The proposed partnership would support physical AI and sovereign industrial foundation models through Germany’s SOOFI project; this is a reported plan, not a signed deal.",
+        "sourceUrl": "https://www.reuters.com/business/germany-plans-ai-cooperation-deal-with-nvidia-handelsblatt-says-2026-10-15/"
+      },
+      {
+        "company": "Snowflake",
+        "headline": "Lumen and Snowflake plan simpler private data connections for enterprise AI",
+        "summary": "Lumen and Snowflake announced plans to combine Lumen’s programmable private network with Snowflake’s AI Data Cloud, including a Data Connectivity Proxy designed for Lumen infrastructure. The aim is to move and govern data securely across clouds and company sites; existing integrations are available, while further connectivity improvements remain planned.",
+        "sourceUrl": "https://ir.lumen.com/news/news-details/2026/Lumen-and-Snowflake-Seek-to-Simplify-Private-Data-Connectivity-for-Enterprises/default.aspx"
+      },
+      {
+        "company": "Snowflake",
+        "headline": "Benchling launches live scientific data sharing with Snowflake",
+        "summary": "Benchling launched Direct Data Share in public beta, connecting experimental data with Snowflake through bidirectional flows and ready-to-query tables refreshed in minutes. Biotech teams can combine lab, instrument and external data for analytics and AI without maintaining custom export pipelines, then return insights to scientists’ workflows.",
+        "sourceUrl": "https://www.benchling.com/blog/direct-data-share-with-snowflake-and-benchling"
+      },
+      {
+        "company": "Palantir",
+        "headline": "Customers Bank selects Palantir to automate deposit onboarding",
+        "summary": "Customers Bank, with nearly $27 billion in assets, will deploy Foundry and AIP to streamline document collection, entity verification and risk checks for new deposit accounts. Palantir has embedded engineers with the bank’s technology team, targeting faster onboarding as deposits grow 15% and client deposit accounts more than 17% year over year; contract value was not disclosed.",
+        "sourceUrl": "https://www.businesswire.com/news/home/20261015311978/en/Customers-Bank-and-Palantir-Collaborate-to-Build-an-AI-Native-Future-for-Banking"
+      },
+      {
+        "company": "Mistral",
+        "headline": "CERN and Mistral plan a foundation model for particle physics",
+        "summary": "CERN and Mistral signed a statement of intent to develop a Large Physics Model trained on billions of simulated particle collisions. It would support particle reconstruction, identification and anomaly detection as CERN prepares for a tenfold increase in collisions around 2030; no budget or delivery timetable was announced.",
+        "sourceUrl": "https://home.cern/cern-and-mistral-join-forces-to-accelerate-ai-for-science/"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Anthropic investors weigh $1.5 trillion IPO valuation, below earlier expectations",
+        "summary": "Some Anthropic investors are discussing an IPO valuation around $1.5 trillion rather than the roughly $2 trillion previously expected, Reuters reported. The new development is investor repricing after revenue growth slowed to 45% quarter on quarter—not a confirmed offering price—raising the stakes for November’s planned listing and the wider AI funding market.",
+        "sourceUrl": "https://www.reuters.com/business/finance/investors-temper-anthropic-ipo-valuation-expectations-over-revenue-growth-2026-10-15/"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Anthropic grants METR employee-like access for independent safety reviews",
+        "summary": "Anthropic is giving six METR researchers employee-like access to assess its models and safety practices, with no company veto over risk findings but narrowly defined redactions permitted. Customer data and model architecture remain off limits; the arrangement is a concrete test of whether external AI audits can be meaningful without exposing proprietary information.",
+        "sourceUrl": "https://www.anthropic.com/news/an-update-on-independent-evaluators"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "OpenAI offers eligible US academic labs sponsored GPT-Rosalind access",
+        "summary": "OpenAI’s Rosalind Academic Plan offers eligible US university labs up to 30 Business Standard seats at no cost for up to 12 months. Access to its life-sciences model GPT-Rosalind requires trusted-access approval, lowering the cost of AI-assisted biological research without removing the model’s safety gate.",
+        "sourceUrl": "https://openai.com/index/introducing-the-rosalind-academic-plan/"
+      }
+    ]
   }
 ]
