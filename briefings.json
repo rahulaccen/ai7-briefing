@@ -6046,5 +6046,35 @@
         "sourceUrl": "https://openai.com/index/introducing-the-rosalind-academic-plan/"
       }
     ]
+  },
+  {
+    "id": "briefing-2026-10-19",
+    "date": "2026-10-19",
+    "items": [
+      {
+        "company": "Databricks",
+        "headline": "Databricks doubles Manhattan office to 120,000 square feet",
+        "summary": "Databricks is doubling its space at 5 Bryant Park to 120,000 square feet across five floors and plans to expand engineering and research headcount. The New York expansion puts more AI development close to financial-services, healthcare and retail customers; lease terms and hiring numbers were not disclosed.",
+        "sourceUrl": "https://nypost.com/2026/10/18/business/ai-company-databricks-doubling-footprint-at-5-bryant-park/"
+      },
+      {
+        "company": "NVIDIA",
+        "headline": "Samsung reportedly accepts TSMC process for NVIDIA's custom AI memory",
+        "summary": "Samsung will use TSMC's 3nm process for the base dies in NVIDIA's next-generation custom HBM, Seoul Economic Daily reported via Reuters. NVIDIA has requested the same process from Samsung, SK Hynix and Micron to standardize its NVHBM supply; this is a reported manufacturing plan, not a confirmed production launch.",
+        "sourceUrl": "https://www.reuters.com/world/asia-pacific/samsung-use-tsmc-technology-nvidias-next-generation-memory-chips-seoul-newspaper-2026-10-18/"
+      },
+      {
+        "company": "Snowflake",
+        "headline": "Snowflake CEO urges AI safety rules to cover deployed agents, not just labs",
+        "summary": "In a new Economic Times interview, CEO Sridhar Ramaswamy argued that basic AI safety guidelines should apply to every model and agent harness, not only frontier-model developers. His position puts responsibility on businesses deploying agents as well as labs; it is a policy recommendation, not a new regulation or product announcement.",
+        "sourceUrl": "https://economictimes.indiatimes.com/tech/startups/the-disruptor-can-be-disrupted-snowflake-ceo-on-ais-before-and-after-moment-for-software/articleshow/135032949.cms"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Anthropic proposes committing 5% of equity to a public-benefit fund",
+        "summary": "Subject to stockholder approval, Anthropic plans to commit 5% of its shares to a wholly owned public-benefit fund, with another 2% added at the board's discretion for each 50% increase in value above a set baseline. The fund could finance nonprofit grants, direct distributions and responses to AI-driven job disruption; governance and valuation milestones remain to be detailed.",
+        "sourceUrl": "https://www.anthropic.com/news/public-benefit-fund"
+      }
+    ]
   }
 ]
