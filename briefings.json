@@ -6154,5 +6154,65 @@
         "sourceUrl": "https://www.reuters.com/legal/litigation/openai-says-its-ai-agents-weakened-internal-monitoring-system-2026-10-21/"
       }
     ]
+  },
+  {
+    "id": "briefing-2026-10-22",
+    "date": "2026-10-22",
+    "items": [
+      {
+        "company": "Databricks",
+        "headline": "Databricks makes managed GPU training platform AI Runtime generally available",
+        "summary": "Databricks made AI Runtime generally available, combining managed GPU infrastructure, model-training tools and Unity Catalog governance inside its data platform. Hundreds of companies already use it; the launch lets enterprises train on their existing data without running a separate GPU stack.",
+        "sourceUrl": "https://www.databricks.com/blog/ai-runtime-generally-available"
+      },
+      {
+        "company": "NVIDIA",
+        "headline": "NVIDIA targets 2.5× substrate capacity and funds $1.1 billion US testing expansion",
+        "summary": "NVIDIA announced supplier agreements targeting 2.5× substrate capacity over three years, more than 300% additional Amkor packaging capacity by end-2028 and a $1.1 billion advance for KYEC’s US testing facilities. These planned expansions address AI-chip supply bottlenecks; they are capacity targets, not output already delivered.",
+        "sourceUrl": "https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout"
+      },
+      {
+        "company": "NVIDIA",
+        "headline": "NVIDIA’s modular DSX POD targets AI-factory deployment in 14 days",
+        "summary": "NVIDIA introduced factory-integrated Vera Rubin AI-factory containers, targeting deployment at a prepared site in as little as 14 days versus six months. Partner systems are due in early 2027; the design shifts integration off-site but still requires power, cooling and networking to be ready.",
+        "sourceUrl": "https://nvidianews.nvidia.com/news/nvidia-introduces-dsx-pod-ai-factories-to-accelerate-europes-infrastructure-deployment"
+      },
+      {
+        "company": "Palantir",
+        "headline": "Palantir reports sovereign-AI deployment gains across defense and construction",
+        "summary": "Palantir detailed new customer outcomes using its platform and NVIDIA open models: L3Harris reported 95% lower costs in an internal test, while McCarthy said an AI-assisted subcontract workflow saves 30,000 hours annually. These customer-reported results—not new contract values—illustrate the case for proprietary-data models over general-purpose frontier models.",
+        "sourceUrl": "https://finance.yahoo.com/technology/ai/articles/palantir-accelerates-delivery-sovereign-ai-200100948.html"
+      },
+      {
+        "company": "Mistral",
+        "headline": "Mistral and NVIDIA expand into AI-driven engineering simulation",
+        "summary": "Mistral and NVIDIA announced work combining Mistral Large 4 with accelerated physics and 3D-simulation tools for engineering design. Planned open datasets and public benchmarks aim to validate automated CAD-to-simulation workflows, extending their partnership into industrial engineering; no commercial timetable was disclosed.",
+        "sourceUrl": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Anthropic previews Claude Duet, a proactive agent for professionals",
+        "summary": "Anthropic opened a waitlisted research preview of Claude Duet, an Opus 5.5-based agent that monitors connected apps, briefs users and continues assigned work while they are away. It is included within Pro and Max usage limits on web, iOS and Android, moving Claude toward ongoing workflow execution rather than prompt-by-prompt assistance.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-duet"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "AI-discovered critical PHP flaws trigger coordinated patching push",
+        "summary": "OpenAI disclosed coordinated fixes for critical PHP vulnerabilities found with AI assistance, including GPT-5.6 Sol. Maintainers and security providers prepared protections before disclosure; organizations running PHP should apply the relevant updates now, underscoring how faster AI vulnerability discovery raises both defensive opportunity and exploitation risk.",
+        "sourceUrl": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "OpenAI models and Codex are coming to Google Cloud",
+        "summary": "OpenAI and Google Cloud will bring frontier models and Codex workflows to Model Garden, with general availability planned in the coming weeks. Customers can use existing Google Cloud spending commitments, easing enterprise procurement; Microsoft remains OpenAI’s primary cloud partner.",
+        "sourceUrl": "https://openai.com/index/openai-models-google-cloud/"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "ChatGPT Ads expands to 89 countries after reaching 100,000 advertisers",
+        "summary": "OpenAI expanded ChatGPT Ads to 26 additional countries, taking availability to 89, and said more than 100,000 advertisers have run campaigns. Ads remain limited to Free and Go plans, broadening monetization without adding ads to Plus, Pro or Enterprise.",
+        "sourceUrl": "https://openai.com/index/chatgpt-ads-expands-26-new-countries/"
+      }
+    ]
   }
 ]
