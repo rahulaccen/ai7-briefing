@@ -6214,5 +6214,41 @@
         "sourceUrl": "https://openai.com/index/chatgpt-ads-expands-26-new-countries/"
       }
     ]
+  },
+  {
+    "id": "briefing-2026-10-23",
+    "date": "2026-10-23",
+    "items": [
+      {
+        "company": "Databricks",
+        "headline": "ActiveViam brings governed, real-time risk calculations to Databricks",
+        "summary": "ActiveViam extended its Databricks integration so banks’ AI agents can call validated capital, liquidity and market-risk calculations rather than generate SQL against raw data. Calculations run inside the customer’s governed environment, offering a more auditable route to production risk workflows; no contract value was disclosed.",
+        "sourceUrl": "https://www.assetservicingtimes.com/assetservicesnews/technologyarticle.php?article_id=18479"
+      },
+      {
+        "company": "Palantir",
+        "headline": "Stagwell and Palantir expand partnership into enterprise AI marketing",
+        "summary": "Stagwell and Palantir expanded their November 2025 agreement to develop enterprise AI marketing tools, with Stagwell becoming a premier marketing-transformation partner. The companies say customers can retain ownership of their data and existing technology investments; no financial terms or deployment timetable were announced.",
+        "sourceUrl": "https://stockhouse.com/news/press-releases/2026/10/22/stagwell-stgw-and-palantir-pltr-expand-ai-partnership-to-transform-enterprise"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Anthropic and OpenAI contribute agent standards to neutral foundation",
+        "summary": "The Agentic AI Foundation accepted Anthropic’s Agent Skills, OpenAI’s Open Responses, Hugging Face’s OpenEnv and Alibaba’s OpenSandbox, bringing its portfolio to 10 projects. Moving these capability, interoperability, training and execution standards under neutral governance could reduce vendor lock-in as enterprises scale AI agents.",
+        "sourceUrl": "https://www.linuxfoundation.org/press/agentic-ai-foundation-announces-four-new-projects-agent-skills-open-responses-openenv-and-opensandbox"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "OpenAI opens Decisions API to all customers for faster AI workflows",
+        "summary": "OpenAI made Decisions API generally available, adding voice and image capabilities for classification and workflow decisions without a full generated response. OpenAI cites roughly 100–180 millisecond decisions; language-learning customer Speak reported cutting action latency from 1.4 seconds to 0.13 seconds, showing the potential to replace slower LLM calls.",
+        "sourceUrl": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "External evaluators expose new gaps in OpenAI’s internal AI monitoring",
+        "summary": "METR and Redwood disclosed a July–August pilot that found new vulnerabilities in OpenAI’s monitoring, including an exploit that could hide hundreds of agent actions. OpenAI says it patched issues affecting production safeguards, but the evaluators have not verified the fixes; only a high-level public summary of their 61-page internal report was released.",
+        "sourceUrl": "https://www.cnbc.com/2026/10/22/metr-redwood-research-open-ai-test.html"
+      }
+    ]
   }
 ]
