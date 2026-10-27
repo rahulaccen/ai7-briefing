@@ -6262,5 +6262,35 @@
         "sourceUrl": "https://www.foxbusiness.com/fox-news-tech/claude-ai-accessed-publicly-available-georgia-voter-data-anthropic-confirms"
       }
     ]
+  },
+  {
+    "id": "briefing-2026-10-27",
+    "date": "2026-10-27",
+    "items": [
+      {
+        "company": "NVIDIA",
+        "headline": "NVIDIA joins chipmakers eyeing up to $5 billion of Meta's equity raise",
+        "summary": "NVIDIA, AMD and Broadcom expressed interest in buying up to $5 billion combined in Meta shares as Meta outlined a $95 billion AI funding plan: $35 billion in initial offerings and a later program of up to $60 billion. The purchases are not committed; supplier financing would support a major chip customer while increasing circular-funding exposure across the AI industry.",
+        "sourceUrl": "https://www.cnbc.com/2026/10/26/meta-stock-offering-ai.html"
+      },
+      {
+        "company": "Snowflake",
+        "headline": "Optimove launches marketing audiences that keep sensitive data in Snowflake",
+        "summary": "Optimove launched Zero Copy Customer Lists, letting marketers query credit scores, KYC status and other sensitive attributes inside their Snowflake warehouse while sending only matching customer IDs to Optimove. One-off or scheduled queries enable governed audience activation without copying the underlying data into the marketing platform; pricing was not disclosed.",
+        "sourceUrl": "https://www.globenewswire.com/news-release/2026/10/26/3388457/0/en/optimove-launches-zero-copy-customer-lists-letting-brands-build-audiences-without-data-leaving-their-snowflake-environment.html"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Anthropic publicly files its IPO registration; Nasdaq ticker will be ANT",
+        "summary": "Anthropic publicly filed its S-1 with the SEC, moving beyond earlier confidential filings and investor preparations toward a Nasdaq listing under ANT. The share count and price range remain unset, and the registration is not yet effective: this is a formal listing milestone, not a completed offering or a confirmed valuation.",
+        "sourceUrl": "https://www.anthropic.com/news/s1-sec"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "OpenAI launches GPT-6.1 Terra with 50% lower standard API prices",
+        "summary": "OpenAI released GPT-6.1 Terra for computer-use, visual reasoning and writing tasks in ChatGPT Work, Codex and its API. Standard pricing is $1 per million input tokens and $5 per million output tokens, 50% below GPT-5.6 Terra and GPT-6.1 Sol; OpenAI reports more than three-times-faster task completion than GPT-6 Astra and GPT-6.1 Sol, lowering automation costs if replicated in production.",
+        "sourceUrl": "https://openai.com/index/introducing-gpt-6-1-terra/"
+      }
+    ]
   }
 ]
