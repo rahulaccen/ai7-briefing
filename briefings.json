@@ -6292,5 +6292,29 @@
         "sourceUrl": "https://openai.com/index/introducing-gpt-6-1-terra/"
       }
     ]
+  },
+  {
+    "id": "briefing-2026-10-28",
+    "date": "2026-10-28",
+    "items": [
+      {
+        "company": "Snowflake",
+        "headline": "Snowflake projects $300 million Saudi investment through 2030",
+        "summary": "Snowflake announced a projected $300 million investment in Saudi Arabia through 2030, spanning its Riyadh regional headquarters, hiring, partners and cloud infrastructure. Its collaboration with the communications ministry targets up to 25,000 learners for data and AI training; two additional Saudi cloud regions are planned for the second half of 2026, expanding data-residency options.",
+        "sourceUrl": "https://uaenews247.com/2026/10/27/snowflake-to-invest-300-million-in-saudi-arabias-ai-data-cloud/"
+      },
+      {
+        "company": "Snowflake",
+        "headline": "SnowPR finds coding-agent cost differences larger than accuracy gaps",
+        "summary": "Snowflake published SnowPR, a benchmark of 65 real engineering changes from its private codebase. Four agents using the same opus-5 model passed 84.1–85.1% of trials—too close for this sample to distinguish—but its internal REM mode cost 23% less than standard Cortex Code mode, though it was slower and is not available to customers. The result highlights agent-software efficiency, not a general accuracy leaderboard.",
+        "sourceUrl": "https://www.snowflake.com/en/blog/engineering/Benchmarking-coding-agents/"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "OpenAI reportedly plans to buy Google AI chips outright",
+        "summary": "OpenAI plans to buy Google’s AI chips, The Information reported, according to Reuters; financial terms and volumes were not disclosed. This would extend OpenAI’s existing TPU rentals and diversify compute beyond NVIDIA GPUs and its Broadcom-designed chip program. OpenAI declined comment and Google had not responded, so this remains a reported plan, not a confirmed purchase.",
+        "sourceUrl": "https://www.reuters.com/business/openai-plans-buy-googles-ai-chips-information-reports-2026-10-28/"
+      }
+    ]
   }
 ]
