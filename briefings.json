@@ -6316,5 +6316,47 @@
         "sourceUrl": "https://www.reuters.com/business/openai-plans-buy-googles-ai-chips-information-reports-2026-10-28/"
       }
     ]
+  },
+  {
+    "id": "briefing-2026-10-29",
+    "date": "2026-10-29",
+    "items": [
+      {
+        "company": "Databricks",
+        "headline": "Magic EdTech joins Databricks’ partner network for education data and AI",
+        "summary": "Magic EdTech joined Databricks’ Brickbuilder network as a consulting and systems-integration partner, making Databricks a preferred deployment option for its EdDataHub solution. The partnership targets fragmented education data, giving publishers, EdTech companies and universities a governed foundation for analytics and AI.",
+        "sourceUrl": "https://www.morningstar.com/news/pr-newswire/20261028io80610/magic-edtech-joins-the-databricks-brickbuilder-partner-network-to-help-educational-organizations-unify-data-for-analytics-and-ai"
+      },
+      {
+        "company": "NVIDIA",
+        "headline": "DOJ questions NVIDIA’s $12.9 billion Hugging Face acquisition",
+        "summary": "The US Justice Department is examining how NVIDIA’s planned $12.9 billion Hugging Face acquisition could affect AI competition, CNBC independently confirmed after Reuters’ report. The questions extend a broader antitrust inquiry to a major AI-model distribution platform; an inquiry is not a finding of wrongdoing or a decision to block the deal.",
+        "sourceUrl": "https://www.cnbc.com/2026/10/28/doj-questions-nvidias-12point9-billion-hugging-face-deal.html"
+      },
+      {
+        "company": "NVIDIA",
+        "headline": "NVIDIA launches open-weight speech model for 40 languages",
+        "summary": "NVIDIA released Nemotron 3.5 Transcribe, combining transcription in 40 languages, speaker attribution, translation and audio question-answering in one open-weight model. It uses roughly 4.3 billion active parameters; planned quantized versions will bring it to local RTX Spark and DGX Spark hardware, widening options for processing sensitive audio without relying solely on cloud services.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-updates-models-agents-games/"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Anthropic adds AI-return reporting and pooled team budgets",
+        "summary": "Anthropic launched reporting tools that combine usage analytics and employee surveys to show what teams produced, what it cost and where AI workflows failed, with recommendations for improvement. Pooled group budgets add spending control, addressing enterprises’ need to demonstrate AI returns; Anthropic says this reporting data will not train its models by default.",
+        "sourceUrl": "https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "Anthropic reportedly taps RetailBook for UK IPO access",
+        "summary": "Anthropic is working with RetailBook to market its IPO shares to UK retail investors, Bloomberg reported, citing people familiar with the matter. The reported distribution arrangement advances the UK access outlined in Monday’s filing; it is not a confirmed allocation, offer price or listing date.",
+        "sourceUrl": "https://www.bloomberg.com/news/articles/2026-10-28/anthropic-is-said-to-plan-uk-share-offering-via-retailbook"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "OpenAI and ServiceNow connect ChatGPT to governed enterprise workflows",
+        "summary": "OpenAI and ServiceNow expanded their partnership with a ChatGPT integration that can find incidents, assess change risk and update ServiceNow records under existing permissions and business rules. Planned additions cover Codex application development, cybersecurity and voice; ServiceNow also plans employee-wide ChatGPT Work and Codex access, while OpenAI plans to adopt ServiceNow internally.",
+        "sourceUrl": "https://openai.com/index/openai-servicenow-partnership-expansion/"
+      }
+    ]
   }
 ]
