@@ -6358,5 +6358,53 @@
         "sourceUrl": "https://openai.com/index/openai-servicenow-partnership-expansion/"
       }
     ]
+  },
+  {
+    "id": "briefing-2026-10-30",
+    "date": "2026-10-30",
+    "items": [
+      {
+        "company": "NVIDIA",
+        "headline": "NVIDIA disputes report linking a customer executive to a Chinese spy operation",
+        "summary": "NVIDIA pushed back after the New York Times reported that US intelligence suspected a Megaspeed executive close to Jensen Huang of acting for China. NVIDIA said customers receive no trade secrets or national-security information and that earlier chip-diversion allegations were investigated and debunked; the report raises export-control and governance scrutiny, not a proven finding of espionage.",
+        "sourceUrl": "https://www.cnbc.com/2026/10/29/nvidia-jensen-huang-chinese-intelligence-asset.html"
+      },
+      {
+        "company": "Palantir",
+        "headline": "Surf Air expands Palantir partnership as five operators sign for its software",
+        "summary": "Surf Air Mobility signed five definitive OperatorOS agreements and expanded its Palantir partnership with dedicated engineering and sales resources. Palantir will co-sell SurfOS to enterprise prospects and support implementation, extending its aviation footprint; Surf Air earns a share of trips managed through the software, while its projected enterprise pipeline is not booked revenue.",
+        "sourceUrl": "https://www.businesswire.com/news/home/20261029755789/en/"
+      },
+      {
+        "company": "Mistral",
+        "headline": "Mistral releases upgraded Large 4 weights for self-hosted coding and cybersecurity",
+        "summary": "Mistral released downloadable weights for an improved version of its 1-trillion-parameter Large 4 model, moving beyond this month's public preview. Companies can run and customize it on their own infrastructure; Mistral reports a 13-point Terminal-Bench improvement to 41% with 30% fewer output tokens, strengthening the case for sovereign AI deployment if those gains hold in production.",
+        "sourceUrl": "https://mistral.ai/news/mistral-large-4-oss/"
+      },
+      {
+        "company": "Mistral",
+        "headline": "Orange Cyberdefense adopts a Mistral cybersecurity model on European compute",
+        "summary": "Orange Cyberdefense announced a partnership to integrate a cybersecurity variant of Mistral's latest model into selected corporate and public-sector services. The gradual rollout will use European compute, initially targeting vulnerability testing and faster breach investigation; it gives a major European security provider a locally hosted AI option, with financial terms undisclosed.",
+        "sourceUrl": "https://www.reuters.com/legal/litigation/orange-unit-signs-deal-mistrals-latest-ai-cybersecurity-model-2026-10-29/"
+      },
+      {
+        "company": "Anthropic",
+        "headline": "SentinelOne plans to add Claude Mythos 5.1 to expert-led security services",
+        "summary": "SentinelOne announced the upcoming addition of Anthropic's Claude Mythos 5.1 to Wayfinder Frontier AI Services. Security experts will use it to discover vulnerabilities, validate which are exploitable and prioritize fixes, expanding Claude's defensive-security distribution; availability timing and pricing were not disclosed, so this is a planned addition rather than a completed rollout.",
+        "sourceUrl": "https://www.businesswire.com/news/home/20261029890153/en/"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "OpenAI doubles Pro usage allowances and reverses planned Pro 200 cut",
+        "summary": "OpenAI said it doubled usage limits for its $100, $200 and $500 Pro tiers and Business Premium, effective immediately, reversing a planned reduction for existing Pro 200 users. The change covers shared ChatGPT Work and Codex allowances, while extended Dots usage remains separate; exact numerical limits were not disclosed, leaving teams more capacity without a higher subscription price.",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-doubles-chatgpt-pro-usage-limits-after-backlash-over-planned-50-percent-cut/"
+      },
+      {
+        "company": "OpenAI",
+        "headline": "OpenAI rewrites its Model Spec around human intent and oversight",
+        "summary": "OpenAI reorganized its public Model Spec around five values: human intent, harm minimization, honesty, human agency and care, with clearer guidance for consequential agent actions and oversight. This changes its stated behavioral and training framework, not a guarantee of current capabilities: OpenAI says today's models do not yet fully reflect the updated specification.",
+        "sourceUrl": "https://openai.com/index/updated-model-spec/"
+      }
+    ]
   }
 ]
